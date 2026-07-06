@@ -1,0 +1,2574 @@
+22
+Volume 12 • Issue 4 • 2020Engineering Management in Production and Servicesreceived: 18 April 2020
+accepted: 25 November 2020
+Warehouse location selection with  
+TOPSIS group decision-making under  
+different expert priority allocations
+Lanndon Ocampo      Gianne Jean Genimelo       
+Jerome Lariosa      Raul Guinitaran       
+Philip John Borromeo      Maria Elena Aparente      
+Teresita Capin      Miriam Bongo
+A B S T R A C T
+Warehouses are crucial infrastructures in supply chains. As a strategic task that would 
+potentially impact various long-term agenda, warehouse location selection becomes 
+an important decision-making process. Due to quantitative and qualitative multiple 
+criteria in selecting alternative warehouse locations, the task becomes a multiple 
+criteria decision-making problem. Current literature offers several approaches to 
+addressing the domain problem. However, the number of factors or criteria considered 
+in the previous works is limited and does not reflect real-life decision-making. In 
+addition, such a problem requires a group decision, with decision-makers having 
+different motivations and value systems. Analysing the varying importance of experts 
+comprising the group would provide insights into how these variations influence the 
+final decision regarding the location. Thus, in this work, we adopted the Technique for 
+Order of Preference by Similarity to Ideal Solution (TOPSIS) to address a warehouse 
+location decision problem under a significant number of decision criteria in a group 
+decision-making environment. To elucidate the proposed approach, a case study in  
+a product distribution firm was carried out. Findings show that decision-makers in this 
+industry emphasise criteria that maintain the distribution networks more efficiently at 
+minimum cost. Results also reveal that varying priorities of the decision-makers have 
+little impact on the group decision, which implies that their degree of knowledge and 
+expertise is comparable to a certain extent. With the efficiency and tractability of the 
+required computations, the TOPSIS method, as demonstrated in this work, provides  
+a useful, practical tool for decision-makers with limited technical computational 
+expertise in addressing the warehouse location problem.
+K E Y   W O R D S
+warehouse, location decision, multiple criteria decision-making, TOPSIS
+10.2478/emj-2020-0025Lanndon Ocampo
+Cebu Technological University, Philippines  
+ORCID 0000-0002-5050-7606
+Corresponding author:  
+e-mail: lanndonocampo@gmail.com
+Gianne Jean Genimelo
+Cebu Technological University, Philippines
+ORCID 0000-0003-4073-8731
+Jerome Lariosa
+Cebu Technological University, Philippines
+ORCID 0000-0003-0632-4228
+Raul Guinitaran
+Cebu Technological University, Philippines
+ORCID 0000-0002-2448-5511
+Philip John Borromeo
+Cebu Technological University, Philippines
+ORCID 0000-0001-8814-2545
+Maria Elena Aparente
+Cebu Technological University, Philippines
+ORCID 0000-0002-8933-5565
+Teresita Capin
+Cebu Technological University, Philippines
+ORCID 0000-0001-7812-0721
+Miriam Bongo
+Cebu Technological University, Philippines
+De La Salle University, Philippines
+ORCID 0000-0002-9383-3399
+Introduction
+Warehouses are infrastructures where raw mate-
+rials or finished goods are stored before distribution 
+for sale (Singh et al., 2018). They serve as storage 
+facilities for enabling the movement of products through receiving, transferring, picking, and ship-
+ping. These processes contribute to the material flows 
+in supply chains (Singh et al., 2018). Mostly, firms 
+have warehouses within their physical vicinities 
+where operations are under their control. When pages:   22-39
+Ocampo, L., Genimelo, G. J., Lariosa, J., Guinitaran, R., Borromeo, P . J., Aparente, M. E., Capin, T., & Bongo, M. (2020). 
+Warehouse location selection with TOPSIS group decision-making under different expert priority allocations. Engineering 
+Management in Production and Services, 12(4), 22-39. doi: 10.2478/emj-2020-0025
+Volume 12 • Issue 4 • 202023
+Engineering Management in Production and Servicesdemand increases, firms (e.g., manufacturing) often 
+require additional warehouse space; however, often, 
+the option of building a warehouse may not be pos-
+sible due to high investment costs (Wutthisirisart et 
+al., 2015). In consequence, excess inventory that can-
+not be stored in warehouses controlled by the firms is 
+transferred to third-party warehouses for which the 
+firm pays rent, as well as incur labour and transporta-
+tion costs for storing items and moving them back to 
+the central warehouse (Demirel et al., 2010). These 
+associated costs (i.e., warehousing costs) represent 
+24–29% of the total logistics cost (Singh et al., 2018). 
+Due to their role in the effective management of the 
+supply chain and its strategic importance, selecting  
+a warehouse location becomes a crucial task.
+A suitable warehouse location enhances the 
+profitability of the firm and reduces the risk and 
+uncertainty of the supply chain (Dey et al., 2016). It 
+allows managers to respond quickly to demand flexi-
+bility (Jha et al., 2018). Consequently, it improves 
+customer satisfaction, increasing the competitive 
+advantage of the firm (Dey et al., 2016). Thus, locat-
+ing a warehouse is a crucial process as it impacts 
+capital investment, operating expenses, and customer 
+service, and once in place, the decision becomes 
+almost irreversible (Singh et al., 2018). Putting in the 
+context of a supply chain network, a warehouse deter -
+mines the efficiency and speed of supply chains 
+(Singh et al., 2018). Vlachopoulou et al. (2001) argued 
+that warehouse location selection was not only  
+a question of choosing sites; instead, it involved com-
+paring local characteristics of a market with the firm’s 
+overall corporate and marketing goals. Weber (1909, 
+1929) first introduced the warehouse location theory. 
+The proposed problem locates a single warehouse to 
+minimise the total travel distance between the ware-
+house and a set of locally distributed customers. Since 
+then, the attention that warehouse location obtains in 
+the current literature has increased dramatically. 
+Various methods were proposed to address  
+a warehouse location problem, generally formulated 
+as a mathematical program with solution techniques 
+ranging from linear programming (Brunaud et al., 
+2018; Vanichchinchai & Apirakkhit, 2018; Y ou et al., 
+2019) to search algorithms (Klose & Görtz, 2007; 
+Huang & Li, 2008; An et al., 2014) and heuristics 
+(Ghaderi & Jabalameli, 2013; Guastaroba & Speranza, 
+2014; Ho, 2015). Although single-objective optimisa-
+tion methods are reported in the current literature, 
+the consideration of multiple criteria is a direct con-
+sequence of the warehouse location problem due to 
+the presence of various factors in the selection pro-cess. Among the early works on this domain, Lee et 
+al. (1980) formulated an integer goal programming to 
+a multi-criterion warehouse selection problem. How-
+ever, formal mathematical programs limit the selec-
+tion process only to consider criteria that can be 
+articulated as a mathematical expression with defined 
+measurement systems. This drawback pre-empts  
+a holistic real-life decision-making problem due to 
+the existence of subjective and objective criteria 
+(Demirel et al., 2010; Dey et al., 2016). Thus, in 
+addressing this limitation, multi-criterion decision-
+making (MCDM) methods have become a popular 
+approach in the domain literature.
+In the literature, works highlighting warehouse 
+location selection went forward by presenting defined 
+sets of criteria commonly used in the real-life deci-
+sion-making process. These works used the criteria to 
+identify the best warehouse location among a defined 
+set of alternative sites. This process is contextualised 
+around the realm of an MCDM where the best alter -
+native is chosen among a specified set, subject to 
+multiple and even conflicting criteria. More formally, 
+the MCDM process can be defined as evaluating the 
+alternatives for selection or ranking, using a number 
+of qualitative and/or quantitative criteria that have 
+different measurement units (Özcan et al., 2011). 
+Among several MCDM methods, the use of the 
+ELimination Et Choice Translating REality (ELEC-
+TRE) methods, the analytic hierarchy process (AHP), 
+and the Technique for Order of Preference by Simi-
+larity to Ideal Solution (TOPSIS) can be highlighted 
+as the primary methods of use (Özcan et al., 2011). 
+The TOPSIS method was first proposed by Hwang 
+and Y oon (1981) with the underlying principle that 
+the best alternative is chosen based on maximising 
+the distance from the negative ideal solution and 
+minimising the distance from the positive ideal solu-
+tion. 
+It is applicable in solving decisions with a large 
+number of criteria, similar to the ELECTRE methods 
+(Roy, 1990; Roy, 1991). This aspect overcomes one 
+shortcoming of the AHP — its unsuitability of han-
+dling a large number of criteria or alternatives. Using 
+the TOPSIS method, weights are determined through 
+normalisation. This aspect overcomes the shortcom-
+ings of ELECTRE methods of possible biased data. 
+These advantages of the TOPSIS compared to the 
+AHP and ELECTRE make the TOPSIS more suitable 
+for solving huge MCDM problems involving a huge 
+number of criteria (e.g., warehouse location selec-
+tion) (Özcan et al., 2011), especially where objective 
+or quantitative data are given (Shih et al., 2007).
+24
+Volume 12 • Issue 4 • 2020Engineering Management in Production and ServicesHung and Cheng (2009) identified the main 
+advantages of the TOPSIS: (1) simple, rational, com-
+prehensible concept, (2) intuitive and clear logic that 
+represents the rationale of human choice, (3) ease of 
+computation and good computational efficiency, (4)  
+a scalar value that accounts for both the best and 
+worst alternatives’ ability to measure the relative per -
+formance for each alternative in a simple mathemati-
+cal form, and (5) possibility for visualisation. 
+However, despite these advantages, using the TOPSIS 
+method in solving a warehouse selection problem has 
+limited insights. To the best of our knowledge, only 
+Özcan et al. (2011), Roh et al. (2015), Büyüközkan 
+and Uztürk (2017), and Roh et al. (2018) have 
+explored such an approach. The TOPSIS method is 
+applicable in solving MCDM problems with a large 
+number of criteria, which was not explored in previ-
+ous warehouse selection studies as a generic set of 
+criteria was mostly used. Whereas in real-life deci-
+sion-making, this domain problem requires a deci-
+sion over a broad set of criteria. Additionally,  
+a committee or a group of high-level managers of an 
+organisation (or firm) along with external consult-
+ants or experts play an important role in the ware-
+house location selection problem (Dey et al., 2016). 
+This expert group carefully chooses the right combi-
+nation of selection criteria for the decision problem, 
+along with important judgment elicitations necessary 
+for the selection process. However, the obviously 
+varied knowledge and expertise of these experts, have 
+a significant impact on the overall group decision. 
+Nevertheless, the current domain literature within 
+the TOPSIS method fails to address this condition. 
+Thus, the motivation of this study is to explore  
+a warehouse selection problem involving a large 
+number of criteria in a group decision-making envi-
+ronment, which is seen as a more realistic approach 
+in warehouse location decision-making. The compre-
+hensive criteria set is obtained by consolidating the 
+significant criteria derived from the literature. In 
+addition, of the varying importance of the analysis by 
+experts comprising the group is put forward to pro-
+vide insights into how these variations influence the 
+final decision regarding the location. The contribu-
+tion of this work is to carry out a group warehouse 
+selection problem under a large number of criteria, 
+which reflects real-life decision-making.
+This paper is organised as follows. Section 2 pre-
+sents some preliminary information on the 
+approaches of warehouse location and the computa-
+tional process of TOPSIS. Section 3 discusses the 
+background of the case study and the proposed pro-cedure. The insights of the findings are highlighted in 
+Section 4. It ends with a conclusion and discussion of 
+future work in Section 5.
+1. Preliminaries
+1.1. Approaches to warehouse location 
+selection
+Due to the finite number of location alternatives, 
+usually pre-defined in the decision problem, to be 
+evaluated under multiple, even conflicting criteria, 
+the warehouse location selection could be appropri-
+ately framed as a multi-criterion decision-making 
+(MCDM) problem (Özcan et al., 2011). As ill-defined 
+formulations, MCDM problems often contain a crite-
+rion or criteria, from the set of criteria, which are 
+subjective, with non-sharp information and limited 
+measurement systems (Ocampo & Clark, 2015). The 
+presence of both quantitative and qualitative factors 
+(i.e., criteria) in the warehouse location selection 
+process (Demirel et al., 2010) increases the complex-
+ity of the decision problem. As such, a decision 
+regarding the location of a warehouse is generally one 
+of the most critical and strategic decisions in logistics 
+management and supply chain planning, mainly that 
+such decision involves substantial capital investments 
+and impacts future long-term capacity and inventory 
+decisions (Demirel et al., 2010).
+In a recent review by Y ap et al. (2019) on the 
+application of MCDM methods in site selection prob-
+lems, to which warehouse location selection belongs, 
+the analytic hierarchy process (AHP) of Saaty (1980) 
+emerges as the widely used approach. In fact, one of 
+the earliest works on solving warehouse location 
+selection problem via MCDM methods was presented 
+by  Korpela and Tuominen (1996), with the AHP as 
+their approach. Since then, the domain literature on 
+this topic has flourished, and an increasing number of 
+works that implemented MCDM methods and their 
+hybrid, including their extensions via the use of fuzzy 
+set theory, has been reported for the last decade. 
+Some MCDM methods which were adopted in 
+addressing the warehouse selection problem and 
+closely related problems include approaches (i.e., 
+pure or hybrid) based on the AHP (Alberto, 2000; 
+García et al., 2014; Boltürk et al., 2016; Raut et al., 
+2017; Kabak & Keskin, 2018; Hakim & Kusumastuti, 
+2018; Singh et al., 2018; Franek & Kashi, 2017; Nevima 
+& Kiszová, 2017), analytic network process — the 
+generalisation of the AHP (Cheng et al., 2005), simple 
+Volume 12 • Issue 4 • 202025
+Engineering Management in Production and Servicesadditive weighting (Chou et al., 2008; Dey et al., 
+2013), PROMETHEE II (Athawale et al., 2012),  
+ELECTRE-II (He et al., 2017), the Choquet integral 
+(Demirel et al., 2010), TOPSIS (Chu, 2002), VIKOR 
+(Kutlu Gündoğdu & Kahraman, 2019), and cloud-
+based design optimisation (Temur, 2016), among 
+others. Some works on this domain purposely com-
+bined two or more MCDM methods to overcome and 
+complement the limitations of each technique and 
+come up with a more powerful hybrid selection tool. 
+In most cases, a different approach is adopted to 
+address the prioritisation (or weighting) of the crite-
+ria and another tool for the ranking of alternative 
+warehouse locations. These works include the inte-
+gration of fuzzy TOPSIS-SAW-MOORA (Dey et al., 
+2016),  fuzzy AHP-TOPSIS (Roh et al., 2018), and 
+stochastic AHP and fuzzy VIKOR (Emeç & Akkaya, 
+2018). Note that this list is not intended to be com-
+prehensive.
+Aside from MCDM techniques, different meth-
+ods have been explored in addressing warehouse 
+selection decisions. In general, these techniques are 
+associated with mathematical programming, with 
+various solution techniques such as search algorithms 
+and heuristics (Tyagi & Das, 1995; Rosenwein, 1996). 
+An early work of Lee et al. (1980) first proposed an 
+integer goal programming formulation for a multi-
+criterion warehouse location problem. Since then, 
+various extensions have been developed, including 
+mixed-integer linear programming (Kratica et al., 
+2014; Brunaud et al., 2018; Vanichchinchai & Apirak-
+khit, 2018; Y ou et al., 2019), non-linear programming 
+(Monthatipkul, 2016), multi-objective optimisation 
+model (Xifeng et al., 2013), and second-order cone 
+programming (Wagner et al., 2009), among others. 
+Due to the complexity of the formulation, and entrap-
+ment to the local optima as a direct consequence, 
+various techniques were developed, such as the 
+Lagrangian relaxation approach (Ozsen et al., 2008; 
+Nezhad et al., 2013), approximation algorithms 
+(Huang & Li, 2008), local search algorithm (Cura, 
+2010), branch-and-price algorithm (Klose & Görtz, 
+2007), hybrid firefly-genetic algorithm (Rahmani  
+& MirHassani, 2014), evolutionary multi-objective 
+optimisation (Rakas et al., 2004), two-stage robust 
+models and algorithms (An et al., 2014), and weighted 
+Dantzig-Wolfe decomposition and the path-relinking 
+combined method (Li et al., 2014). Search heuristics 
+were also proposed, including hybrid multi-start 
+heuristic (Resende & Werneck, 2006), a discrete vari-
+ant of unconscious search (Ardjmand et al., 2014 and 
+Kratica et al., 2014), math heuristic (Rath & Gutjahr, 2014), greedy heuristic and fix-and-optimise heuris-
+tic (Ghaderi & Jabalameli, 2013), kernel search heu-
+ristic (Guastaroba & Speranza, 2014), iterated tabu 
+search heuristic (Ho, 2015), modified Clarke and 
+Wright savings heuristic (Li et al., 2015), and swarm 
+intelligence based on sample average approximation 
+(Aydin & Murat, 2013). Interpretive structural mod-
+elling was also adopted to solve a warehouse selection 
+problem that incorporates the sustainability agenda 
+(Jha et al., 2018). When formal mathematical pro-
+grams are used to address warehouse location deci-
+sions, the factors are expected to be quantitative and 
+measurable in such a way that they can be expressed 
+as formal mathematical equations or inequalities. 
+However, in most real-life cases, some factors relevant 
+in the decision domain (e.g., quality of life, social and 
+cultural, security) are qualitative and subjective, 
+which could not be expressed as mathematical state-
+ments. Thus, MCDM methods are considered  
+a holistic approach in addressing both quantitative 
+and qualitative factors in the selection of a warehouse 
+location. 
+1.2.  TOPSIS — the Technique of Order 
+Preference Similarity to the Ideal 
+Solution 
+In the context of MCDM applications for the 
+selection of a warehouse location, the AHP , ELEC-
+TRE, and TOPSIS can be highlighted as the primary 
+methods (Özcan et al., 2011). Özcan et al. (2011) 
+made a comparative assessment of these methods, 
+and the result is presented in Appendix 1. The assess-
+ment provides an insight into the performance of 
+these methods in several areas. It is noteworthy that 
+the TOPSIS has three main leverages: (1) the number 
+outranking relations is one, which implies efficiency 
+in judgment elicitations, (2) it is able to handle a large 
+number of alternatives and criteria with objective and 
+quantitative data, and (3) it generates a global, net 
+order. These characteristics are appropriate in 
+addressing a warehouse location selection, particu-
+larly when the number of criteria and alternatives is 
+large, and the efficiency in generating the results from 
+judgment elicitations is given a priority.
+Initially proposed by Hwang and Y oon (1981), 
+the foundation of TOPSIS lies at the notion of the 
+distance function where the best alternative is chosen 
+on the basis of maximising the distance from the 
+negative ideal solution and minimising the distance 
+from the positive ideal solution. Aside from location 
+decision problems, TOPSIS has been used in a broad 
+26
+Volume 12 • Issue 4 • 2020Engineering Management in Production and Servicesapplication domain, such as performance evaluation 
+with the use of financial investment decisions (Kim et 
+al., 1997), and financial ratios (Deng et al., 2000), 
+personnel selection (Kelemenis & Askounis, 2010), 
+strategy formulation (Ocampo, 2019), among others. 
+Note that this list is not intended to be comprehen-
+sive. Reviews on the applications of TOPSIS have 
+been reported by Behzadian et al. (2012), Shukla et al. 
+(2017), and  Y adav et al. (2018). TOPSIS leverages its 
+advantages on simplicity and the tractability of the 
+notion of distance based on ranking a set of alterna-
+tives (Chou et al. 2008; Özcanet al., 2011). It has effi-
+cient computational requirements due to its more 
+straightforward evaluation techniques (Chou et al., 
+2008; Özcan et al., 2011; Roszkowska, 2011; Vavrek et 
+al., 2017; Stankevičienė & Nikanorova, 2020).
+The computational steps of the TOPSIS approach 
+are provided below.
+Step 1: Establish a decision matrix to evaluate the 
+alternatives (e.g., supplier selection attributes) under 
+different criteria. The structure of the evaluation can 
+be expressed as follows: 
+ 
+𝐷𝐷𝐷𝐷𝑘𝑘𝑘𝑘=
+⎝⎛𝑓𝑓𝑓𝑓11𝑘𝑘𝑘𝑘𝑓𝑓𝑓𝑓12𝑘𝑘𝑘𝑘⋯𝑓𝑓𝑓𝑓1𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘
+𝑓𝑓𝑓𝑓21𝑘𝑘𝑘𝑘𝑓𝑓𝑓𝑓22𝑘𝑘𝑘𝑘⋯𝑓𝑓𝑓𝑓2𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘
+⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚1𝑘𝑘𝑘𝑘⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚2𝑘𝑘𝑘𝑘⋱
+⋯⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘⎠⎞                    (1)  
+ 
+where 𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝑘𝑘𝑘𝑘, 𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛, 𝑘𝑘𝑘𝑘=1,…,𝑀𝑀𝑀𝑀, 
+represents the evaluation score on the performance 
+(or relevance) of the 𝑖𝑖𝑖𝑖th alternative on the 𝑗𝑗𝑗𝑗th 
+criterion, elicited by the 𝑘𝑘𝑘𝑘th decision- maker.  
+Step 2 : Aggregate the individual decision 
+matrices using an aggregation function. One of the 
+highly ado pted aggregation functions is the 
+arithmetic mean. Thus, the aggregate score 𝑓𝑓𝑓𝑓 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗 can be 
+obtained as 𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=∑𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝑘𝑘𝑘𝑘𝑀𝑀𝑀𝑀
+𝑘𝑘𝑘𝑘=1. The resulting aggregate 
+decision matrix is shown in Equation (2).  
+ 
+𝐷𝐷𝐷𝐷=�𝑓𝑓𝑓𝑓11𝑓𝑓𝑓𝑓12⋯𝑓𝑓𝑓𝑓1𝑛𝑛𝑛𝑛
+𝑓𝑓𝑓𝑓21𝑓𝑓𝑓𝑓22⋯𝑓𝑓𝑓𝑓2𝑛𝑛𝑛𝑛
+⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚1⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚2⋱
+⋯⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚𝑛𝑛𝑛𝑛�                  (2) 
+ 
+Step 3 : Obtain the priority weights of the criteria. 
+The priority weight of a criterion 𝑗𝑗𝑗𝑗 is expressed as 𝑤𝑤𝑤𝑤𝑗𝑗𝑗𝑗. 
+Any prioriti sation  technique generates this. Note that 
+the TOPSIS approach provides no sp ecific method 
+for obtaining the priority weights of the criteria.  
+Step 4 : Calculate the normali sed decision matrix 
+𝑅𝑅𝑅𝑅=�𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗�𝑚𝑚𝑚𝑚×𝑛𝑛𝑛𝑛. The normali sed value 𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗 is obtained 
+as: 
+𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖
+�∑𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖2𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖=1�1
+2   ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛 (3)
+   
+Step 5 : Calculate the weighted normali sed 
+decision matrix 𝑉𝑉𝑉𝑉=�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗�𝑚𝑚𝑚𝑚×𝑛𝑛𝑛𝑛. Each element 
+denoted as 𝑣𝑣𝑣𝑣 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗, is obtained by  
+ 
+ 𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗×𝑤𝑤𝑤𝑤𝑗𝑗𝑗𝑗 ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛  (4) 
+ 
+Step 6 : Determine the positive ideal solutio n 
+(PIS),  denoted by 𝑉𝑉𝑉𝑉+, and the negative ideal solution 
+(NIS), denoted by 𝑉𝑉𝑉𝑉−: 
+𝑉𝑉𝑉𝑉+={𝑣𝑣𝑣𝑣1+,…,𝑣𝑣𝑣𝑣𝑛𝑛𝑛𝑛+}=��𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈    𝐽𝐽𝐽𝐽1�,
+�𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑛𝑛𝑛𝑛
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽2��   
+𝑉𝑉𝑉𝑉−={𝑣𝑣𝑣𝑣1−,…,𝑣𝑣𝑣𝑣𝑛𝑛𝑛𝑛−}=��𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑛𝑛𝑛𝑛
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽1�,
+�𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽2��  
+where 𝐽𝐽𝐽𝐽1 is associated with the benefit (i.e., 
+maximi sing) criteria, and 𝐽𝐽𝐽𝐽2 is associated with the 
+cost (i.e., minimi sing) criteria.  
+Step 7 : Calculate the separation measures, using 
+the m -dimensional Euclide an distance. The 
+separation measure 𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+ of each alternative 𝑖𝑖𝑖𝑖  from the 
+PIS is given as  
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+=�∑�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗−𝑣𝑣𝑣𝑣𝑗𝑗𝑗𝑗+�2𝑛𝑛𝑛𝑛
+𝑗𝑗𝑗𝑗=1 �1
+2  ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚   (7) 
+ 
+Similarly, the separation measures 𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖− of eac h 
+alternative f rom the NIS is as fol lows:  
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−=�∑�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗−𝑣𝑣𝑣𝑣𝑗𝑗𝑗𝑗−�2𝑛𝑛𝑛𝑛
+𝑗𝑗𝑗𝑗=1 �1
+2   ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚  (8) 
+ 
+Step 8 : Calculate the relative closeness to the 
+ideal solution and rank the alternatives in descending 
+order. The relative closeness coefficient of t he 
+alternative j with resp ect to PIS 𝑉𝑉𝑉𝑉+ can be expressed 
+as:  
+𝐶𝐶𝐶𝐶𝑖𝑖𝑖𝑖=𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+  ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚                (9) 
+   
+ 
+𝐷𝐷𝐷𝐷𝑘𝑘𝑘𝑘=
+⎝⎛𝑓𝑓𝑓𝑓11𝑘𝑘𝑘𝑘𝑓𝑓𝑓𝑓12𝑘𝑘𝑘𝑘⋯𝑓𝑓𝑓𝑓1𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘
+𝑓𝑓𝑓𝑓21𝑘𝑘𝑘𝑘𝑓𝑓𝑓𝑓22𝑘𝑘𝑘𝑘⋯𝑓𝑓𝑓𝑓2𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘
+⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚1𝑘𝑘𝑘𝑘⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚2𝑘𝑘𝑘𝑘⋱
+⋯⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘⎠⎞                    (1)  
+ 
+where 𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝑘𝑘𝑘𝑘, 𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛, 𝑘𝑘𝑘𝑘=1,…,𝑀𝑀𝑀𝑀, 
+represents the evaluation score on the performance 
+(or relevance) of the 𝑖𝑖𝑖𝑖th alternative on the 𝑗𝑗𝑗𝑗th 
+criterion, elicited by the 𝑘𝑘𝑘𝑘th decision- maker.  
+Step 2 : Aggregate the individual decision 
+matrices using an aggregation function. One of the 
+highly ado pted aggregation functions is the 
+arithmetic mean. Thus, the aggregate score 𝑓𝑓𝑓𝑓 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗 can be 
+obtained as 𝑓𝑓𝑓𝑓 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=∑𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝑘𝑘𝑘𝑘𝑀𝑀𝑀𝑀
+𝑘𝑘𝑘𝑘=1. The resulting aggregate 
+decision matrix is shown in Equation (2).  
+ 
+𝐷𝐷𝐷𝐷=�𝑓𝑓𝑓𝑓11𝑓𝑓𝑓𝑓12⋯𝑓𝑓𝑓𝑓1𝑛𝑛𝑛𝑛
+𝑓𝑓𝑓𝑓21𝑓𝑓𝑓𝑓22⋯𝑓𝑓𝑓𝑓2𝑛𝑛𝑛𝑛
+⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚1⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚2⋱
+⋯⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚𝑛𝑛𝑛𝑛�                  (2) 
+ 
+Step 3 : Obtain the priority weights of the criteria. 
+The priority weight of a criterion 𝑗𝑗𝑗𝑗 is expressed as 𝑤𝑤𝑤𝑤𝑗𝑗𝑗𝑗. 
+Any prioriti sation  technique generates this. Note that 
+the TOPSIS approach provides no sp ecific method 
+for obtaining the priority weights of the criteria.  
+Step 4 : Calculate the normali sed decision matrix 
+𝑅𝑅𝑅𝑅=�𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗�𝑚𝑚𝑚𝑚×𝑛𝑛𝑛𝑛. The normali sed value 𝑟𝑟𝑟𝑟 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗 is obtained 
+as: 
+𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖
+�∑𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖2𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖=1�1
+2   ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛 (3)
+   
+Step 5 : Calculate the weighted normali sed 
+decision matrix 𝑉𝑉𝑉𝑉=�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗�𝑚𝑚𝑚𝑚×𝑛𝑛𝑛𝑛. Each element 
+denoted as 𝑣𝑣𝑣𝑣 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗, is obtained by  
+ 
+ 𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗×𝑤𝑤𝑤𝑤𝑗𝑗𝑗𝑗 ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛  (4) 
+ 
+Step 6 : Determine the positive ideal solutio n 
+(PIS),  denoted by 𝑉𝑉𝑉𝑉+, and the negative ideal solution 
+(NIS), denoted by 𝑉𝑉𝑉𝑉−: 
+𝑉𝑉𝑉𝑉+={𝑣𝑣𝑣𝑣1+,…,𝑣𝑣𝑣𝑣𝑛𝑛𝑛𝑛+}=��𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈    𝐽𝐽𝐽𝐽1�,
+�𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑛𝑛𝑛𝑛
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽2��   
+𝑉𝑉𝑉𝑉−={𝑣𝑣𝑣𝑣1−,…,𝑣𝑣𝑣𝑣𝑛𝑛𝑛𝑛−}=��𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑛𝑛𝑛𝑛
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽1�,
+�𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽2��  
+where 𝐽𝐽𝐽𝐽1 is associated with the benefit (i.e., 
+maximi sing) criteria, and 𝐽𝐽𝐽𝐽2 is associated with the 
+cost (i.e., minimi sing) criteria.  
+Step 7 : Calculate the separation measures, using 
+the m -dimensional Euclide an distance. The 
+separation measure 𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+ of each alternative 𝑖𝑖𝑖𝑖 from the 
+PIS is given as  
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+=�∑�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗−𝑣𝑣𝑣𝑣𝑗𝑗𝑗𝑗+�2𝑛𝑛𝑛𝑛
+𝑗𝑗𝑗𝑗=1 �1
+2  ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚   (7) 
+ 
+Similarly, the separation measures 𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖− of eac h 
+alternative f rom the NIS is as fol lows:  
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−=�∑�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗−𝑣𝑣𝑣𝑣𝑗𝑗𝑗𝑗−�2𝑛𝑛𝑛𝑛
+𝑗𝑗𝑗𝑗=1 �1
+2   ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚  (8) 
+ 
+Step 8 : Calculate the relative closeness to the 
+ideal solution and rank the alternatives in descending 
+order. The relative closeness coefficient of t he 
+alternative j with resp ect to PIS 𝑉𝑉𝑉𝑉+ can be expressed 
+as:  
+𝐶𝐶𝐶𝐶𝑖𝑖𝑖𝑖=𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+  ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚                (9) 
+  2. Proposed procedure: TOPSIS 
+group decision-making for the 
+problem of warehouse loca -
+tion selection
+2.1. Case-study background
+ABC-G Enterprises is a product distributor of 
+one of the largest brewing companies in the Philip- 
+ 
+𝐷𝐷𝐷𝐷𝑘𝑘𝑘𝑘=
+⎝⎛𝑓𝑓𝑓𝑓11𝑘𝑘𝑘𝑘𝑓𝑓𝑓𝑓12𝑘𝑘𝑘𝑘⋯𝑓𝑓𝑓𝑓1𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘
+𝑓𝑓𝑓𝑓21𝑘𝑘𝑘𝑘𝑓𝑓𝑓𝑓22𝑘𝑘𝑘𝑘⋯𝑓𝑓𝑓𝑓2𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘
+⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚1𝑘𝑘𝑘𝑘⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚2𝑘𝑘𝑘𝑘⋱
+⋯⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘⎠⎞                    (1)  
+ 
+where 𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝑘𝑘𝑘𝑘, 𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛, 𝑘𝑘𝑘𝑘=1,…,𝑀𝑀𝑀𝑀, 
+represents the evaluation score on the performance 
+(or relevance) of the 𝑖𝑖𝑖𝑖th alternative on the 𝑗𝑗𝑗𝑗th 
+criterion, elicited by the 𝑘𝑘𝑘𝑘th decision- maker.  
+Step 2 : Aggregate the individual decision 
+matrices using an aggregation function. One of the 
+highly ado pted aggregation functions is the 
+arithmetic mean. Thus, the aggregate score 𝑓𝑓𝑓𝑓 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗 can be 
+obtained as 𝑓𝑓𝑓𝑓 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=∑𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝑘𝑘𝑘𝑘𝑀𝑀𝑀𝑀
+𝑘𝑘𝑘𝑘=1. The resulting aggregate 
+decision matrix is shown in Equation (2).  
+ 
+𝐷𝐷𝐷𝐷=�𝑓𝑓𝑓𝑓11𝑓𝑓𝑓𝑓12⋯𝑓𝑓𝑓𝑓1𝑛𝑛𝑛𝑛
+𝑓𝑓𝑓𝑓21𝑓𝑓𝑓𝑓22⋯𝑓𝑓𝑓𝑓2𝑛𝑛𝑛𝑛
+⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚1⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚2⋱
+⋯⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚𝑛𝑛𝑛𝑛�                  (2) 
+ 
+Step 3 : Obtain the priority weights of the criteria. 
+The priority weight of a criterion 𝑗𝑗𝑗𝑗 is expressed as 𝑤𝑤𝑤𝑤𝑗𝑗𝑗𝑗. 
+Any prioriti sation  technique generates this. Note that 
+the TOPSIS approach provides no sp ecific method 
+for obtaining the priority weights of the criteria.  
+Step 4 : Calculate the normali sed decision matrix 
+𝑅𝑅𝑅𝑅=�𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗�𝑚𝑚𝑚𝑚×𝑛𝑛𝑛𝑛. The normali sed value 𝑟𝑟𝑟𝑟 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗 is obtained 
+as: 
+𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖
+�∑𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖2𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖=1�1
+2   ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛 (3)
+   
+Step 5 : Calculate the weighted normali sed 
+decision matrix 𝑉𝑉𝑉𝑉=�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗�𝑚𝑚𝑚𝑚×𝑛𝑛𝑛𝑛. Each element 
+denoted as 𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗, is obtained by  
+ 
+ 𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗×𝑤𝑤𝑤𝑤𝑗𝑗𝑗𝑗 ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛  (4) 
+ 
+Step 6 : Determine the positive ideal solutio n 
+(PIS),  denoted by 𝑉𝑉𝑉𝑉+, and the negative ideal solution 
+(NIS), denoted by 𝑉𝑉𝑉𝑉−: 
+𝑉𝑉𝑉𝑉+={𝑣𝑣𝑣𝑣1+,…,𝑣𝑣𝑣𝑣𝑛𝑛𝑛𝑛+}=��𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈    𝐽𝐽𝐽𝐽1�,
+�𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑛𝑛𝑛𝑛
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽2��   
+𝑉𝑉𝑉𝑉−={𝑣𝑣𝑣𝑣1−,…,𝑣𝑣𝑣𝑣𝑛𝑛𝑛𝑛−}=��𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑛𝑛𝑛𝑛
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽1�,
+�𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽2��  
+where 𝐽𝐽𝐽𝐽1 is associated with the benefit (i.e., 
+maximi sing) criteria, and 𝐽𝐽𝐽𝐽2 is associated with the 
+cost (i.e., minimi sing) criteria.  
+Step 7 : Calculate the separation measures, using 
+the m -dimensional Euclide an distance. The 
+separation measure 𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+ of each alternative 𝑖𝑖𝑖𝑖  from the 
+PIS is given as  
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+=�∑�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗−𝑣𝑣𝑣𝑣𝑗𝑗𝑗𝑗+�2𝑛𝑛𝑛𝑛
+𝑗𝑗𝑗𝑗=1 �1
+2  ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚   (7) 
+ 
+Similarly, the separation measures 𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖− of eac h 
+alternative f rom the NIS is as fol lows:  
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−=�∑�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗−𝑣𝑣𝑣𝑣𝑗𝑗𝑗𝑗−�2𝑛𝑛𝑛𝑛
+𝑗𝑗𝑗𝑗=1 �1
+2   ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚  (8) 
+ 
+Step 8 : Calculate the relative closeness to the 
+ideal solution and rank the alternatives in descending 
+order. The relative closeness coefficient of t he 
+alternative j with resp ect to PIS 𝑉𝑉𝑉𝑉+ can be expressed 
+as:  
+𝐶𝐶𝐶𝐶𝑖𝑖𝑖𝑖=𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+  ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚                (9) 
+  
+(5)
+(6) 
+ 
+𝐷𝐷𝐷𝐷𝑘𝑘𝑘𝑘=
+⎝⎛𝑓𝑓𝑓𝑓11𝑘𝑘𝑘𝑘𝑓𝑓𝑓𝑓12𝑘𝑘𝑘𝑘⋯𝑓𝑓𝑓𝑓1𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘
+𝑓𝑓𝑓𝑓21𝑘𝑘𝑘𝑘𝑓𝑓𝑓𝑓22𝑘𝑘𝑘𝑘⋯𝑓𝑓𝑓𝑓2𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘
+⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚1𝑘𝑘𝑘𝑘⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚2𝑘𝑘𝑘𝑘⋱
+⋯⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘⎠⎞                    (1)  
+ 
+where 𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝑘𝑘𝑘𝑘, 𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛, 𝑘𝑘𝑘𝑘=1,…,𝑀𝑀𝑀𝑀, 
+represents the evaluation score on the performance 
+(or relevance) of the 𝑖𝑖𝑖𝑖th alternative on the 𝑗𝑗𝑗𝑗th 
+criterion, elicited by the 𝑘𝑘𝑘𝑘th decision- maker.  
+Step 2 : Aggregate the individual decision 
+matrices using an aggregation function. One of the 
+highly ado pted aggregation functions is the 
+arithmetic mean. Thus, the aggregate score 𝑓𝑓𝑓𝑓 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗 can be 
+obtained as 𝑓𝑓𝑓𝑓 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=∑𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝑘𝑘𝑘𝑘𝑀𝑀𝑀𝑀
+𝑘𝑘𝑘𝑘=1. The resulting aggregate 
+decision matrix is shown in Equation (2).  
+ 
+𝐷𝐷𝐷𝐷=�𝑓𝑓𝑓𝑓11𝑓𝑓𝑓𝑓12⋯𝑓𝑓𝑓𝑓1𝑛𝑛𝑛𝑛
+𝑓𝑓𝑓𝑓21𝑓𝑓𝑓𝑓22⋯𝑓𝑓𝑓𝑓2𝑛𝑛𝑛𝑛
+⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚1⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚2⋱
+⋯⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚𝑛𝑛𝑛𝑛�                  (2) 
+ 
+Step 3 : Obtain the priority weights of the criteria. 
+The priority weight of a criterion 𝑗𝑗𝑗𝑗 is expressed as 𝑤𝑤𝑤𝑤𝑗𝑗𝑗𝑗. 
+Any prioriti sation  technique generates this. Note that 
+the TOPSIS approach provides no sp ecific method 
+for obtaining the priority weights of the criteria.  
+Step 4 : Calculate the normali sed decision matrix 
+𝑅𝑅𝑅𝑅=�𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗�𝑚𝑚𝑚𝑚×𝑛𝑛𝑛𝑛. The normali sed value 𝑟𝑟𝑟𝑟 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗 is obtained 
+as: 
+𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖
+�∑𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖2𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖=1�1
+2   ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛 (3)
+   
+Step 5 : Calculate the weighted normali sed 
+decision matrix 𝑉𝑉𝑉𝑉=�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗�𝑚𝑚𝑚𝑚×𝑛𝑛𝑛𝑛. Each element 
+denoted as 𝑣𝑣𝑣𝑣 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗, is obtained by  
+ 
+ 𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗×𝑤𝑤𝑤𝑤𝑗𝑗𝑗𝑗 ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛  (4) 
+ 
+Step 6 : Determine the positive ideal solutio n 
+(PIS),  denoted by 𝑉𝑉𝑉𝑉+, and the negative ideal solution 
+(NIS), denoted by 𝑉𝑉𝑉𝑉−: 
+𝑉𝑉𝑉𝑉+={𝑣𝑣𝑣𝑣1+,…,𝑣𝑣𝑣𝑣𝑛𝑛𝑛𝑛+}=��𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈    𝐽𝐽𝐽𝐽1�,
+�𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑛𝑛𝑛𝑛
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽2��   
+𝑉𝑉𝑉𝑉−={𝑣𝑣𝑣𝑣1−,…,𝑣𝑣𝑣𝑣𝑛𝑛𝑛𝑛−}=��𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑛𝑛𝑛𝑛
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽1�,
+�𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽2��  
+where 𝐽𝐽𝐽𝐽1 is associated with the benefit (i.e., 
+maximi sing) criteria, and 𝐽𝐽𝐽𝐽2 is associated with the 
+cost (i.e., minimi sing) criteria.  
+Step 7 : Calculate the separation measures, using 
+the m -dimensional Euclide an distance. The 
+separation measure 𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+ of each alternative 𝑖𝑖𝑖𝑖  from the 
+PIS is given as  
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+=�∑�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗−𝑣𝑣𝑣𝑣𝑗𝑗𝑗𝑗+�2𝑛𝑛𝑛𝑛
+𝑗𝑗𝑗𝑗=1 �1
+2  ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚   (7) 
+ 
+Similarly, the separation measures 𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖− of eac h 
+alternative f rom the NIS is as fol lows:  
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−=�∑�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗−𝑣𝑣𝑣𝑣𝑗𝑗𝑗𝑗−�2𝑛𝑛𝑛𝑛
+𝑗𝑗𝑗𝑗=1 �1
+2   ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚  (8) 
+ 
+Step 8 : Calculate the relative closeness to the 
+ideal solution and rank the alternatives in descending 
+order. The relative closeness coefficient of t he 
+alternative j with resp ect to PIS 𝑉𝑉𝑉𝑉+ can be expressed 
+as:  
+𝐶𝐶𝐶𝐶𝑖𝑖𝑖𝑖=𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+  ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚                (9) 
+   
+ 
+𝐷𝐷𝐷𝐷𝑘𝑘𝑘𝑘=
+⎝⎛𝑓𝑓𝑓𝑓11𝑘𝑘𝑘𝑘𝑓𝑓𝑓𝑓12𝑘𝑘𝑘𝑘⋯𝑓𝑓𝑓𝑓1𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘
+𝑓𝑓𝑓𝑓21𝑘𝑘𝑘𝑘𝑓𝑓𝑓𝑓22𝑘𝑘𝑘𝑘⋯𝑓𝑓𝑓𝑓2𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘
+⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚1𝑘𝑘𝑘𝑘⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚2𝑘𝑘𝑘𝑘⋱
+⋯⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘⎠⎞                    (1)  
+ 
+where 𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝑘𝑘𝑘𝑘, 𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛, 𝑘𝑘𝑘𝑘=1,…,𝑀𝑀𝑀𝑀, 
+represents the evaluation score on the performance 
+(or relevance) of the 𝑖𝑖𝑖𝑖th alternative on the 𝑗𝑗𝑗𝑗th 
+criterion, elicited by the 𝑘𝑘𝑘𝑘th decision- maker.  
+Step 2 : Aggregate the individual decision 
+matrices using an aggregation function. One of the 
+highly ado pted aggregation functions is the 
+arithmetic mean. Thus, the aggregate score 𝑓𝑓𝑓𝑓 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗 can be 
+obtained as 𝑓𝑓𝑓𝑓 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=∑𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝑘𝑘𝑘𝑘𝑀𝑀𝑀𝑀
+𝑘𝑘𝑘𝑘=1. The resulting aggregate 
+decision matrix is shown in Equation (2).  
+ 
+𝐷𝐷𝐷𝐷=�𝑓𝑓𝑓𝑓11𝑓𝑓𝑓𝑓12⋯𝑓𝑓𝑓𝑓1𝑛𝑛𝑛𝑛
+𝑓𝑓𝑓𝑓21𝑓𝑓𝑓𝑓22⋯𝑓𝑓𝑓𝑓2𝑛𝑛𝑛𝑛
+⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚1⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚2⋱
+⋯⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚𝑛𝑛𝑛𝑛�                  (2) 
+ 
+Step 3 : Obtain the priority weights of the criteria. 
+The priority weight of a criterion 𝑗𝑗𝑗𝑗 is expressed as 𝑤𝑤𝑤𝑤𝑗𝑗𝑗𝑗. 
+Any prioriti sation  technique generates this. Note that 
+the TOPSIS approach provides no sp ecific method 
+for obtaining the priority weights of the criteria.  
+Step 4 : Calculate the normali sed decision matrix 
+𝑅𝑅𝑅𝑅=�𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗�𝑚𝑚𝑚𝑚×𝑛𝑛𝑛𝑛. The normali sed value 𝑟𝑟𝑟𝑟 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗 is obtained 
+as: 
+𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖
+�∑𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖2𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖=1�1
+2   ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛 (3)
+   
+Step 5 : Calculate the weighted normali sed 
+decision matrix 𝑉𝑉𝑉𝑉=�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗�𝑚𝑚𝑚𝑚×𝑛𝑛𝑛𝑛. Each element 
+denoted as 𝑣𝑣𝑣𝑣 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗, is obtained by  
+ 
+ 𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗×𝑤𝑤𝑤𝑤𝑗𝑗𝑗𝑗 ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛  (4) 
+ 
+Step 6 : Determine the positive ideal solutio n 
+(PIS),  denoted by 𝑉𝑉𝑉𝑉+, and the negative ideal solution 
+(NIS), denoted by 𝑉𝑉𝑉𝑉−: 
+𝑉𝑉𝑉𝑉+={𝑣𝑣𝑣𝑣1+,…,𝑣𝑣𝑣𝑣𝑛𝑛𝑛𝑛+}=��𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈    𝐽𝐽𝐽𝐽1�,
+�𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑛𝑛𝑛𝑛
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽2��   
+𝑉𝑉𝑉𝑉−={𝑣𝑣𝑣𝑣1−,…,𝑣𝑣𝑣𝑣𝑛𝑛𝑛𝑛−}=��𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑛𝑛𝑛𝑛
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽1�,
+�𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽2��  
+where 𝐽𝐽𝐽𝐽1 is associated with the benefit (i.e., 
+maximi sing) criteria, and 𝐽𝐽𝐽𝐽2 is associated with the 
+cost (i.e., minimi sing) criteria.  
+Step 7 : Calculate the separation measures, using 
+the m -dimensional Euclide an distance. The 
+separation measure 𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+ of each alternative 𝑖𝑖𝑖𝑖  from the 
+PIS is given as  
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+=�∑�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗−𝑣𝑣𝑣𝑣𝑗𝑗𝑗𝑗+�2𝑛𝑛𝑛𝑛
+𝑗𝑗𝑗𝑗=1 �1
+2  ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚   (7) 
+ 
+Similarly, the separation measures 𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖− of eac h 
+alternative f rom the NIS is as fol lows:  
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−=�∑�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗−𝑣𝑣𝑣𝑣𝑗𝑗𝑗𝑗−�2𝑛𝑛𝑛𝑛
+𝑗𝑗𝑗𝑗=1 �1
+2   ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚  (8) 
+ 
+Step 8 : Calculate the relative closeness to the 
+ideal solution and rank the alternatives in descending 
+order. The relative closeness coefficient of t he 
+alternative j with resp ect to PIS 𝑉𝑉𝑉𝑉+ can be expressed 
+as:  
+𝐶𝐶𝐶𝐶𝑖𝑖𝑖𝑖=𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+  ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚                (9) 
+   
+ 
+𝐷𝐷𝐷𝐷𝑘𝑘𝑘𝑘=
+⎝⎛𝑓𝑓𝑓𝑓11𝑘𝑘𝑘𝑘𝑓𝑓𝑓𝑓12𝑘𝑘𝑘𝑘⋯𝑓𝑓𝑓𝑓1𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘
+𝑓𝑓𝑓𝑓21𝑘𝑘𝑘𝑘𝑓𝑓𝑓𝑓22𝑘𝑘𝑘𝑘⋯𝑓𝑓𝑓𝑓2𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘
+⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚1𝑘𝑘𝑘𝑘⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚2𝑘𝑘𝑘𝑘⋱
+⋯⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘⎠⎞                    (1)  
+ 
+where 𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝑘𝑘𝑘𝑘, 𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛, 𝑘𝑘𝑘𝑘=1,…,𝑀𝑀𝑀𝑀, 
+represents the evaluation score on the performance 
+(or relevance) of the 𝑖𝑖𝑖𝑖th alternative on the 𝑗𝑗𝑗𝑗th 
+criterion, elicited by the 𝑘𝑘𝑘𝑘th decision- maker.  
+Step 2 : Aggregate the individual decision 
+matrices using an aggregation function. One of the 
+highly ado pted aggregation functions is the 
+arithmetic mean. Thus, the aggregate score 𝑓𝑓𝑓𝑓 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗 can be 
+obtained as 𝑓𝑓𝑓𝑓 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=∑𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝑘𝑘𝑘𝑘𝑀𝑀𝑀𝑀
+𝑘𝑘𝑘𝑘=1. The resulting aggregate 
+decision matrix is shown in Equation (2).  
+ 
+𝐷𝐷𝐷𝐷=�𝑓𝑓𝑓𝑓11𝑓𝑓𝑓𝑓12⋯𝑓𝑓𝑓𝑓1𝑛𝑛𝑛𝑛
+𝑓𝑓𝑓𝑓21𝑓𝑓𝑓𝑓22⋯𝑓𝑓𝑓𝑓2𝑛𝑛𝑛𝑛
+⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚1⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚2⋱
+⋯⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚𝑛𝑛𝑛𝑛�                  (2) 
+ 
+Step 3 : Obtain the priority weights of the criteria. 
+The priority weight of a criterion 𝑗𝑗𝑗𝑗 is expressed as 𝑤𝑤𝑤𝑤𝑗𝑗𝑗𝑗. 
+Any prioriti sation  technique generates this. Note that 
+the TOPSIS approach provides no sp ecific method 
+for obtaining the priority weights of the criteria.  
+Step 4 : Calculate the normali sed decision matrix 
+𝑅𝑅𝑅𝑅=�𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗�𝑚𝑚𝑚𝑚×𝑛𝑛𝑛𝑛. The normali sed value 𝑟𝑟𝑟𝑟 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗 is obtained 
+as: 
+𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖
+�∑𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖2𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖=1�1
+2   ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛 (3)
+   
+Step 5 : Calculate the weighted normali sed 
+decision matrix 𝑉𝑉𝑉𝑉=�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗�𝑚𝑚𝑚𝑚×𝑛𝑛𝑛𝑛. Each element 
+denoted as 𝑣𝑣𝑣𝑣 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗, is obtained by  
+ 
+ 𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗×𝑤𝑤𝑤𝑤𝑗𝑗𝑗𝑗 ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛  (4) 
+ 
+Step 6 : Determine the positive ideal solutio n 
+(PIS),  denoted by 𝑉𝑉𝑉𝑉+, and the negative ideal solution 
+(NIS), denoted by 𝑉𝑉𝑉𝑉−: 
+𝑉𝑉𝑉𝑉+={𝑣𝑣𝑣𝑣1+,…,𝑣𝑣𝑣𝑣𝑛𝑛𝑛𝑛+}=��𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈    𝐽𝐽𝐽𝐽1�,
+�𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑛𝑛𝑛𝑛
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽2��   
+𝑉𝑉𝑉𝑉−={𝑣𝑣𝑣𝑣1−,…,𝑣𝑣𝑣𝑣𝑛𝑛𝑛𝑛−}=��𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑛𝑛𝑛𝑛
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽1�,
+�𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽2��  
+where 𝐽𝐽𝐽𝐽1 is associated with the benefit (i.e., 
+maximi sing) criteria, and 𝐽𝐽𝐽𝐽2 is associated with the 
+cost (i.e., minimi sing) criteria.  
+Step 7 : Calculate the separation measures, using 
+the m -dimensional Euclide an distance. The 
+separation measure 𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+ of each alternative 𝑖𝑖𝑖𝑖  from the 
+PIS is given as  
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+=�∑�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗−𝑣𝑣𝑣𝑣𝑗𝑗𝑗𝑗+�2𝑛𝑛𝑛𝑛
+𝑗𝑗𝑗𝑗=1 �1
+2  ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚   (7) 
+ 
+Similarly, the separation measures 𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖− of eac h 
+alternative f rom the NIS is as fol lows:  
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−=�∑�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗−𝑣𝑣𝑣𝑣𝑗𝑗𝑗𝑗−�2𝑛𝑛𝑛𝑛
+𝑗𝑗𝑗𝑗=1 �1
+2   ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚  (8) 
+ 
+Step 8 : Calculate the relative closeness to the 
+ideal solution and rank the alternatives in descending 
+order. The relative closeness coefficient of t he 
+alternative j with resp ect to PIS 𝑉𝑉𝑉𝑉+ can be expressed 
+as:  
+𝐶𝐶𝐶𝐶𝑖𝑖𝑖𝑖=𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+  ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚                (9) 
+   
+ 
+𝐷𝐷𝐷𝐷𝑘𝑘𝑘𝑘=
+⎝⎛𝑓𝑓𝑓𝑓11𝑘𝑘𝑘𝑘𝑓𝑓𝑓𝑓12𝑘𝑘𝑘𝑘⋯𝑓𝑓𝑓𝑓1𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘
+𝑓𝑓𝑓𝑓21𝑘𝑘𝑘𝑘𝑓𝑓𝑓𝑓22𝑘𝑘𝑘𝑘⋯𝑓𝑓𝑓𝑓2𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘
+⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚1𝑘𝑘𝑘𝑘⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚2𝑘𝑘𝑘𝑘⋱
+⋯⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘⎠⎞                    (1)  
+ 
+where 𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝑘𝑘𝑘𝑘, 𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛, 𝑘𝑘𝑘𝑘=1,…,𝑀𝑀𝑀𝑀, 
+represents the evaluation score on the performance 
+(or relevance) of the 𝑖𝑖𝑖𝑖th alternative on the 𝑗𝑗𝑗𝑗th 
+criterion, elicited by the 𝑘𝑘𝑘𝑘th decision- maker.  
+Step 2 : Aggregate the individual decision 
+matrices using an aggregation function. One of the 
+highly ado pted aggregation functions is the 
+arithmetic mean. Thus, the aggregate score 𝑓𝑓𝑓𝑓 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗 can be 
+obtained as 𝑓𝑓𝑓𝑓 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=∑𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝑘𝑘𝑘𝑘𝑀𝑀𝑀𝑀
+𝑘𝑘𝑘𝑘=1. The resulting aggregate 
+decision matrix is shown in Equation (2).  
+ 
+𝐷𝐷𝐷𝐷=�𝑓𝑓𝑓𝑓11𝑓𝑓𝑓𝑓12⋯𝑓𝑓𝑓𝑓1𝑛𝑛𝑛𝑛
+𝑓𝑓𝑓𝑓21𝑓𝑓𝑓𝑓22⋯𝑓𝑓𝑓𝑓2𝑛𝑛𝑛𝑛
+⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚1⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚2⋱
+⋯⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚𝑛𝑛𝑛𝑛�                  (2) 
+ 
+Step 3 : Obtain the priority weights of the criteria. 
+The priority weight of a criterion 𝑗𝑗𝑗𝑗 is expressed as 𝑤𝑤𝑤𝑤𝑗𝑗𝑗𝑗. 
+Any prioriti sation  technique generates this. Note that 
+the TOPSIS approach provides no sp ecific method 
+for obtaining the priority weights of the criteria.  
+Step 4 : Calculate the normali sed decision matrix 
+𝑅𝑅𝑅𝑅=�𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗�𝑚𝑚𝑚𝑚×𝑛𝑛𝑛𝑛. The normali sed value 𝑟𝑟𝑟𝑟 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗 is obtained 
+as: 
+𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖
+�∑𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖2𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖=1�1
+2   ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛 (3)
+   
+Step 5 : Calculate the weighted normali sed 
+decision matrix 𝑉𝑉𝑉𝑉=�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗�𝑚𝑚𝑚𝑚×𝑛𝑛𝑛𝑛. Each element 
+denoted as 𝑣𝑣𝑣𝑣 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗, is obtained by  
+ 
+ 𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗×𝑤𝑤𝑤𝑤𝑗𝑗𝑗𝑗 ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛  (4) 
+ 
+Step 6 : Determine the positive ideal solutio n 
+(PIS),  denoted by 𝑉𝑉𝑉𝑉+, and the negative ideal solution 
+(NIS), denoted by 𝑉𝑉𝑉𝑉−: 
+𝑉𝑉𝑉𝑉+={𝑣𝑣𝑣𝑣1+,…,𝑣𝑣𝑣𝑣𝑛𝑛𝑛𝑛+}=��𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈    𝐽𝐽𝐽𝐽1�,
+�𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑛𝑛𝑛𝑛
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽2��   
+𝑉𝑉𝑉𝑉−={𝑣𝑣𝑣𝑣1−,…,𝑣𝑣𝑣𝑣𝑛𝑛𝑛𝑛−}=��𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑛𝑛𝑛𝑛
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽1�,
+�𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽2��  
+where 𝐽𝐽𝐽𝐽1 is associated with the benefit (i.e., 
+maximi sing) criteria, and 𝐽𝐽𝐽𝐽2 is associated with the 
+cost (i.e., minimi sing) criteria.  
+Step 7 : Calculate the separation measures, using 
+the m -dimensional Euclide an distance. The 
+separation measure 𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+ of each alternative 𝑖𝑖𝑖𝑖  from the 
+PIS is given as  
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+=�∑�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗−𝑣𝑣𝑣𝑣𝑗𝑗𝑗𝑗+�2𝑛𝑛𝑛𝑛
+𝑗𝑗𝑗𝑗=1 �1
+2  ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚   (7) 
+ 
+Similarly, the separation measures 𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖− of eac h 
+alternative f rom the NIS is as fol lows:  
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−=�∑�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗−𝑣𝑣𝑣𝑣𝑗𝑗𝑗𝑗−�2𝑛𝑛𝑛𝑛
+𝑗𝑗𝑗𝑗=1 �1
+2   ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚  (8) 
+ 
+Step 8 : Calculate the relative closeness to the 
+ideal solution and rank the alternatives in descending 
+order. The relative closeness coefficient of t he 
+alternative j with resp ect to PIS 𝑉𝑉𝑉𝑉+ can be expressed 
+as:  
+𝐶𝐶𝐶𝐶𝑖𝑖𝑖𝑖=𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+  ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚                (9) 
+  
+ 
+ 
+𝐷𝐷𝐷𝐷𝑘𝑘𝑘𝑘=
+⎝⎛𝑓𝑓𝑓𝑓11𝑘𝑘𝑘𝑘𝑓𝑓𝑓𝑓12𝑘𝑘𝑘𝑘⋯𝑓𝑓𝑓𝑓1𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘
+𝑓𝑓𝑓𝑓21𝑘𝑘𝑘𝑘𝑓𝑓𝑓𝑓22𝑘𝑘𝑘𝑘⋯𝑓𝑓𝑓𝑓2𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘
+⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚1𝑘𝑘𝑘𝑘⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚2𝑘𝑘𝑘𝑘⋱
+⋯⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘⎠⎞                    (1)  
+ 
+where 𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝑘𝑘𝑘𝑘, 𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛, 𝑘𝑘𝑘𝑘=1,…,𝑀𝑀𝑀𝑀, 
+represents the evaluation score on the performance 
+(or relevance) of the 𝑖𝑖𝑖𝑖th alternative on the 𝑗𝑗𝑗𝑗th 
+criterion, elicited by the 𝑘𝑘𝑘𝑘th decision- maker.  
+Step 2 : Aggregate the individual decision 
+matrices using an aggregation function. One of the 
+highly ado pted aggregation functions is the 
+arithmetic mean. Thus, the aggregate score 𝑓𝑓𝑓𝑓 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗 can be 
+obtained as 𝑓𝑓𝑓𝑓 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=∑𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝑘𝑘𝑘𝑘𝑀𝑀𝑀𝑀
+𝑘𝑘𝑘𝑘=1. The resulting aggregate 
+decision matrix is shown in Equation (2).  
+ 
+𝐷𝐷𝐷𝐷=�𝑓𝑓𝑓𝑓11𝑓𝑓𝑓𝑓12⋯𝑓𝑓𝑓𝑓1𝑛𝑛𝑛𝑛
+𝑓𝑓𝑓𝑓21𝑓𝑓𝑓𝑓22⋯𝑓𝑓𝑓𝑓2𝑛𝑛𝑛𝑛
+⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚1⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚2⋱
+⋯⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚𝑛𝑛𝑛𝑛�                  (2) 
+ 
+Step 3 : Obtain the priority weights of the criteria. 
+The priority weight of a criterion 𝑗𝑗𝑗𝑗 is expressed as 𝑤𝑤𝑤𝑤𝑗𝑗𝑗𝑗. 
+Any prioriti sation  technique generates this. Note that 
+the TOPSIS approach provides no sp ecific method 
+for obtaining the priority weights of the criteria.  
+Step 4 : Calculate the normali sed decision matrix 
+𝑅𝑅𝑅𝑅=�𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗�𝑚𝑚𝑚𝑚×𝑛𝑛𝑛𝑛. The normali sed value 𝑟𝑟𝑟𝑟 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗 is obtained 
+as: 
+𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖
+�∑𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖2𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖=1�1
+2   ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛 (3)
+   
+Step 5 : Calculate the weighted normali sed 
+decision matrix 𝑉𝑉𝑉𝑉=�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗�𝑚𝑚𝑚𝑚×𝑛𝑛𝑛𝑛. Each element 
+denoted as 𝑣𝑣𝑣𝑣 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗, is obtained by  
+ 
+ 𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗×𝑤𝑤𝑤𝑤𝑗𝑗𝑗𝑗 ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛  (4) 
+ 
+Step 6 : Determine the positive ideal solutio n 
+(PIS),  denoted by 𝑉𝑉𝑉𝑉+, and the negative ideal solution 
+(NIS), denoted by 𝑉𝑉𝑉𝑉−: 
+𝑉𝑉𝑉𝑉+={𝑣𝑣𝑣𝑣1+,…,𝑣𝑣𝑣𝑣𝑛𝑛𝑛𝑛+}=��𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈    𝐽𝐽𝐽𝐽1�,
+�𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑛𝑛𝑛𝑛
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽2��   
+𝑉𝑉𝑉𝑉−={𝑣𝑣𝑣𝑣1−,…,𝑣𝑣𝑣𝑣𝑛𝑛𝑛𝑛−}=��𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑛𝑛𝑛𝑛
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽1�,
+�𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽2��  
+where 𝐽𝐽𝐽𝐽1 is associated with the benefit (i.e., 
+maximi sing) criteria, and 𝐽𝐽𝐽𝐽2 is associated with the 
+cost (i.e., minimi sing) criteria.  
+Step 7 : Calculate the separation measures, using 
+the m -dimensional Euclide an distance. The 
+separation measure 𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+ of each alternative 𝑖𝑖𝑖𝑖  from the 
+PIS is given as  
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+=�∑�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗−𝑣𝑣𝑣𝑣𝑗𝑗𝑗𝑗+�2𝑛𝑛𝑛𝑛
+𝑗𝑗𝑗𝑗=1 �1
+2  ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚   (7) 
+ 
+Similarly, the separation measures 𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖− of eac h 
+alternative f rom the NIS is as fol lows:  
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−=�∑�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗−𝑣𝑣𝑣𝑣𝑗𝑗𝑗𝑗−�2𝑛𝑛𝑛𝑛
+𝑗𝑗𝑗𝑗=1 �1
+2   ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚  (8) 
+ 
+Step 8 : Calculate the relative closeness to the 
+ideal solution and rank the alternatives in descending 
+order. The relative closeness coefficient of t he 
+alternative j with resp ect to PIS 𝑉𝑉𝑉𝑉+ can be expressed 
+as:  
+𝐶𝐶𝐶𝐶𝑖𝑖𝑖𝑖=𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+  ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚                (9) 
+   
+ 
+𝐷𝐷𝐷𝐷𝑘𝑘𝑘𝑘=
+⎝⎛𝑓𝑓𝑓𝑓11𝑘𝑘𝑘𝑘𝑓𝑓𝑓𝑓12𝑘𝑘𝑘𝑘⋯𝑓𝑓𝑓𝑓1𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘
+𝑓𝑓𝑓𝑓21𝑘𝑘𝑘𝑘𝑓𝑓𝑓𝑓22𝑘𝑘𝑘𝑘⋯𝑓𝑓𝑓𝑓2𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘
+⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚1𝑘𝑘𝑘𝑘⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚2𝑘𝑘𝑘𝑘⋱
+⋯⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘⎠⎞                    (1)  
+ 
+where 𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝑘𝑘𝑘𝑘, 𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛, 𝑘𝑘𝑘𝑘=1,…,𝑀𝑀𝑀𝑀, 
+represents the evaluation score on the performance 
+(or relevance) of the 𝑖𝑖𝑖𝑖th alternative on the 𝑗𝑗𝑗𝑗th 
+criterion, elicited by the 𝑘𝑘𝑘𝑘th decision- maker.  
+Step 2 : Aggregate the individual decision 
+matrices using an aggregation function. One of the 
+highly ado pted aggregation functions is the 
+arithmetic mean. Thus, the aggregate score 𝑓𝑓𝑓𝑓 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗 can be 
+obtained as 𝑓𝑓𝑓𝑓 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=∑𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝑘𝑘𝑘𝑘𝑀𝑀𝑀𝑀
+𝑘𝑘𝑘𝑘=1. The resulting aggregate 
+decision matrix is shown in Equation (2).  
+ 
+𝐷𝐷𝐷𝐷=�𝑓𝑓𝑓𝑓11𝑓𝑓𝑓𝑓12⋯𝑓𝑓𝑓𝑓1𝑛𝑛𝑛𝑛
+𝑓𝑓𝑓𝑓21𝑓𝑓𝑓𝑓22⋯𝑓𝑓𝑓𝑓2𝑛𝑛𝑛𝑛
+⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚1⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚2⋱
+⋯⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚𝑛𝑛𝑛𝑛�                  (2) 
+ 
+Step 3 : Obtain the priority weights of the criteria. 
+The priority weight of a criterion 𝑗𝑗𝑗𝑗 is expressed as 𝑤𝑤𝑤𝑤𝑗𝑗𝑗𝑗. 
+Any prioriti sation  technique generates this. Note that 
+the TOPSIS approach provides no sp ecific method 
+for obtaining the priority weights of the criteria.  
+Step 4 : Calculate the normali sed decision matrix 
+𝑅𝑅𝑅𝑅=�𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗�𝑚𝑚𝑚𝑚×𝑛𝑛𝑛𝑛. The normali sed value 𝑟𝑟𝑟𝑟 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗 is obtained 
+as: 
+𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖
+�∑𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖2𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖=1�1
+2   ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛 (3)
+   
+Step 5 : Calculate the weighted normali sed 
+decision matrix 𝑉𝑉𝑉𝑉=�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗�𝑚𝑚𝑚𝑚×𝑛𝑛𝑛𝑛. Each element 
+denoted as 𝑣𝑣𝑣𝑣 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗, is obtained by  
+ 
+ 𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗×𝑤𝑤𝑤𝑤𝑗𝑗𝑗𝑗 ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛  (4) 
+ 
+Step 6 : Determine the positive ideal solutio n 
+(PIS),  denoted by 𝑉𝑉𝑉𝑉+, and the negative ideal solution 
+(NIS), denoted by 𝑉𝑉𝑉𝑉−: 
+𝑉𝑉𝑉𝑉+={𝑣𝑣𝑣𝑣1+,…,𝑣𝑣𝑣𝑣𝑛𝑛𝑛𝑛+}=��𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈    𝐽𝐽𝐽𝐽1�,
+�𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑛𝑛𝑛𝑛
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽2��   
+𝑉𝑉𝑉𝑉−={𝑣𝑣𝑣𝑣1−,…,𝑣𝑣𝑣𝑣𝑛𝑛𝑛𝑛−}=��𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑛𝑛𝑛𝑛
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽1�,
+�𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽2��  
+where 𝐽𝐽𝐽𝐽1 is associated with the benefit (i.e., 
+maximi sing) criteria, and 𝐽𝐽𝐽𝐽2 is associated with the 
+cost (i.e., minimi sing) criteria.  
+Step 7 : Calculate the separation measures, using 
+the m -dimensional Euclide an distance. The 
+separation measure 𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+ of each alternative 𝑖𝑖𝑖𝑖  from the 
+PIS is given as  
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+=�∑�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗−𝑣𝑣𝑣𝑣𝑗𝑗𝑗𝑗+�2𝑛𝑛𝑛𝑛
+𝑗𝑗𝑗𝑗=1 �1
+2  ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚   (7) 
+ 
+Similarly, the separation measures 𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖− of eac h 
+alternative f rom the NIS is as fol lows:  
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−=�∑�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗−𝑣𝑣𝑣𝑣𝑗𝑗𝑗𝑗−�2𝑛𝑛𝑛𝑛
+𝑗𝑗𝑗𝑗=1 �1
+2   ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚  (8) 
+ 
+Step 8 : Calculate the relative closeness to the 
+ideal solution and rank the alternatives in descending 
+order. The relative closeness coefficient of t he 
+alternative j with resp ect to PIS 𝑉𝑉𝑉𝑉+ can be expressed 
+as:  
+𝐶𝐶𝐶𝐶𝑖𝑖𝑖𝑖=𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+  ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚                (9) 
+   
+ 
+𝐷𝐷𝐷𝐷𝑘𝑘𝑘𝑘=
+⎝⎛𝑓𝑓𝑓𝑓11𝑘𝑘𝑘𝑘𝑓𝑓𝑓𝑓12𝑘𝑘𝑘𝑘⋯𝑓𝑓𝑓𝑓1𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘
+𝑓𝑓𝑓𝑓21𝑘𝑘𝑘𝑘𝑓𝑓𝑓𝑓22𝑘𝑘𝑘𝑘⋯𝑓𝑓𝑓𝑓2𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘
+⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚1𝑘𝑘𝑘𝑘⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚2𝑘𝑘𝑘𝑘⋱
+⋯⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘⎠⎞                    (1)  
+ 
+where 𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝑘𝑘𝑘𝑘, 𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛, 𝑘𝑘𝑘𝑘=1,…,𝑀𝑀𝑀𝑀, 
+represents the evaluation score on the performance 
+(or relevance) of the 𝑖𝑖𝑖𝑖th alternative on the 𝑗𝑗𝑗𝑗th 
+criterion, elicited by the 𝑘𝑘𝑘𝑘th decision- maker.  
+Step 2 : Aggregate the individual decision 
+matrices using an aggregation function. One of the 
+highly ado pted aggregation functions is the 
+arithmetic mean. Thus, the aggregate score 𝑓𝑓𝑓𝑓 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗 can be 
+obtained as 𝑓𝑓𝑓𝑓 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=∑𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝑘𝑘𝑘𝑘𝑀𝑀𝑀𝑀
+𝑘𝑘𝑘𝑘=1. The resulting aggregate 
+decision matrix is shown in Equation (2).  
+ 
+𝐷𝐷𝐷𝐷=�𝑓𝑓𝑓𝑓11𝑓𝑓𝑓𝑓12⋯𝑓𝑓𝑓𝑓1𝑛𝑛𝑛𝑛
+𝑓𝑓𝑓𝑓21𝑓𝑓𝑓𝑓22⋯𝑓𝑓𝑓𝑓2𝑛𝑛𝑛𝑛
+⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚1⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚2⋱
+⋯⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚𝑛𝑛𝑛𝑛�                  (2) 
+ 
+Step 3 : Obtain the priority weights of the criteria. 
+The priority weight of a criterion 𝑗𝑗𝑗𝑗 is expressed as 𝑤𝑤𝑤𝑤𝑗𝑗𝑗𝑗. 
+Any prioriti sation  technique generates this. Note that 
+the TOPSIS approach provides no sp ecific method 
+for obtaining the priority weights of the criteria.  
+Step 4 : Calculate the normali sed decision matrix 
+𝑅𝑅𝑅𝑅=�𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗�𝑚𝑚𝑚𝑚×𝑛𝑛𝑛𝑛. The normali sed value 𝑟𝑟𝑟𝑟 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗 is obtained 
+as: 
+𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖
+�∑𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖2𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖=1�1
+2   ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛 (3)
+   
+Step 5 : Calculate the weighted normali sed 
+decision matrix 𝑉𝑉𝑉𝑉=�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗�𝑚𝑚𝑚𝑚×𝑛𝑛𝑛𝑛. Each element 
+denoted as 𝑣𝑣𝑣𝑣 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗, is obtained by  
+ 
+ 𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗×𝑤𝑤𝑤𝑤𝑗𝑗𝑗𝑗 ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛  (4) 
+ 
+Step 6 : Determine the positive ideal solutio n 
+(PIS),  denoted by 𝑉𝑉𝑉𝑉+, and the negative ideal solution 
+(NIS), denoted by 𝑉𝑉𝑉𝑉−: 
+𝑉𝑉𝑉𝑉+={𝑣𝑣𝑣𝑣1+,…,𝑣𝑣𝑣𝑣𝑛𝑛𝑛𝑛+}=��𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈    𝐽𝐽𝐽𝐽1�,
+�𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑛𝑛𝑛𝑛
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽2��   
+𝑉𝑉𝑉𝑉−={𝑣𝑣𝑣𝑣1−,…,𝑣𝑣𝑣𝑣𝑛𝑛𝑛𝑛−}=��𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑛𝑛𝑛𝑛
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽1�,
+�𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽2��  
+where 𝐽𝐽𝐽𝐽1 is associated with the benefit (i.e., 
+maximi sing) criteria, and 𝐽𝐽𝐽𝐽2 is associated with the 
+cost (i.e., minimi sing) criteria.  
+Step 7 : Calculate the separation measures, using 
+the m -dimensional Euclide an distance. The 
+separation measure 𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+ of each alternative 𝑖𝑖𝑖𝑖  from the 
+PIS is given as  
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+=�∑�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗−𝑣𝑣𝑣𝑣𝑗𝑗𝑗𝑗+�2𝑛𝑛𝑛𝑛
+𝑗𝑗𝑗𝑗=1 �1
+2  ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚   (7) 
+ 
+Similarly, the separation measures 𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖− of eac h 
+alternative f rom the NIS is as fol lows:  
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−=�∑�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗−𝑣𝑣𝑣𝑣𝑗𝑗𝑗𝑗−�2𝑛𝑛𝑛𝑛
+𝑗𝑗𝑗𝑗=1 �1
+2   ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚  (8) 
+ 
+Step 8 : Calculate the relative closeness to the 
+ideal solution and rank the alternatives in descending 
+order. The relative closeness coefficient of t he 
+alternative j with resp ect to PIS 𝑉𝑉𝑉𝑉+ can be expressed 
+as:  
+𝐶𝐶𝐶𝐶𝑖𝑖𝑖𝑖=𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+  ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚                (9) 
+   
+ 
+𝐷𝐷𝐷𝐷𝑘𝑘𝑘𝑘=
+⎝⎛𝑓𝑓𝑓𝑓11𝑘𝑘𝑘𝑘𝑓𝑓𝑓𝑓12𝑘𝑘𝑘𝑘⋯𝑓𝑓𝑓𝑓1𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘
+𝑓𝑓𝑓𝑓21𝑘𝑘𝑘𝑘𝑓𝑓𝑓𝑓22𝑘𝑘𝑘𝑘⋯𝑓𝑓𝑓𝑓2𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘
+⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚1𝑘𝑘𝑘𝑘⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚2𝑘𝑘𝑘𝑘⋱
+⋯⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚𝑛𝑛𝑛𝑛𝑘𝑘𝑘𝑘⎠⎞                    (1)  
+ 
+where 𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝑘𝑘𝑘𝑘, 𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛, 𝑘𝑘𝑘𝑘=1,…,𝑀𝑀𝑀𝑀, 
+represents the evaluation score on the performance 
+(or relevance) of the 𝑖𝑖𝑖𝑖th alternative on the 𝑗𝑗𝑗𝑗th 
+criterion, elicited by the 𝑘𝑘𝑘𝑘th decision- maker.  
+Step 2 : Aggregate the individual decision 
+matrices using an aggregation function. One of the 
+highly ado pted aggregation functions is the 
+arithmetic mean. Thus, the aggregate score 𝑓𝑓𝑓𝑓 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗 can be 
+obtained as 𝑓𝑓𝑓𝑓 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=∑𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝑘𝑘𝑘𝑘𝑀𝑀𝑀𝑀
+𝑘𝑘𝑘𝑘=1. The resulting aggregate 
+decision matrix is shown in Equation (2).  
+ 
+𝐷𝐷𝐷𝐷=�𝑓𝑓𝑓𝑓11𝑓𝑓𝑓𝑓12⋯𝑓𝑓𝑓𝑓1𝑛𝑛𝑛𝑛
+𝑓𝑓𝑓𝑓21𝑓𝑓𝑓𝑓22⋯𝑓𝑓𝑓𝑓2𝑛𝑛𝑛𝑛
+⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚1⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚2⋱
+⋯⋮
+𝑓𝑓𝑓𝑓𝑚𝑚𝑚𝑚𝑛𝑛𝑛𝑛�                  (2) 
+ 
+Step 3 : Obtain the priority weights of the criteria. 
+The priority weight of a criterion 𝑗𝑗𝑗𝑗 is expressed as 𝑤𝑤𝑤𝑤𝑗𝑗𝑗𝑗. 
+Any prioriti sation  technique generates this. Note that 
+the TOPSIS approach provides no sp ecific method 
+for obtaining the priority weights of the criteria.  
+Step 4 : Calculate the normali sed decision matrix 
+𝑅𝑅𝑅𝑅=�𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗�𝑚𝑚𝑚𝑚×𝑛𝑛𝑛𝑛. The normali sed value 𝑟𝑟𝑟𝑟 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗 is obtained 
+as: 
+𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖
+�∑𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖2𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖=1�1
+2   ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛 (3)
+   
+Step 5 : Calculate the weighted normali sed 
+decision matrix 𝑉𝑉𝑉𝑉=�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗�𝑚𝑚𝑚𝑚×𝑛𝑛𝑛𝑛. Each element 
+denoted as 𝑣𝑣𝑣𝑣 𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗, is obtained by  
+ 
+ 𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗=𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗×𝑤𝑤𝑤𝑤𝑗𝑗𝑗𝑗 ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚, 𝑗𝑗𝑗𝑗=1,…,𝑛𝑛𝑛𝑛  (4) 
+ 
+Step 6 : Determine the positive ideal solutio n 
+(PIS),  denoted by 𝑉𝑉𝑉𝑉+, and the negative ideal solution 
+(NIS), denoted by 𝑉𝑉𝑉𝑉−: 
+𝑉𝑉𝑉𝑉+={𝑣𝑣𝑣𝑣1+,…,𝑣𝑣𝑣𝑣𝑛𝑛𝑛𝑛+}=��𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈    𝐽𝐽𝐽𝐽1�,
+�𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑛𝑛𝑛𝑛
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽2��   
+𝑉𝑉𝑉𝑉−={𝑣𝑣𝑣𝑣1−,…,𝑣𝑣𝑣𝑣𝑛𝑛𝑛𝑛−}=��𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑛𝑛𝑛𝑛
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽1�,
+�𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚
+𝑖𝑖𝑖𝑖𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗:𝑗𝑗𝑗𝑗∈𝐽𝐽𝐽𝐽2��  
+where 𝐽𝐽𝐽𝐽1 is associated with the benefit (i.e., 
+maximi sing) criteria, and 𝐽𝐽𝐽𝐽2 is associated with the 
+cost (i.e., minimi sing) criteria.  
+Step 7 : Calculate the separation measures, using 
+the m -dimensional Euclide an distance. The 
+separation measure 𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+ of each alternative 𝑖𝑖𝑖𝑖  from the 
+PIS is given as  
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+=�∑�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗−𝑣𝑣𝑣𝑣𝑗𝑗𝑗𝑗+�2𝑛𝑛𝑛𝑛
+𝑗𝑗𝑗𝑗=1 �1
+2  ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚   (7) 
+ 
+Similarly, the separation measures 𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖− of eac h 
+alternative f rom the NIS is as fol lows:  
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−=�∑�𝑣𝑣𝑣𝑣𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗−𝑣𝑣𝑣𝑣𝑗𝑗𝑗𝑗−�2𝑛𝑛𝑛𝑛
+𝑗𝑗𝑗𝑗=1 �1
+2   ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚  (8) 
+ 
+Step 8 : Calculate the relative closeness to the 
+ideal solution and rank the alternatives in descending 
+order. The relative closeness coefficient of t he 
+alternative j with resp ect to PIS 𝑉𝑉𝑉𝑉+ can be expressed 
+as:  
+𝐶𝐶𝐶𝐶𝑖𝑖𝑖𝑖=𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+  ∀𝑖𝑖𝑖𝑖=1,…,𝑚𝑚𝑚𝑚                (9) 
+  
+Volume 12 • Issue 4 • 202027
+Engineering Management in Production and Servicespines. It is a local distributor which is located in Cebu, 
+an island in the central Philippines. With an increas-
+ing trend for the demand for their products, the 
+company is in the process of finding a new location 
+where they can build their second warehouse. The 
+new warehouse is intended to stock a significant vol-
+ume of their products to respond to an expected 
+increase in customer demand. Two possible location 
+alternatives were identified by ABC-G Enterprises. 
+One possible location is at a 10-kilometre distance 
+from their current headquarters, with an area of 
+around  380 square meters. The second alternative 
+has an area of approx. 300 square meters and is 
+located within a 9-kilometre distance. Aside from the 
+available area and the distance of the possible loca-
+tion, the company is also considering other salient 
+criteria. For brevity, we refer to Talamban warehouse 
+and Compostela warehouse for the first and second 
+alternative, respectively. In determining the best loca-
+tion, the final decision lies with the administration 
+team, which is composed of the President, Adminis-
+tration Manager, Senior Manager, and Assistant 
+Manager, who are usually involved in making the 
+crucial decisions of the company. Thus, there is a 
+need for ABC-G Enterprises to carry out an analytic 
+multi-criterion group decision-making process to 
+identify the best location for the warehouse.2.2. Computational steps
+The proposed TOPSIS group decision-making 
+process in this work consists of the following steps:
+Step 1: Set up the decision warehouse location 
+selection problem.
+The decision problem is shown in Fig. 1. It shows 
+the evaluation of two alternative warehouses (i.e., 
+Talamban Warehouse and Compostela Warehouse) 
+under 22 selection criteria. Current literature offers a 
+number of selection criteria for warehouse location 
+selection. Appendix 2 presents the majority of these 
+criteria. These criteria are generic to some extent but 
+may not be applicable in some cases, depending on 
+the decision problem under consideration. The two 
+warehouse location alternatives are evaluated with 
+this set of criteria. Table 1 presents these criteria, cor -
+responding codes for the brevity of presentation, and 
+a brief description.
+Step 2: Assign the importance weights of the 
+expert decision-makers.
+For this work, the administration team, which is 
+composed of four members, becomes the expert 
+group tasked to elicit judgments within the TOPSIS 
+approach. Thus, the proposed approach becomes  
+a TOPSIS group decision-making problem. However, 
+in this case, the members of the expert group are non-
+Optimal 
+Warehouse 
+Location
+C20
+C21
+C22C19C18C17C16C11
+C15C12C10C9
+C13C7C6C5C1
+C14C8C4C3C2
+Talamban 
+Warehouse
+Compostela 
+Warehouse
+ 
+Fig. 1. Case for the p roblem of the  warehouse location selection  
+  
+ Fig. 1. Case for the problem of the  warehouse location selection
+28
+Volume 12 • Issue 4 • 2020Engineering Management in Production and ServicesTab. 1. The set of criteria for the case of warehouse location selection
+Code Criteria Description
+C1 Unit price Refers to the unit price per square metre of land
+C2 Transportation costRelates to costs associated with the transportation facilities, and 
+alternative transportation types
+C3 Logistics costRelates to the costs of transferring products from the warehouse to 
+their destinations
+C4 Proximity to the leading supplier The distance from the warehouse to the main supplier
+C5 Proximity to customers The distance from the warehouse to the customers
+C6 Availability of customers Number of customers in the area of the warehouse
+C7 Space availability Adequate space should be available for the warehouse
+C8 Accessibility to the roadRoad infrastructure considering the trucking service and road 
+conditions
+C9 Accessibility to the seaportConsiders accessibility to the seaport and distance from the ware -
+house
+C10 Accessibility to the airportConsiders accessibility to the airport and distance from the ware-
+house
+C11 Existence of modes of transportation Availability of different transportation types in the location
+C12 Quality and reliability of modes of transportationTransportation service between the customer, supplier, and the 
+warehouse
+C13 Telecommunication systems Communication facilities and technologies of the warehouse
+C14 Zoning and construction planDifferent development plans, implementations, and arrangements 
+of local administrations at alternative locations
+C15 Industrial regulations laws Various laws and arrangements at the alternative locations
+C16 Security of regionRefers to the rate of loss by robbery, presence of organised crime, 
+security personnel, and security systems
+C17 Traffic accessRefers to the capacity of handling a large volume of traffic and 
+providing ease of access to transportation infrastructure and 
+traffic-related services
+C18 Political stability Relates to political change or stable political decisions
+C19 Social stability Risk of protests against the government
+C20 Economic stability A significant level of output growth and low and stable inflation
+C21 Impact on ecological landscapeMaintains or improves the original landscape without damaging 
+the city’s image
+C22 Condition of public facilities Requires public goods, such as roads, communication, power sup-
+ply, and water to function properly
+Tab. 3. Importance weights of decision-makers based on S1, S2, S3
+Decision-makers Priority weights of decision-
+makers based on
+S1 S2 S3
+President 0.2258 0.2903 0.2500
+Administration Manager 0.2258 0.2581 0.2500
+Senior Manager 0.2581 0.2258 0.2500
+Assistant Manager 0.2903 0.2258 0.2500Tab. 2. Rating scale for each criterion
+ScaleEquivalent 
+rating 
+score
+Very important 10
+Fairly important 9
+Important 7
+Slightly important 5
+Least important 3
+Not important at all 1
+Intermediate values between the two adjacent 
+judgments2, 4, 6, 8
+Volume 12 • Issue 4 • 202029
+Engineering Management in Production and Serviceshomogeneous in their expertise of the decision 
+problem, as well as their power in decision-making 
+within the company. Thus, the aggregation described 
+in Step 2 must be revised. Instead, expert decision-
+makers are assigned corresponding priority weights. 
+These weights represent the importance of their 
+inputs to the group decision. One crucial point that 
+must be addressed in the process of generating these 
+weights. To address this, three possible scenarios 
+were explored; that is, three sets of priority weights of 
+decision-makers were generated. Priority weights 
+were obtained based on (S1) the level of their exper -
+tise in warehouse location selection, (S2) their power 
+in making decisions, (S3) equal weights. Table 2 pro-
+vides the rating scale that was used to generate the 
+importance weights of the decision-makers. The 
+weights of the decision-makers based on the three 
+scenarios (i.e., S1, S2, S3) are shown in Table 3. 
+Tab. 4. Criteria weights for S1, S2, and S3
+Criteria PresidentAdmin  
+ManagerSenior  
+ManagerAssistant 
+ManagerWeights for 
+S1Weights for 
+S2Weights for 
+S3
+C1 10 10 10 10 0.0758 0.0759 0.0759
+C2 9 8 9 9 0.0665 0.0663 0.0664
+C3 6 5 7 6 0.0457 0.0453 0.0455
+C4 9 9 10 10 0.0724 0.0717 0.0721
+C5 8 8 9 10 0.0670 0.0659 0.0664
+C6 7 6 7 7 0.0514 0.0512 0.0512
+C7 8 8 7 9 0.0609 0.0607 0.0607
+C8 8 9 7 9 0.0626 0.0627 0.0626
+C9 3 1 2 1 0.0130 0.0137 0.0133
+C10 1 2 1 1 0.0093 0.0095 0.0095
+C11 5 5 4 5 0.0360 0.0362 0.0361
+C12 7 8 8 9 0.0612 0.0602 0.0607
+C13 7 6 6 5 0.0450 0.0460 0.0455
+C14 4 3 4 2 0.0242 0.0250 0.0247
+C15 6 7 6 7 0.0494 0.0492 0.0493
+C16 8 7 7 8 0.0570 0.0570 0.0569
+C17 8 8 9 9 0.0648 0.0641 0.0645
+C18 5 5 4 3 0.0316 0.0328 0.0323
+C19 4 2 3 2 0.0205 0.0213 0.0209
+C20 4 3 3 3 0.0245 0.0250 0.0247
+C21 1 1 2 1 0.0095 0.0093 0.0095
+C22 6 7 6 8 0.0516 0.0509 0.0512Based on S1, the Assistant Manager got the high-
+est priority since it has a better knowledge of the 
+warehouse operations. The S2 scenario yields the 
+President’s judgments with the highest weight as it 
+has the most significant power in making decisions 
+for the company. Finally, Table 3 shows with equal 
+priority weights, that the level of influence of the four 
+decision-makers on the warehouse location selection 
+is equal.
+Step 3: Generate the priority weights of the crite-
+ria. Decision-makers were asked to rate the impor -
+tance of each criterion on a scale from 1 to 10, where 
+1 and 10 representing the lowest and highest impor -
+tance, respectively. With S1, S2, and S3, three sets of 
+priority weights were also generated for the criteria 
+set. Table 4 presents the criteria weights on the three 
+different scenarios.
+30
+Volume 12 • Issue 4 • 2020Engineering Management in Production and ServicesTab. 5. Rating scale for the cost criteria
+Scale Rating
+Very Poor (VP) 10
+Poor (P) 9
+Medium Poor (MP) 7
+Fair (F) 5
+Good (G) 3
+Very Good (VG) 1
+Intermediate values between the two 
+adjacent judgments8, 6, 4, 2Tab. 6. Rating scale for the benefit criteria
+Scale Rating
+Poor (P) 1
+Medium Poor (MP) 3
+Fair (F) 5
+Medium Good (MG) 7
+Good (G) 9
+Very Good (VG) 10
+Intermediate values between the two 
+adjacent judgments2, 4, 6, 8Table 4 shows the weights of each criterion for all 
+scenarios, i.e., S1, S2, and S3. It must be noted that the 
+weights of the cri teria presente d in Table 4 are 
+aggregate weights concerning the corresponding 
+importance of the decision -makers in each scenari o, 
+as shown in Table 3. For instance, the weight of C1 
+for S1, written as 𝑤𝑤𝑤𝑤1𝑆𝑆𝑆𝑆1, is computed using the 
+following:  
+𝑤𝑤𝑤𝑤1𝑆𝑆𝑆𝑆1=∑𝑥𝑥𝑥𝑥1𝑘𝑘𝑘𝑘𝑆𝑆𝑆𝑆1𝜔𝜔𝜔𝜔𝑘𝑘𝑘𝑘𝑆𝑆𝑆𝑆1𝑘𝑘𝑘𝑘
+∑∑𝑥𝑥𝑥𝑥𝑖𝑖𝑖𝑖𝑘𝑘𝑘𝑘𝑆𝑆𝑆𝑆1𝜔𝜔𝜔𝜔𝑘𝑘𝑘𝑘𝑆𝑆𝑆𝑆1𝑘𝑘𝑘𝑘𝑖𝑖𝑖𝑖                           (10)  
+ 
+where 𝑤𝑤𝑤𝑤1𝑆𝑆𝑆𝑆1 denotes the weight of criterion 1 in S1, 𝑚𝑚𝑚𝑚1𝑘𝑘𝑘𝑘𝑆𝑆𝑆𝑆1 
+is the score of criterion 1 under S1 as elici ted by 
+decision -maker 𝑘𝑘𝑘𝑘, and 𝜔𝜔𝜔𝜔𝑘𝑘𝑘𝑘𝑆𝑆𝑆𝑆1 represent s the weight of 
+decision -maker 𝑘𝑘𝑘𝑘 under S1. For instance,  
+ 
+𝑤𝑤𝑤𝑤1𝑆𝑆𝑆𝑆1
+= (10×0.2258 )+(10×0.2258 )+(10×0.2581 )+(10×0.2903 )
+131. 8710
+= 
+0.0758   
+ 
+ 
+𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝜎𝜎𝜎𝜎=1
+4∑𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝑘𝑘𝑘𝑘,𝜎𝜎𝜎𝜎𝜔𝜔𝜔𝜔𝑘𝑘𝑘𝑘𝜎𝜎𝜎𝜎
+𝑘𝑘𝑘𝑘                          (11)  
+ 
+where 𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝜎𝜎𝜎𝜎 represents the aggregate performance score 
+of the 𝑖𝑖𝑖𝑖th alternative (i.e., warehouse) with respect to 
+𝑗𝑗𝑗𝑗th criterion, under scenario σ (i.e., S1, S2, S3), 𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝑘𝑘𝑘𝑘,𝜎𝜎𝜎𝜎 
+is the score of the 𝑖𝑖𝑖𝑖th alternative with respect to 𝑗𝑗𝑗𝑗th 
+criterion, under scenario σ evaluated by the  𝑘𝑘𝑘𝑘th 
+decision -maker, and 𝜔𝜔𝜔𝜔𝑘𝑘𝑘𝑘𝜎𝜎𝜎𝜎 is the importance weight of 
+decision -maker 𝑘𝑘𝑘𝑘 under scenario σ. The aggrega te 
+decision matrices are shown in Table 8.  
+For instance, using Equation (11), the value of 𝑓𝑓𝑓𝑓11𝑆𝑆𝑆𝑆1 
+can be obtained:  
+ 
+𝑓𝑓𝑓𝑓11𝑆𝑆𝑆𝑆1
+= (4×0.225 8)+(5×0.2258 )+(5×0.2580 )+(4×0.2932 )
+4
+=1.1210  
+ 
+ 
+Step 6 : Calculate the normali sed decision 
+matrices.   
+ 
+ 
+Using Equation (3), the normali sed decision 
+matrices are obtained.  𝐶𝐶𝐶𝐶1(𝑢𝑢𝑢𝑢𝑛𝑛𝑛𝑛𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢 𝑝𝑝𝑝𝑝𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑝𝑝𝑝𝑝𝑒𝑒𝑒𝑒)
+≻𝐶𝐶𝐶𝐶4(𝑝𝑝𝑝𝑝𝑟𝑟𝑟𝑟𝑝𝑝𝑝𝑝𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝 𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝 𝑢𝑢𝑢𝑢ℎ𝑒𝑒𝑒𝑒 𝑙𝑙𝑙𝑙𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑛𝑛𝑛𝑛𝑙𝑙𝑙𝑙 𝑠𝑠𝑠𝑠𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑒𝑒𝑒𝑒𝑟𝑟𝑟𝑟 )
+≻𝐶𝐶𝐶𝐶2(𝑢𝑢𝑢𝑢𝑟𝑟𝑟𝑟𝑒𝑒𝑒𝑒𝑛𝑛𝑛𝑛𝑠𝑠𝑠𝑠𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑟𝑟𝑟𝑟𝑢𝑢𝑢𝑢𝑒𝑒𝑒𝑒𝑢𝑢𝑢𝑢𝑖𝑖𝑖𝑖𝑝𝑝𝑝𝑝𝑛𝑛𝑛𝑛 𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑠𝑠𝑠𝑠𝑢𝑢𝑢𝑢)
+≻𝐶𝐶𝐶𝐶5(𝑝𝑝𝑝𝑝𝑟𝑟𝑟𝑟𝑝𝑝𝑝𝑝𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝 𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝 𝑝𝑝𝑝𝑝𝑢𝑢𝑢𝑢𝑠𝑠𝑠𝑠𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝𝑚𝑚𝑚𝑚𝑒𝑒𝑒𝑒𝑟𝑟𝑟𝑟𝑠𝑠𝑠𝑠 )
+≻𝐶𝐶𝐶𝐶17(𝑢𝑢𝑢𝑢𝑟𝑟𝑟𝑟𝑒𝑒𝑒𝑒𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑝𝑝𝑝𝑝  𝑒𝑒𝑒𝑒𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑒𝑒𝑒𝑒𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠 )
+≻𝐶𝐶𝐶𝐶8(𝑒𝑒𝑒𝑒𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑒𝑒𝑒𝑒𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑖𝑖𝑖𝑖𝑎𝑎𝑎𝑎𝑖𝑖𝑖𝑖𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝 𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝 𝑢𝑢𝑢𝑢ℎ𝑒𝑒𝑒𝑒 𝑟𝑟𝑟𝑟𝑝𝑝𝑝𝑝𝑒𝑒𝑒𝑒𝑙𝑙𝑙𝑙)
+≻𝐶𝐶𝐶𝐶7(𝑠𝑠𝑠𝑠𝑝𝑝𝑝𝑝𝑒𝑒𝑒𝑒𝑝𝑝𝑝𝑝𝑒𝑒𝑒𝑒 𝑒𝑒𝑒𝑒𝑚𝑚𝑚𝑚𝑒𝑒𝑒𝑒𝑖𝑖𝑖𝑖𝑙𝑙𝑙𝑙𝑒𝑒𝑒𝑒𝑎𝑎𝑎𝑎𝑖𝑖𝑖𝑖𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝)
+≻𝐶𝐶𝐶𝐶12(𝑞𝑞𝑞𝑞𝑢𝑢𝑢𝑢𝑒𝑒𝑒𝑒𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝 𝑒𝑒𝑒𝑒𝑛𝑛𝑛𝑛𝑙𝑙𝑙𝑙  𝑟𝑟𝑟𝑟𝑒𝑒𝑒𝑒𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑒𝑒𝑒𝑒𝑎𝑎𝑎𝑎𝑖𝑖𝑖𝑖𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝  𝑝𝑝𝑝𝑝𝑓𝑓𝑓𝑓 𝑚𝑚𝑚𝑚𝑝𝑝𝑝𝑝𝑙𝑙𝑙𝑙𝑒𝑒𝑒𝑒𝑠𝑠𝑠𝑠 𝑝𝑝𝑝𝑝𝑓𝑓𝑓𝑓 𝑢𝑢𝑢𝑢𝑟𝑟𝑟𝑟𝑒𝑒𝑒𝑒𝑛𝑛𝑛𝑛𝑠𝑠𝑠𝑠𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑟𝑟𝑟𝑟𝑢𝑢𝑢𝑢𝑒𝑒𝑒𝑒𝑢𝑢𝑢𝑢𝑖𝑖𝑖𝑖𝑝𝑝𝑝𝑝𝑛𝑛𝑛𝑛)
+≻𝐶𝐶𝐶𝐶16(𝑠𝑠𝑠𝑠𝑒𝑒𝑒𝑒𝑝𝑝𝑝𝑝𝑢𝑢𝑢𝑢𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝  𝑝𝑝𝑝𝑝𝑓𝑓𝑓𝑓 𝑟𝑟𝑟𝑟𝑒𝑒𝑒𝑒𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑝𝑝𝑝𝑝𝑛𝑛𝑛𝑛 )
+≻𝐶𝐶𝐶𝐶6(𝑒𝑒𝑒𝑒𝑚𝑚𝑚𝑚𝑒𝑒𝑒𝑒𝑖𝑖𝑖𝑖𝑙𝑙𝑙𝑙𝑒𝑒𝑒𝑒𝑎𝑎𝑎𝑎𝑖𝑖𝑖𝑖𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝 𝑝𝑝𝑝𝑝𝑓𝑓𝑓𝑓 𝑝𝑝𝑝𝑝𝑢𝑢𝑢𝑢𝑠𝑠𝑠𝑠𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝𝑚𝑚𝑚𝑚𝑒𝑒𝑒𝑒𝑟𝑟𝑟𝑟𝑠𝑠𝑠𝑠 )
+≻𝐶𝐶𝐶𝐶22(𝑝𝑝𝑝𝑝𝑢𝑢𝑢𝑢𝑎𝑎𝑎𝑎𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑝𝑝𝑝𝑝 𝑓𝑓𝑓𝑓𝑒𝑒𝑒𝑒𝑝𝑝𝑝𝑝𝑖𝑖𝑖𝑖𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑖𝑖𝑖𝑖𝑒𝑒𝑒𝑒𝑠𝑠𝑠𝑠  𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑛𝑛𝑛𝑛𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑖𝑖𝑖𝑖𝑝𝑝𝑝𝑝𝑛𝑛𝑛𝑛) 
+ 
+ 
+𝑤𝑤𝑤𝑤1𝑆𝑆𝑆𝑆1= (10×0.2258 )+(10×0.2258 )+(10×0.2581 )+(10×0.2903 )
+131.8710=0.0758   
+ 
+ 
+ 
+𝑓𝑓𝑓𝑓11𝑆𝑆𝑆𝑆1= (4×0.2258 )+(5×0.2258 )+(5×0.2580 )+(4×0.2932 )
+4=1.1210 
+ 
+ 
+ 
+ 
+C1(unit price) ≻C4(proximity to the leading 
+supplier)≻C2(transportation cost) ≻C5(proximity to 
+customers) ≻C17(traffic access) ≻C8(accessibility to 
+the road)≻C7(space availability) ≻C12(quality and 
+reliability of modes of transportation) ≻C16(security 
+of region) ≻C6(availability of  customers) ≻ 
+C22(public facilities condition)  Step 4: Decision-makers elicit judgments on the 
+decision matrix. Using the rating scale for cost criteria 
+(i.e., Table 5), and benefit criteria (i.e., Table 6), deci-
+sion-makers elicit judgments on the performance of 
+the jth alternative (i.e., warehouse) on the ith crite-
+rion.
+The decision matrix is shown in Table 7.
+Step 5: Generate aggregate decision matrices.
+Three aggregate decision matrices were generated, 
+which corresponded to S1, S2, and S3 scenarios. Since 
+the decision-makers had different importance 
+weights at different scenarios, the aggregation func-
+tion described in Step 2 of Section 2.2 had to be 
+revised. To incorporate the importance weights of the 
+decision-makers, the aggregation function is devel-
+oped in Equation (11). 
+𝑤𝑤𝑤𝑤1𝑆𝑆𝑆𝑆1= (10×0.2258 )+(10×0.2258 )+(10×0.2581 )+(10×0.2903 )
+131.8710=0.0758   
+ 
+ 
+ 
+𝑓𝑓𝑓𝑓11𝑆𝑆𝑆𝑆1= (4×0.2258 )+(5×0.2258 )+(5×0.2580 )+(4×0.2932 )
+4=1.1210 
+ 
+ 
+ 
+ 
+C1(unit price) ≻C4(proximity to the leading 
+supplier)≻C2(transportation cost) ≻C5(proximity to 
+customers) ≻C17(traffic access) ≻C8(accessibility to 
+the road)≻C7(space availability) ≻C12(quality and 
+reliability of modes of transportation) ≻C16(security 
+of region) ≻C6(availability of  customers) ≻ 
+C22(public facilities condition)  Table 4 shows the weights of each criterion for all 
+scenarios, i.e., S1, S2, and S3. It must be noted that the 
+weights of the cri teria presented in Table 4 are 
+aggregate weights concerning the corresponding 
+importance of the decision -makers in each scenari o, 
+as shown in Table 3. For instance, the weight of C1 
+for S1, written as 𝑤𝑤𝑤𝑤1𝑆𝑆𝑆𝑆1, is computed using the 
+following:  
+𝑤𝑤𝑤𝑤1𝑆𝑆𝑆𝑆1=∑𝑥𝑥𝑥𝑥1𝑘𝑘𝑘𝑘𝑆𝑆𝑆𝑆1𝜔𝜔𝜔𝜔𝑘𝑘𝑘𝑘𝑆𝑆𝑆𝑆1𝑘𝑘𝑘𝑘
+∑∑𝑥𝑥𝑥𝑥𝑖𝑖𝑖𝑖𝑘𝑘𝑘𝑘𝑆𝑆𝑆𝑆1𝜔𝜔𝜔𝜔𝑘𝑘𝑘𝑘𝑆𝑆𝑆𝑆1𝑘𝑘𝑘𝑘𝑖𝑖𝑖𝑖                           (10)  
+ 
+where 𝑤𝑤𝑤𝑤1𝑆𝑆𝑆𝑆1 denotes the weight of criterion 1 in S1, 𝑚𝑚𝑚𝑚1𝑘𝑘𝑘𝑘𝑆𝑆𝑆𝑆1 
+is the score of criterion 1 under S1 as elici ted by 
+decision -maker 𝑘𝑘𝑘𝑘, and 𝜔𝜔𝜔𝜔𝑘𝑘𝑘𝑘𝑆𝑆𝑆𝑆1 represent s the weight of 
+decision -maker 𝑘𝑘𝑘𝑘 under S1. For instance,  
+ 
+𝑤𝑤𝑤𝑤1𝑆𝑆𝑆𝑆1
+= (10×0.2258 )+(10×0.2258 )+(10×0.2581 )+(10×0.2903 )
+131. 8710
+= 
+0.0758   
+ 
+ 
+𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝜎𝜎𝜎𝜎=1
+4∑𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝑘𝑘𝑘𝑘,𝜎𝜎𝜎𝜎𝜔𝜔𝜔𝜔𝑘𝑘𝑘𝑘𝜎𝜎𝜎𝜎
+𝑘𝑘𝑘𝑘                          (11)  
+ 
+where 𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝜎𝜎𝜎𝜎 represents the a ggregate performance score 
+of the 𝑖𝑖𝑖𝑖th alternative (i.e., warehouse) with respect to 
+𝑗𝑗𝑗𝑗th criterion, under scenario σ (i.e., S1, S2, S3), 𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝑘𝑘𝑘𝑘,𝜎𝜎𝜎𝜎 
+is the score of the 𝑖𝑖𝑖𝑖th alternative with respect to 𝑗𝑗𝑗𝑗th 
+criterion, under scenario σ evaluated by the  𝑘𝑘𝑘𝑘th 
+decision -maker, and 𝜔𝜔𝜔𝜔𝑘𝑘𝑘𝑘𝜎𝜎𝜎𝜎 is the importance weight of 
+decision -maker 𝑘𝑘𝑘𝑘 under scenario σ. The aggrega te 
+decision matrices are shown in Table 8.  
+For instance, using Equation (11), the value of 𝑓𝑓𝑓𝑓11𝑆𝑆𝑆𝑆1 
+can be obtained:  
+ 
+𝑓𝑓𝑓𝑓11𝑆𝑆𝑆𝑆1
+= (4×0.225 8)+(5×0.2258 )+(5×0.2580 )+(4×0.2932 )
+4
+=1.1210  
+ 
+ 
+Step 6 : Calculate the normali sed decision 
+matrices.   
+ 
+ 
+Using Equation (3), the normali sed decision 
+matrices are obtained.  𝐶𝐶𝐶𝐶1(𝑢𝑢𝑢𝑢𝑛𝑛𝑛𝑛𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢 𝑝𝑝𝑝𝑝𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑝𝑝𝑝𝑝𝑒𝑒𝑒𝑒)
+≻𝐶𝐶𝐶𝐶4(𝑝𝑝𝑝𝑝𝑟𝑟𝑟𝑟𝑝𝑝𝑝𝑝𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝 𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝 𝑢𝑢𝑢𝑢ℎ𝑒𝑒𝑒𝑒 𝑙𝑙𝑙𝑙𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑛𝑛𝑛𝑛𝑙𝑙𝑙𝑙 𝑠𝑠𝑠𝑠𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑒𝑒𝑒𝑒𝑟𝑟𝑟𝑟 )
+≻𝐶𝐶𝐶𝐶2(𝑢𝑢𝑢𝑢𝑟𝑟𝑟𝑟𝑒𝑒𝑒𝑒𝑛𝑛𝑛𝑛𝑠𝑠𝑠𝑠𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑟𝑟𝑟𝑟𝑢𝑢𝑢𝑢𝑒𝑒𝑒𝑒𝑢𝑢𝑢𝑢𝑖𝑖𝑖𝑖𝑝𝑝𝑝𝑝𝑛𝑛𝑛𝑛 𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑠𝑠𝑠𝑠𝑢𝑢𝑢𝑢)
+≻𝐶𝐶𝐶𝐶5(𝑝𝑝𝑝𝑝𝑟𝑟𝑟𝑟𝑝𝑝𝑝𝑝𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝 𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝 𝑝𝑝𝑝𝑝𝑢𝑢𝑢𝑢𝑠𝑠𝑠𝑠𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝𝑚𝑚𝑚𝑚𝑒𝑒𝑒𝑒𝑟𝑟𝑟𝑟𝑠𝑠𝑠𝑠 )
+≻𝐶𝐶𝐶𝐶17(𝑢𝑢𝑢𝑢𝑟𝑟𝑟𝑟𝑒𝑒𝑒𝑒𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑝𝑝𝑝𝑝  𝑒𝑒𝑒𝑒𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑒𝑒𝑒𝑒𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠 )
+≻𝐶𝐶𝐶𝐶8(𝑒𝑒𝑒𝑒𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑒𝑒𝑒𝑒𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑖𝑖𝑖𝑖𝑎𝑎𝑎𝑎𝑖𝑖𝑖𝑖𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝 𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝 𝑢𝑢𝑢𝑢ℎ𝑒𝑒𝑒𝑒 𝑟𝑟𝑟𝑟𝑝𝑝𝑝𝑝𝑒𝑒𝑒𝑒𝑙𝑙𝑙𝑙)
+≻𝐶𝐶𝐶𝐶7(𝑠𝑠𝑠𝑠𝑝𝑝𝑝𝑝𝑒𝑒𝑒𝑒𝑝𝑝𝑝𝑝𝑒𝑒𝑒𝑒 𝑒𝑒𝑒𝑒𝑚𝑚𝑚𝑚𝑒𝑒𝑒𝑒𝑖𝑖𝑖𝑖𝑙𝑙𝑙𝑙𝑒𝑒𝑒𝑒𝑎𝑎𝑎𝑎𝑖𝑖𝑖𝑖𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝)
+≻𝐶𝐶𝐶𝐶12(𝑞𝑞𝑞𝑞𝑢𝑢𝑢𝑢𝑒𝑒𝑒𝑒𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝 𝑒𝑒𝑒𝑒𝑛𝑛𝑛𝑛𝑙𝑙𝑙𝑙  𝑟𝑟𝑟𝑟𝑒𝑒𝑒𝑒𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑒𝑒𝑒𝑒𝑎𝑎𝑎𝑎𝑖𝑖𝑖𝑖𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝  𝑝𝑝𝑝𝑝𝑓𝑓𝑓𝑓 𝑚𝑚𝑚𝑚𝑝𝑝𝑝𝑝𝑙𝑙𝑙𝑙𝑒𝑒𝑒𝑒𝑠𝑠𝑠𝑠 𝑝𝑝𝑝𝑝𝑓𝑓𝑓𝑓 𝑢𝑢𝑢𝑢𝑟𝑟𝑟𝑟𝑒𝑒𝑒𝑒𝑛𝑛𝑛𝑛𝑠𝑠𝑠𝑠𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑟𝑟𝑟𝑟𝑢𝑢𝑢𝑢𝑒𝑒𝑒𝑒𝑢𝑢𝑢𝑢𝑖𝑖𝑖𝑖𝑝𝑝𝑝𝑝𝑛𝑛𝑛𝑛)
+≻𝐶𝐶𝐶𝐶16(𝑠𝑠𝑠𝑠𝑒𝑒𝑒𝑒𝑝𝑝𝑝𝑝𝑢𝑢𝑢𝑢𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝  𝑝𝑝𝑝𝑝𝑓𝑓𝑓𝑓 𝑟𝑟𝑟𝑟𝑒𝑒𝑒𝑒𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑝𝑝𝑝𝑝𝑛𝑛𝑛𝑛 )
+≻𝐶𝐶𝐶𝐶6(𝑒𝑒𝑒𝑒𝑚𝑚𝑚𝑚𝑒𝑒𝑒𝑒𝑖𝑖𝑖𝑖𝑙𝑙𝑙𝑙𝑒𝑒𝑒𝑒𝑎𝑎𝑎𝑎𝑖𝑖𝑖𝑖𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝 𝑝𝑝𝑝𝑝𝑓𝑓𝑓𝑓 𝑝𝑝𝑝𝑝𝑢𝑢𝑢𝑢𝑠𝑠𝑠𝑠𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝𝑚𝑚𝑚𝑚𝑒𝑒𝑒𝑒𝑟𝑟𝑟𝑟𝑠𝑠𝑠𝑠 )
+≻𝐶𝐶𝐶𝐶22(𝑝𝑝𝑝𝑝𝑢𝑢𝑢𝑢𝑎𝑎𝑎𝑎𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑝𝑝𝑝𝑝 𝑓𝑓𝑓𝑓𝑒𝑒𝑒𝑒𝑝𝑝𝑝𝑝𝑖𝑖𝑖𝑖𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑖𝑖𝑖𝑖𝑒𝑒𝑒𝑒𝑠𝑠𝑠𝑠  𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑛𝑛𝑛𝑛𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑖𝑖𝑖𝑖𝑝𝑝𝑝𝑝𝑛𝑛𝑛𝑛) 
+ Table 4 shows the weights of each criterion for all 
+scenarios, i.e., S1, S2, and S3. It must be noted that the 
+weights of the cri teria presented in Table 4 are 
+aggregate weights concerning the corresponding 
+importance of the decision -makers in each scenari o, 
+as shown in Table 3. For instance, the weight of C1 
+for S1, written as 𝑤𝑤𝑤𝑤1𝑆𝑆𝑆𝑆1, is computed using the 
+following:  
+𝑤𝑤𝑤𝑤1𝑆𝑆𝑆𝑆1=∑𝑥𝑥𝑥𝑥1𝑘𝑘𝑘𝑘𝑆𝑆𝑆𝑆1𝜔𝜔𝜔𝜔𝑘𝑘𝑘𝑘𝑆𝑆𝑆𝑆1𝑘𝑘𝑘𝑘
+∑∑𝑥𝑥𝑥𝑥𝑖𝑖𝑖𝑖𝑘𝑘𝑘𝑘𝑆𝑆𝑆𝑆1𝜔𝜔𝜔𝜔𝑘𝑘𝑘𝑘𝑆𝑆𝑆𝑆1𝑘𝑘𝑘𝑘𝑖𝑖𝑖𝑖                           (10)  
+ 
+where 𝑤𝑤𝑤𝑤1𝑆𝑆𝑆𝑆1 denotes the weight of criterion 1 in S1, 𝑚𝑚𝑚𝑚1𝑘𝑘𝑘𝑘𝑆𝑆𝑆𝑆1 
+is the score of criterion 1 under S1 as elici ted by 
+decision -maker 𝑘𝑘𝑘𝑘, and 𝜔𝜔𝜔𝜔𝑘𝑘𝑘𝑘𝑆𝑆𝑆𝑆1 represent s the weight of 
+decision -maker 𝑘𝑘𝑘𝑘 under S1. For instance,  
+ 
+𝑤𝑤𝑤𝑤1𝑆𝑆𝑆𝑆1
+= (10×0.2258 )+(10×0.2258 )+(10×0.2581 )+(10×0.2903 )
+131. 8710
+= 
+0.0758   
+ 
+ 
+𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝜎𝜎𝜎𝜎=1
+4∑𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝑘𝑘𝑘𝑘,𝜎𝜎𝜎𝜎𝜔𝜔𝜔𝜔𝑘𝑘𝑘𝑘𝜎𝜎𝜎𝜎
+𝑘𝑘𝑘𝑘                          (11)  
+ 
+where 𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝜎𝜎𝜎𝜎 represents the aggregate performance score 
+of the 𝑖𝑖𝑖𝑖th alternative (i.e., warehouse) with respect to 
+𝑗𝑗𝑗𝑗th criterion, under scenario σ (i.e., S1, S2, S3), 𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑗𝑗𝑗𝑗𝑘𝑘𝑘𝑘,𝜎𝜎𝜎𝜎 
+is the score of the 𝑖𝑖𝑖𝑖th alternative with respect to 𝑗𝑗𝑗𝑗th 
+criterion, under scenario σ evaluated by the  𝑘𝑘𝑘𝑘th 
+decision -maker, and 𝜔𝜔𝜔𝜔𝑘𝑘𝑘𝑘𝜎𝜎𝜎𝜎 is the importance weight of 
+decision -maker 𝑘𝑘𝑘𝑘 under scenario σ. The aggrega te 
+decision matrices are shown in Table 8.  
+For instance, using Equation (11), the value of 𝑓𝑓𝑓𝑓11𝑆𝑆𝑆𝑆1 
+can be obtained:  
+ 
+𝑓𝑓𝑓𝑓11𝑆𝑆𝑆𝑆1
+= (4×0.225 8)+(5×0.2258 )+(5×0.2580 )+(4×0.2932 )
+4
+=1.1210  
+ 
+ 
+Step 6 : Calculate the normali sed decision 
+matrices.   
+ 
+ 
+Using Equation (3), the normali sed decision 
+matrices are obtained.  𝐶𝐶𝐶𝐶1(𝑢𝑢𝑢𝑢𝑛𝑛𝑛𝑛𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢 𝑝𝑝𝑝𝑝𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑝𝑝𝑝𝑝𝑒𝑒𝑒𝑒)
+≻𝐶𝐶𝐶𝐶4(𝑝𝑝𝑝𝑝𝑟𝑟𝑟𝑟𝑝𝑝𝑝𝑝𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝 𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝 𝑢𝑢𝑢𝑢ℎ𝑒𝑒𝑒𝑒 𝑙𝑙𝑙𝑙𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑛𝑛𝑛𝑛𝑙𝑙𝑙𝑙 𝑠𝑠𝑠𝑠𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑒𝑒𝑒𝑒𝑟𝑟𝑟𝑟 )
+≻𝐶𝐶𝐶𝐶2(𝑢𝑢𝑢𝑢𝑟𝑟𝑟𝑟𝑒𝑒𝑒𝑒𝑛𝑛𝑛𝑛𝑠𝑠𝑠𝑠𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑟𝑟𝑟𝑟𝑢𝑢𝑢𝑢𝑒𝑒𝑒𝑒𝑢𝑢𝑢𝑢𝑖𝑖𝑖𝑖𝑝𝑝𝑝𝑝𝑛𝑛𝑛𝑛 𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑠𝑠𝑠𝑠𝑢𝑢𝑢𝑢)
+≻𝐶𝐶𝐶𝐶5(𝑝𝑝𝑝𝑝𝑟𝑟𝑟𝑟𝑝𝑝𝑝𝑝𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑚𝑚𝑚𝑚𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝 𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝 𝑝𝑝𝑝𝑝𝑢𝑢𝑢𝑢𝑠𝑠𝑠𝑠𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝𝑚𝑚𝑚𝑚𝑒𝑒𝑒𝑒𝑟𝑟𝑟𝑟𝑠𝑠𝑠𝑠 )
+≻𝐶𝐶𝐶𝐶17(𝑢𝑢𝑢𝑢𝑟𝑟𝑟𝑟𝑒𝑒𝑒𝑒𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑖𝑖𝑖𝑖𝑝𝑝𝑝𝑝  𝑒𝑒𝑒𝑒𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑒𝑒𝑒𝑒𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠 )
+≻𝐶𝐶𝐶𝐶8(𝑒𝑒𝑒𝑒𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑒𝑒𝑒𝑒𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑖𝑖𝑖𝑖𝑎𝑎𝑎𝑎𝑖𝑖𝑖𝑖𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝 𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝 𝑢𝑢𝑢𝑢ℎ𝑒𝑒𝑒𝑒 𝑟𝑟𝑟𝑟𝑝𝑝𝑝𝑝𝑒𝑒𝑒𝑒𝑙𝑙𝑙𝑙)
+≻𝐶𝐶𝐶𝐶7(𝑠𝑠𝑠𝑠𝑝𝑝𝑝𝑝𝑒𝑒𝑒𝑒𝑝𝑝𝑝𝑝𝑒𝑒𝑒𝑒 𝑒𝑒𝑒𝑒𝑚𝑚𝑚𝑚𝑒𝑒𝑒𝑒𝑖𝑖𝑖𝑖𝑙𝑙𝑙𝑙𝑒𝑒𝑒𝑒𝑎𝑎𝑎𝑎𝑖𝑖𝑖𝑖𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝)
+≻𝐶𝐶𝐶𝐶12(𝑞𝑞𝑞𝑞𝑢𝑢𝑢𝑢𝑒𝑒𝑒𝑒𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝 𝑒𝑒𝑒𝑒𝑛𝑛𝑛𝑛𝑙𝑙𝑙𝑙  𝑟𝑟𝑟𝑟𝑒𝑒𝑒𝑒𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑒𝑒𝑒𝑒𝑎𝑎𝑎𝑎𝑖𝑖𝑖𝑖𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝  𝑝𝑝𝑝𝑝𝑓𝑓𝑓𝑓 𝑚𝑚𝑚𝑚𝑝𝑝𝑝𝑝𝑙𝑙𝑙𝑙𝑒𝑒𝑒𝑒𝑠𝑠𝑠𝑠 𝑝𝑝𝑝𝑝𝑓𝑓𝑓𝑓 𝑢𝑢𝑢𝑢𝑟𝑟𝑟𝑟𝑒𝑒𝑒𝑒𝑛𝑛𝑛𝑛𝑠𝑠𝑠𝑠𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑟𝑟𝑟𝑟𝑢𝑢𝑢𝑢𝑒𝑒𝑒𝑒𝑢𝑢𝑢𝑢𝑖𝑖𝑖𝑖𝑝𝑝𝑝𝑝𝑛𝑛𝑛𝑛)
+≻𝐶𝐶𝐶𝐶16(𝑠𝑠𝑠𝑠𝑒𝑒𝑒𝑒𝑝𝑝𝑝𝑝𝑢𝑢𝑢𝑢𝑟𝑟𝑟𝑟𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝  𝑝𝑝𝑝𝑝𝑓𝑓𝑓𝑓 𝑟𝑟𝑟𝑟𝑒𝑒𝑒𝑒𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑝𝑝𝑝𝑝𝑛𝑛𝑛𝑛 )
+≻𝐶𝐶𝐶𝐶6(𝑒𝑒𝑒𝑒𝑚𝑚𝑚𝑚𝑒𝑒𝑒𝑒𝑖𝑖𝑖𝑖𝑙𝑙𝑙𝑙𝑒𝑒𝑒𝑒𝑎𝑎𝑎𝑎𝑖𝑖𝑖𝑖𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝 𝑝𝑝𝑝𝑝𝑓𝑓𝑓𝑓 𝑝𝑝𝑝𝑝𝑢𝑢𝑢𝑢𝑠𝑠𝑠𝑠𝑢𝑢𝑢𝑢𝑝𝑝𝑝𝑝𝑚𝑚𝑚𝑚𝑒𝑒𝑒𝑒𝑟𝑟𝑟𝑟𝑠𝑠𝑠𝑠 )
+≻𝐶𝐶𝐶𝐶22(𝑝𝑝𝑝𝑝𝑢𝑢𝑢𝑢𝑎𝑎𝑎𝑎𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑝𝑝𝑝𝑝 𝑓𝑓𝑓𝑓𝑒𝑒𝑒𝑒𝑝𝑝𝑝𝑝𝑖𝑖𝑖𝑖𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑖𝑖𝑖𝑖𝑒𝑒𝑒𝑒𝑠𝑠𝑠𝑠  𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑛𝑛𝑛𝑛𝑙𝑙𝑙𝑙𝑖𝑖𝑖𝑖𝑢𝑢𝑢𝑢𝑖𝑖𝑖𝑖𝑝𝑝𝑝𝑝𝑛𝑛𝑛𝑛) 
+ 
+Step 6: Calculate the normalised decision matri-
+ces. Using Equation (3), the normalised decision 
+matrices are obtained. 
+Step 7: Calculate the weighted normalised deci-
+sion matrices. Using Equation (4) with inputs from 
+the priority weights of the criteria under the different 
+scenarios, the weighted normalised decision matrices 
+are obtained. Table 10 presents these matrices.
+Step 8: Determine V+ and V-  for S1, S2, and S3.
+The PIS (V+) and the NIS (V-) are obtained using 
+Equation (5) and Equation (6), respectively. Table 11 
+describes these values.
+Step 9 : Generate the separation measures 𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+ and 
+𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖−. The separation measures 𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖+ and 𝐷𝐷𝐷𝐷𝑖𝑖𝑖𝑖− are 
+obtained using Equation (7) and Equation (8), 
+respectively. The results are shown in Table 12.  
+ 
+Volume 12 • Issue 4 • 202031
+Engineering Management in Production and ServicesTab. 8. Aggregate decision matrices
+CriteriaS1 S2 S3
+Talamban Compostela Talamban Compostela Talamban Compostela
+C1 1.1210 0.8065 1.1210 0.8145 1.1250 0.8125
+C2 0.8065 1.1210 0.8145 1.1210 0.8125 1.1250
+C3 0.8065 1.1210 0.8145 1.1210 0.8125 1.1250
+C4 1.7258 0.7016 1.6774 0.7661 1.6875 0.7500
+C5 2.3226 1.6210 2.3065 1.6290 2.3125 1.6250
+C6 2.3226 1.6210 2.3065 1.6290 2.3125 1.6250
+C7 1.9839 2.2984 2.0161 2.3226 2.0000 2.3125
+C8 2.3145 2.3710 2.3065 2.3871 2.3125 2.3750
+C9 0.2500 0.2500 0.2500 0.2500 0.2500 0.2500
+C10 0.2500 0.2500 0.2500 0.2500 0.2500 0.2500
+C11 2.3226 2.3226 2.3065 2.3065 2.3125 2.3125
+C12 2.3226 2.3226 2.3065 2.3065 2.3125 2.3125
+C13 2.3790 2.3790 2.3790 2.3790 2.3750 2.3750
+C14 1.1210 2.2500 1.1290 2.2500 1.1250 2.2500
+C15 1.3790 1.9919 1.3548 2.0242 1.3750 2.0000
+C16 1.7097 2.1210 1.7742 2.1371 1.7500 2.1250
+C17 1.0645 1.8226 1.0565 1.8065 1.0625 1.8125
+C18 2.0726 2.0726 2.0565 2.0565 2.0625 2.0625
+C19 2.0645 2.2500 2.0726 2.2500 2.0625 2.2500
+C20 1.9194 1.6210 1.8629 1.6290 1.8750 1.6250
+C21 2.4274 2.4274 2.4435 2.4435 2.4375 2.4375
+C22 2.3790 2.3790 2.3790 2.3790 2.3750 2.3750Tab. 7. Decision matrix
+CriteriaPresident Administration Manager Senior Manager Assistant Manager
+Talamban Compostela Talamban Compostela Talamban Compostela Talamban Compostela
+C1 4 3 5 4 5 3 4 3
+C2 3 4 4 5 3 5 3 4
+C3 3 4 4 5 3 5 3 4
+C4 9 1 1 9 9 1 8 1
+C5 9 7 9 6 9 7 10 6
+C6 9 7 9 6 9 7 10 6
+C7 9 10 8 9 8 10 7 8
+C8 9 10 9 10 10 8 9 10
+C9 1 1 1 1 1 1 1 1
+C10 1 1 1 1 1 1 1 1
+C11 9 9 9 9 9 9 10 10
+C12 9 9 9 9 9 9 10 10
+C13 10 10 9 9 9 9 10 10
+C14 5 9 4 9 5 9 4 9
+C15 5 9 4 9 9 5 4 9
+C16 8 9 8 9 8 7 4 9
+C17 4 7 4 7 5 7 4 8
+C18 8 8 8 8 8 8 9 9
+C19 9 9 8 9 7 9 9 9
+C20 10 7 1 6 10 7 9 6
+C21 10 10 10 10 10 10 9 9
+C22 10 10 9 9 9 9 10 10
+32
+Volume 12 • Issue 4 • 2020Engineering Management in Production and ServicesTab. 9. Normalised decision matrices
+Criteria S1 S2 S3
+Talamban Compostela Talamban Compostela Talamban Compostela
+C1 0.8118 0.5840 0.8090 0.5878 0.8107 0.5855
+C2 0.5840 0.8118 0.5878 0.8090 0.5855 0.8107
+C3 0.5840 0.8118 0.5878 0.8090 0.5855 0.8107
+C4 0.9264 0.3766 0.9096 0.4154 0.9138 0.4061
+C5 0.8200 0.5723 0.8168 0.5769 0.8182 0.5749
+C6 0.8200 0.5723 0.8168 0.5769 0.8182 0.5749
+C7 0.6534 0.7570 0.6555 0.7552 0.6542 0.7564
+C8 0.6985 0.7156 0.6949 0.7192 0.6976 0.7165
+C9 0.7071 0.7071 0.7071 0.7071 0.7071 0.7071
+C10 0.7071 0.7071 0.7071 0.7071 0.7071 0.7071
+C11 0.7071 0.7071 0.7071 0.7071 0.7071 0.7071
+C12 0.7071 0.7071 0.7071 0.7071 0.7071 0.7071
+C13 0.7071 0.7071 0.7071 0.7071 0.7071 0.7071
+C14 0.4459 0.8951 0.4485 0.8938 0.4472 0.8944
+C15 0.5692 0.8222 0.5562 0.8310 0.5665 0.8240
+C16 0.6276 0.7786 0.6388 0.7694 0.6357 0.7719
+C17 0.5043 0.8635 0.5048 0.8632 0.5057 0.8627
+C18 0.7071 0.7071 0.7071 0.7071 0.7071 0.7071
+C19 0.6761 0.7368 0.6775 0.7355 0.6757 0.7372
+C20 0.7640 0.6452 0.7528 0.6583 0.7557 0.6549
+C21 0.7071 0.7071 0.7071 0.7071 0.7071 0.7071
+C22 0.7071 0.7071 0.7071 0.7071 0.7071 0.7071
+Tab. 10. Weighted normalised decision matrices
+Criteria S1 S2 S3
+Talamban Compostela Talamban Compostela Talamban Compostela
+C1 0.0616 0.0443 0.0614 0.0446 0.0615 0.0444
+C2 0.0389 0.0540 0.0390 0.0537 0.0389 0.0538
+C3 0.0267 0.0371 0.0266 0.0366 0.0267 0.0369
+C4 0.0671 0.0273 0.0652 0.0298 0.0659 0.0293
+C5 0.0550 0.0384 0.0538 0.0380 0.0543 0.0382
+C6 0.0421 0.0294 0.0418 0.0295 0.0419 0.0295
+C7 0.0398 0.0461 0.0398 0.0458 0.0397 0.0459
+C8 0.0437 0.0448 0.0435 0.0451 0.0437 0.0449
+C9 0.0092 0.0092 0.0097 0.0097 0.0094 0.0094
+C10 0.0066 0.0066 0.0068 0.0068 0.0067 0.0067
+C11 0.0254 0.0254 0.0256 0.0256 0.0255 0.0255
+C12 0.0432 0.0432 0.0426 0.0426 0.0429 0.0429
+C13 0.0318 0.0318 0.0325 0.0325 0.0322 0.0322
+C14 0.0108 0.0217 0.0112 0.0223 0.0110 0.0221
+C15 0.0281 0.0406 0.0274 0.0409 0.0280 0.0407
+C16 0.0358 0.0444 0.0364 0.0439 0.0362 0.0439
+C17 0.0327 0.0560 0.0324 0.0554 0.0326 0.0557
+C18 0.0223 0.0223 0.0232 0.0232 0.0228 0.0228
+C19 0.0139 0.0151 0.0144 0.0157 0.0141 0.0154
+C20 0.0187 0.0158 0.0188 0.0164 0.0186 0.0162
+C21 0.0067 0.0067 0.0066 0.0066 0.0067 0.0067
+C22 0.0365 0.0365 0.0360 0.0360 0.0362 0.0362
+Volume 12 • Issue 4 • 202033
+Engineering Management in Production and ServicesTab. 11.  V+ and V- for S1, S2, and S3
+CriteriaS1 S2 S3
+C1 0.0443 0.0616 0.0446 0.0614 0.0444 0.0615
+C2 0.0389 0.0540 0.0390 0.0537 0.0389 0.0538
+C3 0.0267 0.0371 0.0266 0.0366 0.0267 0.0369
+C4 0.0671 0.0273 0.0652 0.0298 0.0659 0.0293
+C5 0.0550 0.0384 0.0538 0.0380 0.0543 0.0382
+C6 0.0421 0.0294 0.0418 0.0295 0.0419 0.0295
+C7 0.0461 0.0398 0.0458 0.0398 0.0459 0.0397
+C8 0.0448 0.0437 0.0451 0.0435 0.0449 0.0437
+C9 0.0092 0.0092 0.0097 0.0097 0.0094 0.0094
+C10 0.0066 0.0066 0.0068 0.0068 0.0067 0.0067
+C11 0.0254 0.0254 0.0256 0.0256 0.0255 0.0255
+C12 0.0432 0.0432 0.0426 0.0426 0.0429 0.0429
+C13 0.0318 0.0318 0.0325 0.0325 0.0322 0.0322
+C14 0.0217 0.0108 0.0223 0.0112 0.0221 0.0110
+C15 0.0406 0.0281 0.0409 0.0274 0.0407 0.0280
+C16 0.0444 0.0358 0.0439 0.0364 0.0439 0.0362
+C17 0.0560 0.0327 0.0554 0.0324 0.0557 0.0326
+C18 0.0223 0.0223 0.0232 0.0232 0.0228 0.0228
+C19 0.0151 0.0139 0.0157 0.0144 0.0154 0.0141
+C20 0.0187 0.0158 0.0188 0.0164 0.0186 0.0162
+C21 0.0067 0.0067 0.0066 0.0066 0.0067 0.0067
+C22 0.0365 0.0365 0.0360 0.0360 0.0362 0.0362
+Tab. 12. The separation measures and the relative closeness coefficients
+S1 S2 S3
+Talamban Compostela Talamban Compostela Talamban Compostela
+0.0351 0.0486 0.0348 0.0444 0.0347 0.0457
+0.0486 0.0351 0.0444 0.0348 0.0457 0.0347
+0.5808 0.4192 0.5607 0.4393 0.5681 0.4319
+Rank 1 2 1 2 1 2 
+𝑤𝑤𝑤𝑤1𝑆𝑆𝑆𝑆1= (10×0.2258 )+(10×0.2258 )+(10×0.2581 )+(10×0.2903 )
+131.8710=0.0758   
+ 
+ 
+ 
+𝑓𝑓𝑓𝑓11𝑆𝑆𝑆𝑆1= (4×0.2258 )+(5×0.2258 )+(5×0.2580 )+(4×0.2932 )
+4=1.1210 
+ 
+ 
+ 
+ 
+C1(unit price) ≻C4(proximity to the leading 
+supplier)≻C2(transportation cost) ≻C5(proximity to 
+customers) ≻C17(traffic access) ≻C8(accessibility to 
+the road)≻C7(space availability) ≻C12(quality and 
+reliability of modes of transportation) ≻C16(security 
+of region) ≻C6(availability of  customers) ≻ 
+C22(public facilities condition)  3. Results and discussion
+In this work, three scenarios on the distribution 
+of importance of the decision-makers’ judgments 
+were explored. Results show that these distributions 
+yielded slight changes in the priorities of the ware-
+house location decision criteria. As shown in Table 4, 
+the priorities yielded the following list:These criteria are identified by obtaining the 
+median of all priorities and choosing those criteria 
+which are above the median. Although small varia-
+tions exist in the priority values and their correspond-
+ing ranks, the order of these criteria is reasonably 
+stable under the three scenarios. This implies that the 
+conditions of engaging more importance to expertise, 
+decision-making power, or none at all have a limited 
+impact on the group decision. A plausible way of 
+explaining such a finding is that the members of the 
+expert group (i.e., the administration team) have  
+a comparable degree of knowledge and expertise on 
+the operations of the warehouse as a distribution 
+centre. With a closely related level of understanding 
+of these operations, the priorities of these criteria 
+would not significantly differ compared to a condi-
+34
+Volume 12 • Issue 4 • 2020Engineering Management in Production and Servicestion where experts have a more heterogeneous 
+understanding of the domain problem. The ranking 
+of priorities of the criteria indicates that the most 
+crucial (i.e., top five) factors in warehouse location 
+decision-making in the context of a product distribu-
+tion firm include unit price, proximity to the leading 
+supplier, transportation cost, proximity to customers, 
+and traffic access. These criteria are highly associated 
+with the economic considerations and efficient opera-
+tions towards downstream and upstream supply 
+chain members. It shows that decision-makers in this 
+industry put more emphasis on maintaining the dis-
+tribution networks more efficiently at minimum cost. 
+This is consistent with the insights in the current lit-
+erature. In the Philippines, as in many developing 
+economies, traffic congestion is prevalent (i.e., most 
+notably in the case location), and aiming to minimise 
+the distances and maximise access to suppliers and 
+customers is crucial in enhancing the productivity of 
+the distribution operations. The unit price is associ-
+ated with capital investment, which is a straightfor -
+ward consideration in investment decisions. On the 
+other hand, transportation cost is an operational cost, 
+and keeping such a cost plays a huge role in maximis-
+ing productivity.
+With the use of group TOPSIS, the case study 
+revealed that the Talamban site was the best ware-
+house location under the three different scenarios. 
+This is also consistent with the observation which was 
+obtained in the priorities of the criteria in relation to 
+the distribution of priorities of decision-makers. It 
+supports the previous claim that the expert knowl-
+edge and expertise regarding the decision of a ware-
+house location and the case problem are homogeneous 
+to a considerable extent. It implies that the case firm 
+must establish its warehouse at the identified loca-
+tion. It should be noted that the group decision using 
+TOPSIS is robust on the distribution of expert priori-
+ties, as long as their knowledge and expertise are 
+comparable.
+Conclusions
+The selection of a location for a warehouse 
+requires considering multiple criteria used to evalu-
+ate the alternative sites, which is a straightforward 
+implication of real-life decision-making. This set of 
+criteria, often with numerous, contains both objective 
+and subjective factors with non-sharp definitions and 
+limited measurement scales. Furthermore, the pres-
+ence of multiple decision-makers with different motivations and value systems is prevalent in such  
+a strategic decision-making process. Understanding 
+the impact of these differences in priorities is crucial 
+in a group decision-making environment. In this 
+article, with the use of TOPSIS, a warehouse location 
+decision problem was considered with a significant 
+number of criteria under a group decision-making 
+structure with varying priorities of experts. A case 
+study of a distribution firm was presented to illustrate 
+the approach.
+Under three different distribution scenarios of 
+expert priorities (i.e., expertise, decision-making 
+power, and equal weights), results showed that the 
+unit price, proximity to the leading supplier, trans-
+portation cost, proximity to customers, and traffic 
+access were considered the most important criteria 
+for selecting a possible site for a warehouse. These 
+findings imply two important insights. First, costs 
+(i.e., investment capital and operational expenses) are 
+important economic considerations in establishing  
+a warehouse and maintaining it, which are inputs to 
+warehouse location decisions. These costs are crucial 
+factors in maintaining the overall profitability. Sec-
+ond, decision-makers put an emphasis on the efficient 
+distribution operations to both downstream and 
+upstream members of the supply chain. These factors, 
+in general, are associated with maximising the pro-
+ductivity of the warehouse operations. Findings also 
+reveal that the varying priorities of the decision-
+makers have little impact on the group decision, both 
+at identifying priority criteria and the best warehouse 
+location under TOPSIS, which implies that their 
+degree of knowledge and expertise is comparable to  
+a certain extent. This work demonstrates the efficacy 
+of using the TOPSIS in warehouse location decisions 
+under a significant number of criteria, along with an 
+expert group who is tasked with making judgment 
+elicitations. Due to the efficiency and tractability of 
+the required computations, the TOPSIS method pro-
+vides a useful, practical tool for analysts and decision-
+makers with limited technical computational 
+expertise in addressing the warehouse location prob-
+lem.
+Nevertheless, this work is not free from limita-
+tions. First, the findings in this work, to some extent, 
+are dependent on the case conditions. Thus, these 
+findings may not reflect other cases with different 
+conditions and must be adopted with care. Second, 
+the limited impact of homogeneous knowledge and 
+expertise of experts on the group decision may be 
+anecdotal evidence. A more controlled investigation 
+on such a claim may serve as grounds for future work. 
+Volume 12 • Issue 4 • 202035
+Engineering Management in Production and ServicesThird, the TOPSIS method works well not only with  
+a considerable number of criteria but also for a sig-
+nificant number of alternatives. Future works may be 
+extended to multiple warehouse location alternatives. 
+Fourth, it is also possible to explore a group decision-
+making environment where a criterion is evaluated 
+by a decision-maker with a more significant amount 
+of knowledge and expertise. For instance, a criterion 
+for traffic access could be better assessed by a vehicle 
+operator than a CEO. Lastly, other extensions of 
+TOPSIS, such as the use of standard fuzzy sets, hesi-
+tant fuzzy sets, type-2 fuzzy sets, neutrosophic sets, 
+and grey theory, under a group decision-making 
+process, could be explored in future work.
+Literature
+Alberto, P . (2000). The logistics of industrial location de-
+cisions: An application of the analytic hierarchy 
+process methodology. International Journal of Lo-
+gistics: Research and Applications, 3(3), 273-289. doi: 
+10.1080/713682767
+An, Y ., Zeng, B., Zhang, Y ., & Zhao, L. (2014). Reliable p-
+median facility location problem: two-stage robust 
+models and algorithms. Transportation Research 
+Part B: Methodological, 64, 54-72. doi: 10.1016/j.
+trb.2014.02.005
+Ardjmand, E., Park, N., Weckman, G., & Amin-Naseri, M. 
+R. (2014). The discrete Unconscious search and its 
+application to uncapacitated facility location prob-
+lem. Computers & Industrial Engineering, 73, 32-40. 
+doi: 10.1016/j.cie.2014.04.010
+Athawale, V ., Chatterjee, P ., & Chakraborty, S. (2012). De-
+cision making for facility location selection using 
+PROMETHEE II method. International Journal of 
+Industrial and Systems Engineering, 11(1-2), 16-30. 
+doi: 10.1504/IJISE.2012.046652
+Aydin, N., & Murat, A. (2013). A swarm intelligence based 
+sample average approximation algorithm for the ca-
+pacitated reliable facility location problem. Interna -
+tional Journal of Production Economics, 145(1), 173-
+183. doi: 10.1016/j.ijpe.2012.10.019
+Behzadian, M., Otaghsara, S. K., Y azdani, M., & Ignatius, 
+J. (2012). A state-of the-art survey of TOPSIS ap-
+plications. Expert Systems with Applications, 39(17), 
+13051-13069. doi: 10.1016/j.eswa.2012.05.056
+Boltürk, E., Çevik Onar, S., Öztayşi, B., Kahraman, C.,  
+& Goztepe, K. (2016). Multi-attribute warehouse lo-
+cation selection in humanitarian logistics using hesi-
+tant fuzzy AHP . International Journal of the Analytic 
+Hierarchy Process, 8(2), 271-298. doi: 10.13033/ijahp.
+v8i2.387
+Brunaud, B., Bassett, M. H., Agarwal, A., Wassick, J. M.,  
+& Grossmann, I. E. (2018). Efficient formulations for 
+dynamic warehouse location under discrete transpor -
+tation costs. Computers & Chemical Engineering, 111, 
+311-323. doi: 10.1016/j.compchemeng.2017.05.011Büyüközkan, G., & Uztürk, D. (2017, July). Combined QFD 
+TOPSIS approach with 2-tuple linguistic informa-
+tion for warehouse selection. In 2017 IEEE interna-
+tional conference on fuzzy systems (FUZZ-IEEE) (pp. 
+1-6). IEEE. doi: 10.1109/FUZZ-IEEE.2017.8015684
+Chan, F. T. S., Kumar, N., & Choy, K. L. (2007). Decision-
+making approach for the distribution centre loca-
+tion problem in a supply chain network using the 
+fuzzy-based hierarchical concept. Proceedings of the 
+Institution of Mechanical Engineers, Part B: Journal 
+of Engineering Manufacture, 221(4), 725-739. doi: 
+10.1243/09544054JEM526
+Cheng, E. W ., Li, H., & Yu, L. (2005). The analytic net-
+work process (ANP) approach to location selection:  
+a shopping mall illustration. Construction Innova -
+tion, 5(2), 83-98. doi: 10.1108/14714170510815195
+Chou, S. Y ., Chang, Y . H., & Shen, C. Y . (2008). A fuzzy 
+simple additive weighting system under group deci-
+sion-making for facility location selection with ob-
+jective/subjective attributes. European Journal of Op-
+erational Research, 189(1), 132-145. doi: 10.1016/j.
+ejor.2007.05.006
+Chu, T. C. (2002). Facility location selection using fuzzy 
+TOPSIS under group decisions. International 
+Journal of Uncertainty, Fuzziness and Knowledge-
+based systems, 10(6), 687-701. doi: 10.1142/
+S0218488502001739
+Colson, G., & Dorigo, F. (2004). A public warehouses se-
+lection support system. European Journal of Opera-
+tional Research, 153(2), 332-349. doi: 10.1016/S0377-
+2217(03)00156-5
+Cura, T. (2010). A parallel local search approach to solv-
+ing the uncapacitated warehouse location problem. 
+Computers & Industrial Engineering, 59(4), 1000-
+1009. doi: 10.1016/j.cie.2010.09.012
+Demirel, T., Demirel, N. Ç., & Kahraman, C. (2010). Multi-
+criteria warehouse location selection using Choquet 
+integral. Expert Systems with Applications, 37(5), 
+3943-3952. doi: 10.1016/j.eswa.2009.11.022
+Deng, H., Y eh, C. H., & Willis, R. J. (2000). Inter-company 
+comparison using modified TOPSIS with objective 
+weights. Computers & Operations Research, 27(10), 
+963-973. doi: 10.1016/S0305-0548(99)00069-6
+Dey, B., Bairagi, B., Sarkar, B., & Sanyal, S. K. (2013). A hy-
+brid fuzzy technique for the selection of warehouse 
+location in a supply chain under a Utopian environ-
+ment. International Journal of Management Science 
+and Engineering Management, 8(4), 250-261. doi: 
+10.1080/17509653.2013.825075
+Dey, B., Bairagi, B., Sarkar, B., & Sanyal, S. K. (2016). Ware-
+house location selection by fuzzy multi-criteria deci-
+sion making methodologies based on subjective and 
+objective criteria. International Journal of Manage-
+ment Science and Engineering Management, 11(4), 
+262-278. doi: 10.1080/17509653.2015.1086964
+Dey, B., Bairagi, B., Sarkar, B., & Sanyal, S. K. (2017). 
+Group heterogeneity in multi member decision 
+making model with an application to warehouse 
+location selection in a supply chain. Computers  
+& Industrial Engineering, 105, 101-122. doi: 10.1016/j.
+cie.2016.12.025
+36
+Volume 12 • Issue 4 • 2020Engineering Management in Production and ServicesDogan, I. (2012). Analysis of facility location model using 
+Bayesian Networks. Expert Systems with Applications, 
+39(1), 1092-1104. doi: 10.1016/j.eswa.2011.07.109
+Emeç, Ş., & Akkaya, G. (2018). Stochastic AHP and fuzzy 
+VIKOR approach for warehouse location selection 
+problem. Journal of Enterprise Information Manage -
+ment, 31(6), 950-962. doi: 10.1108/JEIM-12-2016-
+0195
+Franek, J., & Kashi, K. (2017). Application of hybrid madm 
+methods for performance evaluation in manufactur -
+ing. Forum Scientiae Oeconomia, 5(2), 41-54. doi: 
+10.23762/fso_vol5no2_17_4
+García, J. L., Alvarado, A., Blanco, J., Jiménez, E., Maldona-
+do, A. A., & Cortés, G. (2014). Multi-attribute evalu-
+ation and selection of sites for agricultural product 
+warehouses based on an analytic hierarchy process. 
+Computers and Electronics in Agriculture, 100, 60-69. 
+doi: 10.1016/j.compag.2013.10.009
+Ghaderi, A., & Jabalameli, M. S. (2013). Modeling the bud-
+get-constrained dynamic uncapacitated facility loca-
+tion–network design problem and solving it via two 
+efficient heuristics: a case study of health care. Math -
+ematical and Computer Modelling, 57(3-4), 382-400. 
+doi: 10.1016/j.mcm.2012.06.017
+Guastaroba, G., & Speranza, M. G. (2014). A heuristic 
+for BILP problems: the single source capacitated 
+facility location problem. European Journal of Op-
+erational Research, 238(2), 438-450. doi: 10.1016/j.
+ejor.2014.04.007
+Hakim, R. T., & Kusumastuti, R. D. (2018). A model to de-
+termine relief warehouse location in East Jakarta us-
+ing the analytic hierarchy process. International Jour -
+nal of Technology, 9(7), 1405-1414. doi: 10.14716/
+ijtech.v9i7.1596
+He, J., Feng, C., Hu, D., & Liang, L. (2017). A decision 
+model for emergency warehouse location based on 
+a novel stochastic MCDA method: evidence from 
+China. Mathematical Problems in Engineering, 2017, 
+7804781. doi: 10.1155/2017/7804781
+Ho, S. C. (2015). An iterated tabu search heuristic for the 
+single source capacitated facility location problem. 
+Applied Soft Computing, 27, 169-178. doi: 10.1016/j.
+asoc.2014.11.004
+Huang, H. C., & Li, R. (2008). A k-product uncapacitated 
+facility location problem. European Journal of Op-
+erational Research, 185(2), 552-562. doi: 10.1016/j.
+ejor.2007.01.010
+Hung, C. C., & Chen, L. H. (2009, March). A fuzzy TOPSIS 
+decision making model with entropy weight under 
+intuitionistic fuzzy environment. In Proceedings of 
+the International Multiconference of Engineers and 
+Computer Scientists (vol. 1, pp. 13–16). IMECS Hong 
+Kong.
+Hwang, C., & Y oon, K. (1981). Multiple attribute decision 
+making: Methods and applications . Berlin, Germany: 
+Springer.
+Jha, M. K., Raut, R. D., Gardas, B. B., & Raut, V . (2018). 
+A sustainable warehouse selection: an interpretive 
+structural modelling approach. International Journal 
+of Procurement Management, 11(2), 201-232. doi: 
+10.1504/IJPM.2018.090025Kabak, M., & Keskin, İ. (2018). Hazardous materials ware-
+house selection based on GIS and MCDM. Arabian 
+Journal for Science and Engineering, 43(6), 3269-
+3278. doi: 10.1007/s13369-018-3063-z
+Kelemenis, A., & Askounis, D. (2010). A new TOPSIS-
+based multi-criteria approach to personnel selection. 
+Expert Systems with Applications, 37(7), 4999-5008. 
+doi: 10.1016/j.eswa.2009.12.013
+Kim, G., Park, C. S., & Y oon, K. P . (1997). Identifying in-
+vestment opportunities for advanced manufacturing 
+systems with comparative-integrated performance 
+measurement. International Journal of Produc-
+tion Economics, 50(1), 23-33. doi: 10.1016/S0925-
+5273(97)00014-5
+Klose, A., & Görtz, S. (2007). A branch-and-price algo-
+rithm for the capacitated facility location problem. 
+European Journal of Operational Research, 179(3), 
+1109-1125. doi: 10.1016/j.ejor.2005.03.078
+Korpela, J., & Tuominen, M. (1996). A decision aid in ware-
+house site selection. International Journal of Produc-
+tion Economics, 45(1-3), 169-180. doi: 10.1016/0925-
+5273(95)00135-2
+Kratica, J., Dugošija, D., & Savić, A. (2014). A new mixed 
+integer linear programming model for the multi 
+level uncapacitated facility location problem. Applied 
+Mathematical Modelling, 38(7-8), 2118-2129. doi: 
+10.1016/j.apm.2013.10.012
+Kuo, M. S. (2011). Optimal location selection for an inter -
+national distribution center by using a new hybrid 
+method. Expert Systems with Applications, 38(6), 
+7208-7221. doi: 10.1016/j.eswa.2010.12.002
+Kutlu Gündoğdu, F., & Kahraman, C. (2019). A novel 
+VIKOR method using spherical fuzzy sets and its 
+application to warehouse site selection. Journal of 
+Intelligent & Fuzzy Systems, 37(1), 1197-1211. doi: 
+10.3233/JIFS-182651
+Lee, S. M., Green, G. I., & Kim, C. S. (1980). A multicrite-
+ria warehouse location model. Academy of Manage-
+ment Proceedings, 1980(1), 317-321. doi: 10.5465/
+ambpp.1980.4977851
+Li, H., Lv, T., & Li, Y . (2015). The tractor and semitrailer 
+routing problem with many-to-many demand con-
+sidering carbon dioxide emissions. Transportation 
+Research Part D: Transport and Environment, 34, 68-
+82. doi: 10.1016/j.trd.2014.10.004
+Li, J., Chu, F., Prins, C., & Zhu, Z. (2014). Lower and up-
+per bounds for a two-stage capacitated facility loca-
+tion problem with handling costs. European Jour -
+nal of Operational Research, 236(3), 957-967. doi: 
+10.1016/j.ejor.2013.10.047
+MacCarthy, B. L., & Atthirawong, W . (2003). Factors affect-
+ing location decisions in international operations- 
+a Delphi study. International Journal of Operations 
+& Production Management, 23(7), 794-818. doi: 
+10.1108/01443570310481568
+Melachrinoudis, E., & Min, H. (2000). The dynamic reloca-
+tion and phase-out of a hybrid, two-echelon plant/
+warehousing facility: A multiple objective approach. 
+European Journal of Operational Research, 123(1), 
+1-15. doi: 10.1016/S0377-2217(99)00166-6
+Monthatipkul, C. (2016). A non-linear program to find an 
+approximate location of a second warehouse: A case 
+Volume 12 • Issue 4 • 202037
+Engineering Management in Production and Servicesstudy. Kasetsart Journal of Social Sciences, 37(3), 190-
+201. doi: 10.1016/j.kjss.2016.08.007
+Nevima, J., & Kiszová, Z. (2017). Modified human devel-
+opment index and its weighted alternative – the case 
+of Visegrad Four plus Austria and Slovenia.  Forum 
+Scientiae Oeconomia , 5(2), 102-111. doi: 10.23762/
+fso_vol5no2_17_8
+Nezhad, A. M., Manzour, H., & Salhi, S. (2013). Lagrang-
+ian relaxation heuristics for the uncapacitated single-
+source multi-product facility location problem. In -
+ternational Journal of Production Economics, 145(2), 
+713-723. doi: 10.1016/j.ijpe.2013.06.001
+Ocampo, L., & Clark, E. (2015). A sustainable manufac-
+turing strategy decision framework in the context 
+of multi-criteria decision-making. Jordan Journal of 
+Mechanical & Industrial Engineering, 9 (3), 177-186.
+Ocampo, L. A. (2019). Applying fuzzy AHP–TOPSIS 
+technique in identifying the content strategy of sus-
+tainable manufacturing for food production. En -
+vironment, Development and Sustainability, 21(5), 
+2225-2251. doi: 10.1007/s10668-018-0129-8
+Özcan, T., Çelebi , N., & Esnaf, Ş. (2011). Comparative 
+analysis of multi-criteria decision making method-
+ologies and implementation of a warehouse location 
+selection problem. Expert Systems with Applications, 
+38(8), 9773-9779. doi: 10.1016/j.eswa.2011.02.022
+Ozsen, L., Coullard, C. R., & Daskin, M. S. (2008). Ca-
+pacitated warehouse location model with risk pool-
+ing. Naval Research Logistics, 55(4), 295-312. doi: 
+10.1002/nav.20282
+Rahmani, A., & MirHassani, S. A. (2014). A hybrid Firefly-
+Genetic Algorithm for the capacitated facility loca-
+tion problem. Information Sciences, 283, 70-78. doi: 
+10.1016/j.ins.2014.06.002
+Rakas, J., Teodorović, D., & Kim, T. (2004). Multi-objective 
+modeling for determining location of undesirable 
+facilities. Transportation Research Part D: Trans-
+port and Environment, 9(2), 125-138. doi: 10.1016/j.
+trd.2003.09.002
+Rao, C., Goh, M., Zhao, Y ., & Zheng, J. (2015). Location 
+selection of city logistics centers under sustainability. 
+Transportation Research Part D: Transport and Envi-
+ronment, 36, 29-44. doi: 10.1016/j.trd.2015.02.008
+Rath, S., & Gutjahr, W . J. (2014). A math-heuristic for the 
+warehouse location–routing problem in disaster re-
+lief. Computers & Operations Research, 42, 25-39. doi: 
+10.1016/j.cor.2011.07.016
+Raut, R. D., Narkhede, B. E., Gardas, B. B., & Raut, V . 
+(2017). Multi-criteria decision making approach: 
+a sustainable warehouse location selection prob-
+lem. International Journal of Management Concepts 
+and Philosophy, 10(3), 260-281. doi: 10.1504/IJM-
+CP .2017.085834
+Resende, M. G., & Werneck, R. F. (2006). A hybrid multi-
+start heuristic for the uncapacitated facility location 
+problem. European Journal of Operational Research, 
+174(1), 54-68. doi: 10.1016/j.ejor.2005.02.046
+Roh, S. Y ., Jang, H. M., & Han, C. H. (2013). Warehouse 
+location decision factors in humanitarian relief lo-
+gistics. The Asian Journal of Shipping and Logistics, 
+29(1), 103-120. doi: 10.1016/j.ajsl.2013.05.006Roh, S. Y ., Shin, Y . R., & Seo, Y . J. (2018). The pre-positioned 
+warehouse location selection for international hu-
+manitarian relief logistics. The Asian Journal of Ship -
+ping and Logistics, 34(4), 297-307. doi: 10.1016/j.
+ajsl.2018.12.003
+Roh, S., Pettit, S., Harris, I., & Beresford, A. (2015). The pre-
+positioning of warehouses at regional and local levels 
+for a humanitarian relief organisation. International 
+Journal of Production Economics, 170, 616-628. doi: 
+10.1016/j.ijpe.2015.01.015
+Rosenwein, M. B. (1996). A comparison of heuristics for 
+the problem of batching orders for warehouse selec-
+tion. International Journal of Production Research, 
+34(3), 657-664. doi: 10.1080/00207549608904926
+Roszkowska, E. (2011). Multi-criteria decision making 
+models by applying the TOPSIS method to crisp and 
+interval data. Multiple Criteria Decision Making . Uni-
+versity of Economics in Katowice, ’10-11, 200-230.
+Roy, B. (1990). The outranking approach and the founda-
+tions of ELECTRE methods. In Bana e Costa C.A. 
+(eds). Readings in multiple criteria decision aid 
+(pp. 155-183). Springer, Berlin, Heidelberg. doi: 
+10.1007/978-3-642-75935-2_8
+Roy, B. (1991). The outranking approach and the founda-
+tions of ELECTRE methods. Theory and Decision, 
+31(1), 49-73. doi: 10.1007/BF00134132
+Saaty, T. L. (1980). The analytic hierarchy process. McGraw-
+Hill, New Y ork.
+Shih, H. S., Shyur, H. J., & Lee, E. S. (2007). An extension 
+of TOPSIS for group decision making. Mathemati -
+cal and Computer Modelling, 45(7-8), 801-813. doi: 
+10.1016/j.mcm.2006.03.023
+Shukla, A., Agarwal, P ., Rana, R. S., & Purohit, R. (2017). 
+Applications of TOPSIS algorithm on various man-
+ufacturing processes: a review. Materials Today: 
+Proceedings, 4 (4), 5320-5329. doi: 10.1016/j.mat-
+pr.2017.05.042
+Singh, R. K., Chaudhary, N., & Saxena, N. (2018). Selec-
+tion of warehouse location for a global supply chain: 
+A case study. IIMB Management Review, 30(4), 343-
+356. doi: 10.1016/j.iimb.2018.08.009
+Stankevičienė, J., & Nikanorova, M. (2020). Eco-innovation 
+as a pillar for sustainable development of circular 
+economy. Business: Theory and Practice , 21(2), 531-
+544. doi: 10.3846/btp.2020.12963
+Temur, G. T. (2016). A novel multi attribute decision mak-
+ing approach for location decision under high un-
+certainty. Applied Soft Computing, 40, 674-682. doi: 
+10.1016/j.asoc.2015.12.027
+Tyagi, R., & Das, C. (1995). Manufacturer and warehouse 
+selection for stable relationships in dynamic whole-
+saling and location problems. International Journal of 
+Physical Distribution & Logistics Management, 25(6), 
+54-72. doi: 10.1108/09600039510093276
+Vanichchinchai, A., & Apirakkhit, S. (2018). An identifica-
+tion of warehouse location in Thailand. Asia Pacific 
+Journal of Marketing and Logistics, 30(3), 749-758. 
+doi: 10.1108/APJML-10-2017-0229
+Vavrek, R., Adamisin, P ., & Kotulic, R. (2017). Multi-cri-
+teria evaluation of municipalities in Slovakia - case 
+study in selected districts. Polish Journal of Man -
+38
+Volume 12 • Issue 4 • 2020Engineering Management in Production and Servicesagement Studies, 16(2), 290-301. doi: 10.17512/
+pjms.2017.16.2.25
+Vlachopoulou, M., Silleos, G., & Manthou, V . (2001). Geo-
+graphic information systems in warehouse site selec-
+tion decisions. International Journal of Production 
+Economics, 71(1-3), 205-212. doi: 10.1016/S0925-
+5273(00)00119-5
+Wagner, M. R., Bhadury, J., & Peng, S. (2009). Risk manage-
+ment in uncapacitated facility location models with 
+random demands. Computers & Operations Research, 
+36(4), 1002-1011. doi: 10.1016/j.cor.2007.12.008
+Weber, A. (1909). Ueber den Standort der Industrieni. TuK-
+bingen: J.C.B. Mohr. [English translation: The Theory 
+of the Location of Industries. Chicago: Chicago Uni-
+versity Press, 1929].
+Weber, A. (1929) (translated by Carl J. Friedrich from We-
+ber’s 1909 book). Theory of the location of industries. 
+Chicago: The University of Chicago Press.
+Wutthisirisart, P ., Sir, M. Y ., & Noble, J. S. (2015). The two-
+warehouse material location selection problem. In -
+ternational Journal of Production Economics, 170, 
+780-789. doi: 10.1016/j.ijpe.2015.07.008
+Xifeng, T., Ji, Z., & Peng, X. (2013). A multi-objective 
+optimization model for sustainable logistics facil-
+ity location. Transportation Research Part D: Trans-
+port and Environment, 22, 45-48. doi: 10.1016/j.
+trd.2013.03.003
+Y adav, S. K., Joseph, D., & Jigeesh, N. (2018). A review on 
+industrial applications of TOPSIS approach. Inter -
+national Journal of Services and Operations Manage-
+ment, 30(1), 23-28. doi: 10.1504/IJSOM.2018.091438
+Y ap, J. Y . L., Ho, C. C., & Ting, C. -Y . (2019). A systematic 
+review of the applications of multi-criteria decision-
+making methods in site selection problems. Built En -
+vironment Project and Asset Management, 9(4), 548-
+563. doi: 10.1108/BEPAM-05-2018-0078
+Y ou, M., Xiao, Y ., Zhang, S., Y ang, P ., & Zhou, S. (2019). Op-
+timal mathematical programming for the warehouse 
+location problem with Euclidean distance lineariza-
+tion. Computers & Industrial Engineering, 136, 70-79. 
+doi: 10.1016/j.cie.2019.07.020
+Volume 12 • Issue 4 • 202039
+Engineering Management in Production and ServicesSource Location selection criteria
+Özcan et al. (2011)unit price; stock holding capacity; average distance to main supplier; average distance to shops; movement 
+flexibility
+Dey et al. (2017) availability of markets; transportation facility; space availability; costs
+Demirel et al. (2010) costs; labour characteristics; infrastructure; markets; macro-environment
+García et al. (2014)accessibility to the area; distance; costs; security of the region; local acceptance of the company; company 
+needs
+Alberto (2000)environmental aspects; costs; quality of living; local incentives; time reliability provided to customers; 
+response flexibility to customers’ demands; integration with customers
+Chan et al. (2007) cost expected; traffic access; market opportunity; quality of living; local incentives
+Dogan (2012)quality of labour; quality of suppliers; demographics; geographical location; quality of life; financial ef -
+ficiency; quality of transportation; government efficiency; quality and infrastructure; regulatory; social and 
+cultural factors; economic performance 
+MacCarthy and Atthri -
+rawong (2003)Costs; labour characteristics; infrastructure; proximity to suppliers; proximity to markets/customers; prox -
+imity to parent company’s facilities; proximity to competition; quality of life; legal and regulatory frame -
+work; economic factors; government and political factors; social and cultural factors; characteristics of a 
+specific location
+Roh et al. (2013) location; logistics; national stability; cost; cooperation 
+Melachrinoudis and 
+Min (2000)cost; traffic access; local incentives
+Kuo (2011)port rate; import/export volume; location resistance; extension transportation convenience; trans-ship -
+ment time; one-stop service; information abilities; port and warehouse facilities; port operation system; 
+density of shipping line
+Rao et al. (2015)price of acquiring land; upside delivery flexibility; transportation conditions; service level; human resources 
+condition; environmental protection level; impact on ecological landscape; natural conditions; public facili -
+ties condition; security; comply with sustainability laws and regulations; impact on nearby residents; impact 
+on traffic congestion
+Colson and Dorigo 
+(2004)surface of storage; volume of storage; general storage; storage of dangerous items; temperature-controlled 
+storage; separated storage areas; heating; humidity-controlled environment; ventilation-controlled environ -
+ment; insulated roof and walls; office(s) present on site; distance from nearest motorway; connection to 
+rail; connection to waterways; certified to ISO 9001/9002; certified to SQAS; certified to HACCP; daily open -
+ing hours; customs on site; bonded warehouse; feigned warehouse; simple inventory recording; real inven-
+tory management; use of bar codes or tags; interfaced computer system; RF communications; (Re-)packag-
+ing; order management; transport/distribution; only for receipts and issues; mixed with trans-shipment for 
+third parties; forklift trucks-electric; forklift trucks-gas; forklift trucks-diesel/petrol; tractors for terminal; 
+height stacking; open loading/unloading docks; covered loading/unloading docks; dock levellers; automatic 
+docks; and docks for swap bodies/semi-trailersAppendix 1. Comparative analysis of well-known multi-criteria decision-making methodologies (adopted from Özcan et al., 2011)
+Appendix 2. Some warehouse location selection criteriaCharacteristics AHP TOPSIS ELECTRE I ELECTRE II ELECTRE III
+Core processCreating hierarchal 
+structure and pair -
+wise comparison 
+matricesCalculating distance 
+to positive and nega-
+tive ideal pointDetermining concor -
+dance and discor -
+dance indexesDetermining concor -
+dance and discor -
+dance indexesDetermining con -
+cordance and dis -
+cordance  indexes 
+with indifference and 
+preference thresholds
+Necessity to 
+quantify the 
+relative impor -
+tance of criteriaYes Yes Yes Yes Yes
+Determining of 
+weightsPairwise comparison 
+matrices. 1-9 scaleNo specific method. 
+Linear or vector nor -
+malisation No specific method. 
+Based on decision 
+makerNo specific method. 
+Based on decision 
+makerNo specific method. 
+Based on the decision 
+maker
+Number and 
+type of outrank -
+ing relationsN*(N-1)/2 1 2 2 1 fuzzy
+Consistency 
+checkProvided None None None Provided
+Problem struc-
+tureLittle number of alter -
+native and criteria or 
+qualitative dataLarge number of al -
+ternative and criteria, 
+objective and quanti-
+tative dataLarge number of 
+alternatives and 
+criteria, objective and 
+quantitative dataLarge number of 
+alternatives and 
+criteria, objective and 
+quantitative dataObjective and quanti-
+tative data, usage of 
+fuzzy logic
+Final results Global, net ordering Global, net ordering A kernel A partial pre-order A partial pre-order

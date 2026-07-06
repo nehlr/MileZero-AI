@@ -1,0 +1,658 @@
+Measuring the Importance of Warehouse…      MARITIME FACULTY JOURNAL 
+ 
+291 
+ Received:12.12.2021  
+Accepted:16.05.2022  Dokuz Eylül University  
+Maritime Faculty Journal 
+Published Online:30.12.2022  Vol:14 Issue: 2 Year:2022 pp:291-305 
+DOI: 10.18613/deudfd.1035664 E-ISSN: 2458-9942 
+Research Article  
+ 
+MEASURING THE IMPORTANCE OF WAREHOUSE 
+LOCATION SELECTION CRITERIA USING BEST-WORST 
+METHOD 
+Volkan ÇET İNKAYA1 
+Onur AKDA Ş2 
+      
+ABSTRACT 
+ 
+Warehouse performance has a major role in improving the effectiveness of supply 
+chain considering especially the locatio n where the warehous ing activities occur. 
+Warehouse location selection criteria have been widely used by  decision-makers 
+and researchers to achieve operational efficien cy and reduce operational costs in 
+the supply chain. On the other hand, the location of the warehouse is usually 
+evaluated and decided on individual basis. This research aims to reveal the 
+importance levels of the warehouse selection criteria. In this context, the relative 
+weights of the warehouse location selectio n criteria obtained from the literature 
+were determined using the Best Worst Me thod (BWM), a multi criteria decision 
+making method.  A questionnaire form was sent to five warehouse professional 
+experts in different co mpanies including supplie rs, manufacturers, and 
+distributors in Turkey. As re sult of the study, it has been seen that the “Market” 
+criterion (sub-criteria, market size and demand quantity) has a dominant effect on 
+the selection of warehouse loca tion compared to others.  
+  
+Key Words:  Warehouse location selection, BWM (Best-Worst Method),  
+importance of wareh ouse location criteria
+                                                 
+1    Dr. ,Dokuz Eylül University, Maritime Faculty, volkan.cetinkaya@deu.edu.tr 
+Orcid no: 0000-0001-8921-1311 
+2 Asst. Prof. Dr., Dokuz Eylül University, Maritime Faculty,  
+onur.akdas@deu.edu.tr,  Orcid no: 0000-0002-8622-6494 
+ 
+Measuring the Importance of Warehouse…      MARITIME FACULTY JOURNAL 
+ 
+292 
+ DEPO YER İ SEÇİM KRİTERLER İNİN ÖNEM DÜZEY İNİN 
+BWM YÖNTEM İ İLE ÖLÇÜLMES İ 
+ 
+ÖZ 
+ 
+Depo performans ı özellikle depolama aktivitelerinin gerçekle ştirildiği lokasyon 
+açısından tedarik zincirinin performans ının artt ırılmas ında önemli bir role 
+sahiptir. Depo yeri seçim kriterleri tedarik zincirinde operasyonel verimlili ği 
+sağlamak ve operasyonel maliyetleri aza ltmak için karar vericiler ve 
+araştırmac ılar taraf ından yayg ın olarak kullan ılmaktad ır. Diğer taraftan, depo 
+yeri seçimi karar ı genellikle ki şisel yarg ılara dayan ılarak al ınır. Bu çal ışma depo 
+yeri seçim kriterlerinin önem düzeylerinin ortaya konmas ı amac ını taşımaktad ır. 
+Bu kapsamda literatürde n elde edilen depo yeri seçim kriterlerinin göreceli 
+ağırlıklar ı çok kriterli karar verme yö ntemi olan BWM yöntemi kullan ılarak tespit  
+edilmiştir.   Çal ışma kapsam ında Türkiye’de yerle şik tedarikçiler, üreticiler ve 
+dağıtıcılar olmak üzere farkl ı firmalardan be ş depo uzman ına anket formu 
+gönderilmi ştir. Çal ışman ın sonucunda ‘Pazar’ kriterinin (alt kriterleri pazar 
+büyüklüğü ve talep miktar ı) depo yeri seçiminde di ğer kriterlere göre bask ın bir 
+etkiye sahip oldu ğu görülmü ştür. 
+. Keywords: Depo yeri se çimi, BWM Metodu,  depo yeri seçim kriterleri önem 
+düzeyi
+  
+ 
+ 
+1. INTRODUCTION 
+ 
+Warehousing system must be adequately synchronized with other 
+supply chain activities and should correspond to all material and product 
+needs in all stages of supply chain. The efficient and effective movement of goods from raw material sites to processing facilities, component 
+fabrication plants, finished goods as sembly plants, distribution centers, 
+warehouses, retailers, and customers is critical in today’s competitive 
+environment (Demirel et al. 2010).  
+The warehouse site location decision has an intensive effect on the 
+investment costs, operating costs and distribution strategy of the company 
+that has an important role in increasing customer service level.  
+Warehouse location is even more crucial as misguided location can 
+cause disruptions in supply chain activities. Key supply chain goal is 
+improving on-time delivery with mini mum costs and efficiency. So, supply 
+chain managers must select the warehouse location that verifies a balance 
+between satisfying customer demands and enhancing efficiency in 
+warehouse operations .  Warehouse location selection is a complex process 
+where multiple, both tangible and intangible, criteria need to be considered. 
+Since the strategic objectives in cost reduction and customer service level 
+Measuring the Importance of Warehouse…      MARITIME FACULTY JOURNAL 
+ 
+293 
+ decisions warehouse location can be supported by a variety of models 
+based on quantitative and qualitative  factors (Vlachopoulou et al. 2001). 
+One of the models put forward to evaluate location problem based on selected criteria is multiple crit eria decision-making (MCDM) method. 
+Many criteria have an impact on th e selected warehouse location which 
+makes this a typical multiple-criteria decision-making (MCDM) problem. 
+MCDM effectively deals with the intricacy of decision-making process 
+considering all decision criteria harmoniously. Although multi-criteria 
+decision-making methods generally aims to rank the alternatives by using 
+qualitative and quantitative criteria, it is necessary to rank the importance 
+level of the criteria in the first steps of the method. To measure the 
+importance of warehouse location selection criteria, this study aims to rank 
+the criteria by using a multiple-criteria decision-making (MCDM) called 
+BWM (Best-Worst Method) develope d by (Rezaei, 2015). This study 
+contributes to the warehouse location selection research subfield by answering the question of which criteria has the highest effect on location 
+decision especially by using a new multi-criteria decision method. The 
+criteria implemented in this study are obtained from literature and grouped 
+into 5 main criteria. To determine the importance of main and sub-criteria 
+and BWM (Best-Worst Method) is applied.  
+The remainder of this paper is structured as follows. The following 
+section reviews the related literature on criteria regarding warehouse 
+location selection problems. The methodology is detailed in Section 3 and 
+analysis are described in Section 4. Finally, Section 5 summarizes the 
+results of the study. 
+ 
+2. LITERATURE REVIEW 
+ 
+Location selection is an old and widely discussed decision-making 
+science field referring to determination of specific operation location of 
+economic facilities such as factories, freight and passenger terminals, 
+distribution centers, warehouses and so on. According to Korpela and 
+Tuominen (1996); the number of facilities and their location are the fundamental decisions forming the basics of logistics system design. 
+Establishment of warehouses in a logistics system has important role on 
+the efficiency of whole supply chain. 
+Farahani et al (2010) classified logistics-oriented location problems 
+into four categories as: Optimization Problems, Single and Multiple Objective Location Problems, Dete rministic and Non-Deterministic 
+Problems and Continuous and Discrete Location Problems. Ballou (1981) 
+revealed warehouse location as one of key decision area in logistics 
+systems design process. The warehouse location decision is a process 
+during which multiple criteria must be considered (Korpela and Tuominen, 
+Measuring the Importance of Warehouse…      MARITIME FACULTY JOURNAL 
+ 
+294 
+ 1996). The location alternatives for warehouse can be evaluated by using 
+a multiple criteria decision-making method (MCDM) considering 
+qualitative and quantitative criteria. Many MCDM methods have been successfully applied by past research as decision making models to support 
+warehouse location decision.  
+Traditional methods of the warehouse location selection process in 
+the extended literature range from analytic hierarchical process (AHP), 
+Simple Additive Weighting (SAW), Multi Objective Optimization on the 
+basis of Ratio Analysis (MOORA), Multi-criteria Optimization and 
+Compromise Solution (called VIKOR), Preference Ranking Organization 
+Method (PROMETHEE), Grey Relational Analysis (GRA), Complex 
+Proportional Assessment method with the applications of the Grey systems 
+theory (COPRAS-G), to Elimination and Et Choice Translating Reality 
+(ELECTRE). Korpela, J. and Tuominen, M. (1996) put forward that cost-
+oriented methods are not sufficient to develop logistics strategy and 
+suggested to consider reliability, flexibility, and compatibility by using an 
+AHP supported qualitative analysis. Garc ia et al. (2014) developed a model 
+based on AHP for agricultural product warehouses. Özcan et al. (2011) 
+compared some MCDM techniques (AHP, TOPSIS, ELECTRE and Grey 
+Theory) by implementing a warehouse location selection problem in Turkey. Singh et al. (2018) presented a fuzzy decision-making approach to 
+deal with optimal location for a warehouse in different regions of Iran on 
+the basis of different criteria. Demirel et al. (2010) identified 5 main criteria 
+for warehouse location selection from the literature and using an additive 
+operator for multi-criteria decision-making methods, named as Choquet Integral.  
+As MCDM, Linear Programming is a frequent method being applied 
+in location selection problems. Christofides and Beasley (1982) developed 
+a dynamic mixed integer model with Lagrangean relaxation approach 
+considering capacities of warehouses and compared studies about capacitated warehouse location problems.  Chen et al. (2007) proposed a 
+fuzzy decision-making method for the mu ltiple conflict objectives problem 
+in a supply chain network with demand uncertainties. MCDM and Linear 
+Programming models has applied differ ent criteria to select the best 
+location for warehouse in supply chain. These criteria focus on cost, 
+infrastructure, labor, market and government.  
+By reviewing the related literature, it is found that no such study 
+conducted in the field of warehouse location selection by using BWM 
+method.  
+ 
+Warehouse Location Selection Criteria 
+Multi-criteria decision making can be defined as the evaluation of 
+the alternatives for the purpose of selection or ranking, using a number of 
+Measuring the Importance of Warehouse…      MARITIME FACULTY JOURNAL 
+ 
+295 
+ qualitative and/or quantitative criteria that have different measurement 
+units (Özcan et al, 2011) . According to Demirel et al. (2010) the location 
+of a warehouse is generally one of the most important and strategic decision in the optimization of logistic systems and warehouse location is 
+a long-term decision and is influenced by many quantitative and qualitative 
+factors. Criteria those have the most frequency on warehouse location 
+studies are listed in Table 1. 
+ 
+Table 1: Criteria for Warehouse Location Selection 
+ 
+Main Criteria Sub-Criteria 
+COST  
+Demirel et al. (2010),  Santosa 
+and Kresna (2015), Chen et al. 
+(2007), Dey et al. (2017)  C1-Establishing costs  Chen et al. (2007),  Kelly and 
+Marucheck (1984),  Budak et al (2020), Santosa and Kresna (2015), He et al.( 2017) 
+C2-Distribution and Transportation  costs  Chen et al. 
+(2007), Vlachopoulou et al.(2001), Garcia et al. (2014) 
+C3-Handling costs  (Demirel et al.(2010), Chen et al. 
+(2007) 
+INFRASTRUCTURE 
+Demirel et al. (2010), Singh et 
+al. (2018)  I1-Building  Colson and Dorigo (2004), Vlachopoulo et 
+al. (2001), Shahparvari et al.. (2020), Colson and Dorigo 
+(2014), Farahani et al. (2010) 
+I2-Transportation infrastructure  Żak and Węgliński 
+(2014), Singh et al. (2018), Demirel et al (2010), Garcia 
+et al (2014), He et al . (2017), Vlachopoulo et al. (2001), 
+Colson and Dorigo (2014) 
+I3-Proximity to ports and hubs Kang (2020)  
+I4-Electricity, water and telecommunication  Singh et 
+al. (2018), Demirel et al.. (2010) 
+LABOR 
+Demirel et al. (2010),  
+Torabizadeh et al. (2020), 
+Kang (2020)  L1-Availability of labor force  Demirel et al. (2010), 
+Kang (2020) 
+L2-Skilled labor Demirel et al. (2010), Korpela and 
+Touminen (1996), Melachrinoudis et al. (2005) 
+MARKET  
+Kelly and Marucheck (1984) 
+(Demirel et al. (2010),  Singh et 
+al. (2018), Dey et al. ( 2017), 
+Kang (2020)  M1-Proximity to customers, suppliers and producers 
+(Demirel et al. (2010), Vlachopoulou et al (2001), Kang, 
+(2020), Shahparvari et al. (2020), Vlachopoulo et al. 
+(2001), Dey et al. (2017), Garcia et al (2014), Özcan et al. 
+(2011) 
+M2- Lead times and responsiveness  Demirel et al. 
+(2010), Melachrinoudis et al.(2005), Chen et al. (2007) 
+M3- Market size and demand quantity  Singh et al. 
+(2018), Chen et al. (2007), Santosa and Krosna (2015), 
+Vlachopoulou  et al. (2001), Christofides and Beasley 
+(1982), Kelly and Marucheck (1984) 
+M4- Scope for market growth  Singh et al (2018) 
+GOVERNMENT   
+Singh et al. (2018)  G1-Land prices  Singh et al (2018), He et al. (2017) 
+G2-Taxation policies  Singh et al (2018), Melachrinoudis 
+et al. (2005), He et al. (2017) 
+G3-Incentives  Singh et al (2018), Chen et al. (2007), 
+Demirel et al. (2010) 
+Measuring the Importance of Warehouse…      MARITIME FACULTY JOURNAL 
+ 
+296 
+  
+3. METHODOLOGY 
+ 
+Research methodology of this study has two main stages. The first 
+stage requires collecting warehouse location selection criteria through a literature review. The second stage is to use the BWM and ranking criteria 
+by assigning their weights. A systematic survey of literature has been 
+conducted to identify the criteria used in previous studies. Based on the 
+previous literature, we focused on five  main criteria and 16 sub-criteria the 
+most frequently used on warehouse location selection studies. 
+ 
+3.1.Best-Worst Method (BWM) 
+ 
+In this section, we present the multi-criteria decision-making 
+method (MCDM), called BWM (Best-Worst Method) used in this study.  
+Multi-criteria decision-making methods deal with the process of 
+making decisions in presence of multiple criteria (Rezaei et al., 2015). Different MCDM methods can be applied to rank criteria and evaluate the 
+alternatives. In this study, a multi-criteria decision-making method called 
+BWM (Best-Worst Method) and developed by Rezaei (2015) is applied to 
+determine the subjective importance weights of warehouse location 
+selection criteria. In this method, the decision-maker (DM) selects the best 
+and worst decision criteria from among the available criteria; then, using 
+paired comparisons, determines the priority of the best criterion over each 
+of other criteria as well as the priority of each criterion over the worst 
+criterion. Then, a programming model is formed, and the optimal weights 
+of the criteria are obtained by solving the model (Amiri et al., 2020). 
+BWM (Best-Worst Method) is selected in this study because of two 
+relevant concerns faced in pairwise comparison problems. The first concern related to other MCDM techniques is that the number of 
+comparisons makes the comparison process lengthier and the second one 
+is inconsistency between comparisons because of lack of concentration. 
+Instead of a complete pairwise comparison matrix, the BWM requires 
+fewer comparisons, since the comparison is conducted in a very structured way (Rezaei et al., 2018). According to Amiri et al. (2020); (BWM) is one 
+of the most important methods for dete rmining the weights of criteria or 
+options in multi-criteria decision-making (MCDM) and has attracted the 
+attention of many researchers due to its advantages such as fewer numbers 
+of comparisons and higher consistency rate. As a result, BWM requires fewer pair comparisons than previous methods such as AHP and also offers 
+more consistent comparisons (Amiri et al., 2020). 
+Measuring the Importance of Warehouse…      MARITIME FACULTY JOURNAL 
+ 
+297 
+ Although BWM is relatively a new method, it has been used by 
+number of authors in different selection problem studies. Pamucar Ecer 
+and Ecer (2020) used BWM for sustainable supplier selection while Gupta and Barua (2017) used the method for supplier selection on the base of 
+supplier’s green innovation ability.  Hosseini et al. (2021) utilized BWM 
+for weighting criteria in their sust ainable supplier selection study. BWM 
+has also been used by Qian et al. (2021) for selection green 3PL logistics 
+service provider. BWM has been used to evaluate selection criteria in 
+logistics and supply chain. While Sharma  et al. (2021) evaluated criteria of 
+barriers in Big Data Analytics in supply chain, Kaviani et al. (2020) used 
+the method to evaluate barriers to successful implementation of reverse 
+logistics in automotive industry. Rezaei et al. (2018) has measured the 
+subjective importance of logistics performance index criteria. 
+Studies that have employed the BWM reached different numbers of 
+the sample. Arsu and Uğuz Arsu (2021) carried out their BWM studies 
+with five experts to assess the set of criteria on personnel selection process. 
+Bilgiç et al. (2021)  identified renewable energy resource investment 
+criteria by BWM by taking the feedbacks of five experts. In addition, Koca 
+and Akçakaya (2021) have also employed BWM with the response of five 
+expert in the field of Design of Wearable Technological Products. Kalpoe et al. (2020) also identified the technology acceptance model of e-
+commerce users by analyzing the six experts’ answers to the questions 
+asked by BWM approach.   
+The BWM has five steps to determine the weights. The steps as 
+given by Rezaei (2015) are explained below: 
+Step 1:  Determination of a set of decision criteria. In this step, we 
+consider ൛ܿ
+ଵǡܿଶǡܿଷǡǥǡܿ௡ൟ that should be used to arrive at a decision. 
+Step 2: Determination of the best and the worst criteria through 
+decision criteria and creation of Best-to- Other’s  vector: 
+Step 3: Determination of the preference of the best criterion over all 
+the other criteria using a number between 1 and 9.  
+࡮࡭=ሺ࡮ࢇ૚ǡ࡮ࢇ૛ǡǥǤǡ࢔࡮ࢇሻ whereሺ࢐࡮ࢇ )indicates the preference of the 
+best criterion B over criterion j. 
+Step 4: Determination of the preference  of all the criteria over the 
+worst criterion using a number between 1 and 9.  
+ࢃ࡭=ሺࢇ૚ࢃǡࢇ૛ࢃǡǥǤǡࢃ࢔ࢇሻࢀ where ሺ୨୛)indicates the preference of 
+criterion j over the worst criterion. 
+Step 5:  Finding the optimal weights. ሺݓଵכ, ݓଶכǡǥǥݓ ௡כሻ 
+Optimal weights can be obtained when maximum absolute 
+differences for all j is minimized. If we also consider that the sum of the 
+weights must be equal to 1 and none of the weights can be negative, the 
+following minimax model is obtained: 
+Measuring the Importance of Warehouse…      MARITIME FACULTY JOURNAL 
+ 
+298 
+ min ݔܽ݉௝{|ݓ஻െܽ஻௝ݓ௝| , |ݓ௝െܽ௝ௐݓௐ|} 
+s.t. σݓ௝௝ = 1 
+ݓ௝ ≥ 0, for all j 
+This problem can be solved by converting it to a linear programming 
+model shown below: 
+Min 9௅ 
+s.t.  
+|ݓ஻െܽ஻௝ݓ௝| ≤ 9௅ for all j 
+|ݓ௝െܽ௝ௐݓௐ| ≤ 9௅ for all j 
+σݓ௝௝ = 1 
+ݓ௝ ≥ 0, for all j 
+Consistency ( 9௅) of comparisons close to 0 is desired (Rezaei, 
+2016). 
+ 
+3.2. Data Collection 
+ 
+We designed a BWM questionnaire form in which five main criteria 
+and sixteen sub-criteria definitions exist. BWM questionnaire form were 
+sent twelve warehousing experts (warehouse managers of BCO’s 
+(Benefical Cargo Owners) and wholesaler s) in different sectors via e-mail 
+and LinkedIn. All experts were selected precisely to get satisfactory 
+outcome from the research considering that professional experience in the 
+industry. Of these twelve experts, five completed questionnaire and sent it 
+back. We can define five experts in this  study as professionals who have 
+on average 18,2 years of manageri al experience in warehousing 
+operations. Table 2 shows the years of experience, affiliated industry 
+actors ( Digital Supply Chain Provider , Beneficial Cargo Owner, 3rd Party 
+Logistics Provider ) and the positions (Manager, Warehouse Manager) of 
+the participants. 
+ 
+Table 2: Profile of the Participants 
+In the questionnaire form, firstly warehousing experts were asked to 
+write down the best and the worst criteria through 5 main criteria. The No. of the 
+Participants Experience in 
+the Industry Affiliated Industry Actor, Position 
+1 30 years Digital Supply Chain Provider, Manager 
+2 22 years Beneficial Cargo Owner (BCO), Warehouse Manager 
+3 15 years BCO, Supply Chain Chief 
+4 14 years 3rd Party Logistics Provider, Warehouse Manager 
+5 10 years 3rd Party Logistics Provider ,Warehouse Manager 
+Measuring the Importance of Warehouse…      MARITIME FACULTY JOURNAL 
+ 
+299 
+ experts then were asked to determine the preference of the best criterion 
+over the other criteria and the preference of the worst criterion over the 
+other criteria. The same process was conducted within each criteria group for the evaluation of sub-criteria.  
+ 
+4. RESULTS AND DISCUSSION 
+In this section, we discuss the results of the study including the 
+weights and analysis of the weights about the importance level of 
+warehouse location selection criteria. 
+Regarding analysis of 5 main criteria, 4 of 5 experts have indicated 
+‘Market’ and ‘Government’ to be the most important criterion and ‘least 
+important criterion respectively. Table 3 shows the frequencies of criteria 
+selected to be most and least important by the experts. 
+ 
+Table 3: Frequencies of Criteria to Be Selected to Be Most and Least 
+Important by Experts  
+Main 
+criterion Number of 
+experts 
+indicating as 
+most 
+important Number 
+of experts 
+indicating 
+as least 
+important Sub-
+criterion Number 
+of experts 
+indicating 
+as most 
+important Number 
+of experts 
+indicating 
+as least 
+important 
+Cost 1 - C1 - 2 
+C2 5 - 
+C3 - 3 
+Infrastructure - - I1 - 1 
+I2 5 - 
+I3 - - 
+I4 - 4 
+Labor  - 1 L1 5 - 
+L2 - 5 
+Market  4 - M1  2 
+M2   
+M3 5 - 
+M4 - 3 
+Government - 4 G1 - 1 
+G2 1 4 
+G3 4 - 
+Measuring the Importance of Warehouse…      MARITIME FACULTY JOURNAL 
+ 
+300 
+ The five main criteria and sixteen sub-criteria through each other 
+were rated by five respondents. Average consistency ( 9௅) values for all 
+comparison satisfy the desired limit ( 9௅ < 0.10). Importance weight of each 
+criterion were averaged after evaluation of comparison scores of each 
+respondent. Table 4 indicates the average weights and ranks. 
+ 
+Table 4: Weights and Rankings for Main and Sub-Criteria 
+Main criterion Weight 
+score  Rank  Sub-
+criterion Weight 
+score Rank 
+Cost 0.33 2 C1 0.14 3 
+C2 0.68 1 
+C3 0.18 2 
+Infrastructure 0.15 3 I1 0.13 3 
+I2 0.34 2 
+I3 0.45 1 
+I4 0.08 4 
+Labor 0.11 4 L1 0.81 1 
+L2 0.19 2 
+Market 0.34 1 M1 0.18 3 
+M2 0.26 2 
+M3 0.47 1 
+M4 0.09 4 
+Government 0.07 5 G1 0.30 2 
+G2 0.26 3 
+G3 0.44 1 
+Measuring the Importance of Warehouse…      MARITIME FACULTY JOURNAL 
+ 
+301 
+ Most respondents considered ‘Market’  and ‘ Cost ’ as the most 
+important criteria followed by ‘Infrastructure’, as seen in the final 
+weights. ‘Government ’ and ‘Labor ’ has the lowest weight on the base of 
+respondents’ importance evaluation. Within each main criterion group, the 
+criteria considered to be the most important sub- criterion are ‘ Distribution 
+and transportation cost’ , ‘Proximity to ports and hubs’ , ‘Availability 
+of labor force’ , ‘Market volume and demand quantity’  and 
+‘Incentives’.  That Distributio n and transportation cost’ , ‘Proximity to 
+ports and hubs’ are ranked first in their own groups reinforces the 
+importance of these two criteria in the selection of warehouse location. The 
+importance of ‘ Market’ as a main criterion and ‘Market size and deman d 
+quantity’  as a sub-criterion implies that warehouse managers pay more 
+attention on economies of scale and cube-utilization while managing 
+warehouse processes. In ‘Labor’ main criteria group, two sub-criteria 
+significantly differ from each-other considering weight scores. Most experts assigned the highest priority to ‘ Availability of labor force’ . 
+However, according to Jhawar et al. (2014) it is one of the most severe and 
+immediate requirements for skill development in warehouse segment in 
+logistics systems. The requirement for skilled labor could be crucial for 
+some sectors like; electronics or food-beverage. The ranked fifth main criterion is ‘Government’ . We can conclude from the expert opinions that 
+incentives of land and fall of the land prices could emerge a location to set 
+up a warehouse in addition to ‘Market volume and demand quantity’ and 
+‘Distribution and transportation cost’ criteria.  
+ 
+5. CONCLUSIONS AND RECOMMENDATIONS 
+ 
+Warehouse location decisions have long become a crucial 
+component of supply chain systems considering the importance of 
+warehousing function in whole supply chain. Most of the location 
+decisions are made in complex environments where there are so many 
+criteria. MCDM techniques can overcome this complexity by indicating 
+the importance of warehouse location cr iteria. In this study, as a MCDM, 
+BWM is used to analyze the warehouse  location criteria. Evaluating the 
+weight of each criterion using BWM contributes to the literature on 
+warehouse location. 
+From the BWM results, we can conclude the first-ranking criterion 
+getting the most influence on selection of warehouse location is ‘Market’ . 
+‘Cost’  has been identified as another doinant criterion in the BWM 
+Analysis. Besides these two key criteria, ‘ Infrastructure’ and ‘Labor’  
+cannot be ignored, as those criteria help in selecting the right location for 
+Measuring the Importance of Warehouse…      MARITIME FACULTY JOURNAL 
+ 
+302 
+ warehouse. Governmental criteria group, consisting of ‘Land prices’ 
+Taxation policies’ and ‘Incentives’  sub-criteria is supportive. 
+This study provides many implications for academia and managers 
+of companies. Conducting BWM has employed a novel approach for 
+warehouse location problem in warehousing literature. The logistics 
+managers of supply chains can consider  these important cr iteria for their 
+warehouse site location problems. 
+As every research work, this study has a significant limitation. Our 
+study is focused on primarily warehouse location selection problems in 
+Turkey and BWM comparisons were made by only Turkish warehouse 
+managers. For better and generalized results, future studies can be 
+conducted by getting connections with warehouse managers  across two or 
+three countries. 
+For further studies, firstly it is important to conduct other MCDM 
+methods. Secondly, It is clear that many of these criteria can cause interrelation.  DEMATEL technique can be adopted in future studies in 
+order to investigate the interrelation between warehouse location selection 
+criteria. 
+ 
+RESOURCES 
+ 
+Amiri M., Tabatabaei, M.H., Ghahremanloo, M., Ghrobaee, M.K., 
+Zavadskas, E.K., Antucheviciene, J. (2020). A new fuzzy approach based 
+on BWM and fuzzy preference programming for hospital performance 
+evaluation: A case study. Applied Soft Computing Journal, 92, (2020), 1-
+13.  
+Arsu, T. and Uğuz Arsu, Ş. (2021) Evaluation of The Criteria Used in The 
+Personnel Selection Process With The Best Worst Method ,(BWM, Third 
+Sector Social Economic Review, 56 (3), 1949-1967 . 
+ Ballou, R.H. (1981). Reformulating a logistics strategy: A concern for the 
+past, present and future.  International Journal of Physical Distribution & 
+Materials Management, 11 (8), 71-83. 
+ 
+Bilgiç, S., Tor ğul, B., and Paksoy, T. (2021), Evaluation of renewable 
+energy resources with BWM for sustainable energy management. Journal 
+of Productivity, 2 (2021), 95-110  
+ 
+Budak, A., Kaya, İ., Karaşan, A., Erdo ğan, M. (2020). Real -time location 
+systems selection by using a fuzzy MCDM approach: An application in 
+humanitarian relief logistics. Applied Soft Computing Journal, 92, (2020), 
+1-21. 
+Measuring the Importance of Warehouse…      MARITIME FACULTY JOURNAL 
+ 
+303 
+ Chen, C.L., Yuan, T.W., Lee, W.C.(2007). Multi-criteria fuzzy 
+optimization for locating warehouses and distribution centers in a supply 
+chain network. Journal of Chinese Institute of Chemical Engineers, 38 
+(2007), 393-407. 
+ 
+Christofides, N., Beasley, J.E. (1982). Extensions to a Lagrangean 
+relaxation approach for the capacitated warehouse location problem. 
+European Journal of Operational Research, 12 (1983), 19-28. 
+ 
+Colson, G. and Dorigo, F. (2004). A public warehouses selection support 
+system. European Journal of Operational Research, 153 (2004), 332-349. 
+ 
+Demirel, T ., Demirel, N.Ç., Kahraman, C. (2010). Multi -criteria 
+warehouse location selection using Choquet integral. Expert Systems with 
+Applications, 37 (2010), 3943-3952. 
+ 
+Dey, B., Bairagi, B., Sarkar, B., Sanyar, S.K. (2017). Group heterogeneity 
+in multi member decision making model with an application to warehouse 
+location selection in a supply chain. Computers and Industrial 
+Engineering, 105 (2017), 101-122. 
+ 
+Farahani, R.Z., SteadieSeifi, M., Asgari, N. (2010). Multiple criteria 
+facility location problems: A survey. Applied Mathematical Modelling, 34 
+(2010), 1689-1709. 
+ García, J.L., Alvarado, A., Blanco, J., Jiménez, E., Maldonado, A.A., 
+Cortés, G. (2014). Multi -attribute evaluation and selection of sites for 
+agricultural product warehouses based on an analytic hierarchy process. 
+Computer and Electronics in Agriculture, 100 (2014), 60-69. 
+ Gupta, H., Barua, M. (2017). Supplier selection among SMEs on the basis 
+of their green innovation ability using BWM and fuzzy TOPSIS. Journal 
+of Cleaner Production . doi: 10.1016/j.jclepro.2017.03.125. 
+ 
+He, Y., Wang, X., Lin, Y., Zhou, F., Zhou, L. (2017). Sustainable decision 
+making for joint distribution center location choice. Transportation 
+Research Part D, 55, (2017), 202-216. 
+ 
+Hosseini, Z.S., Flapper, S.D., Pirayesh, M. (2021). Sustainable supplier 
+selection and order allocation under  demand, supplier availability and 
+supplier grading uncertainties. Computer and Industrial Engineering. 
+doi.org/10.1016/j.cie.2021.107811. 
+Measuring the Importance of Warehouse…      MARITIME FACULTY JOURNAL 
+ 
+304 
+ Jhawar, A., Garg, S.K., Shikha, N., Khera, N. (2014). Analysis of skilled 
+work force effect on the logistics performance index -case study form 
+India. Logistics Research, 7, (117), 1-10. 
+ 
+Kang, S. (2020). Warehouse location choice: A case study in Los Angeles, 
+CA. Journal of Transport Geography, 88, 966-923. 
+ 
+Kalpoe, R., Asghari, H., Rezaei, J. (2020). A novel group multi-criteria 
+decision- making approach for establishing users’ technology acceptance 
+in the context of apparel e-commerce. The First International Workshop 
+on Best-Worst Method. 1st Session. 11-12 June 2020 Delft, The 
+Netherlands. 
+ 
+Kaviani, M.A., Tavana, M., Michnik, J., Kumar, A. (2020). An integrated 
+framework for evaluating the barriers to successful implementation of reverse logistics in the automotive industry. Journal of Cleaner 
+Production,  272, (122714).  
+ 
+Kelly, D.L., Marucheck, A.S. (1984). Planning horizon results for the 
+dynamic warehouse location problem. Journal of Operations 
+Management, 4, (3), 271-294. 
+ 
+Koca, G., Akçakaya , E.D.U. (2021). Evaluation of factors effective in the 
+design of wearable technological products using the best-worst method 
+(BWM). BSEU Journal of Science, 8(1), 136-150. 
+ 
+Korpela, J. ve Tuominen, M. (1996). A decision aid in warehouse site 
+selection. International Journal of Production Economics, 45 (1996), 169-
+180. 
+ Melachrinoudis, E., Messac, A., Min, H. (2005). Consolidating a 
+warehouse network: A physical programming approach. International 
+Journal of Production Economics, 97, (2005), 1-17. 
+ 
+Özcan, T., Çelebi, N., Esnaf, Ş. (2011). Comparative analysis of multi -
+criteria decision-making methodologies and implementation of a 
+warehouse location selection problem. Expert Systems with Application, 
+38 (2011), 9773-9779. 
+ 
+Pamucar, D. Ecer, F. (2020). Prioritizing the weights of the evaluation 
+criteria under fuzziness: the fuzzy full consistency method. Facta 
+Universitatis Series Mechanical Engineering, 3, (2020), 419-437.  
+Measuring the Importance of Warehouse…      MARITIME FACULTY JOURNAL 
+ 
+305 
+ Qian, X., Fang, S.C., Yin, M., Huang, M ., Li, X. (2021), Selecting green third-
+party logistics providers for a loss-avers e fourth party logistics provider in a 
+multiattribute reverse auction. Information Sciences, 547, (2021), 357-377. 
+ 
+Rezaei, J. (2015). Best-worst multi-criteria decision-making method. Omega, 
+53 (2015), 49-57. 
+ 
+Rezaei, J., Roekel, W.S., Tavasszy, L. (2018). Measuring the relative 
+importance of the logistics performance index indicators using Best Worst 
+Method. Transport Policy, 68 (2018), 158-169.  
+ 
+Rezaei, J., Wang, J., Tavasszy, L. (2015). Linking supplier development to 
+supplier segmentation using Best Worst Method. Expert Systems with 
+Applications, 42 (2015), 9152-9164. 
+ Santosa, B., Kresna, I. G. N. A (2015). Capacitated warehouse location 
+problem. Simulated annealing to solve single stage capacitated warehouse 
+location problem. Procedia Manufacturing, 4 (2015), 62-70. 
+ 
+Shahparvari, S., Nasirian, A., Mohammadi, A., Noori, S., Chhetri, P. (2020). A GIS-LP integrated approa ch for the logistics hub location 
+problem. Computers and Industrial Engineering, 146, (2020), 1-17. 
+ 
+Sharma, V., Kumar, A., Kumar, M. (2021). A framework based on BWM 
+for big data analytics (BDA) barriers  in manufacturing supply chains. 
+Materialstoday Proceedings, 47 , (16), 5515-5519.  
+ 
+Singh, R., Chaudhary, N., Saxena, N. (2018). Selection of warehouse 
+location for a global supply chain: A case study. IIMB Management 
+Review, 30 (2018), 343-356. 
+ 
+Torabizadeh, M., Yusof, N. M., Ma’aram, A., Shaharoun, A. M. (2020). 
+Identifying sustainable warehouse management system indicator and 
+proposing new weighting method. Journal of Cleaner Production, 248 
+(2020), 1-11.  
+ 
+Vlachopoulou, M., Silleos, G., Manthou, V. (2001). Geographic 
+information systems in warehouse site selection decisions. International 
+Journal of Production Economics, 71 (2001), 205-212. 
+ 
+Żak, J., Weglinski, S. (2014). The selection of the logistics center location 
+based on MCDM/A methodology.  Transportation Research Procedia, 3, 
+(2014), 555-564.   

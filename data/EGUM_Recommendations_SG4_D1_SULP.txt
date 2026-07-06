@@ -1,0 +1,860 @@
+1 
+  
+Recommendations  on Urban 
+Logistics  
+Expert Group on U rban Mobility, subgroup  4 
+ 
+ 
+ 
+ 
+ 
+ 
+Sustainable urban logistics 
+planning  (SULP)  
+ 
+ 
+Adopted by the EGUM Plenary on  05.12.2024  
+ 
+ 
+ 
+ 
+This document has been prepared by the Expert Group for Urban Mobility set up by Commission Decision C(2022) 5320 of 28.7.202 2, register 
+of Commission Expert Groups and Other Similar Entities, code number E03863. It reflects the views only of the authors, and the European 
+Commission is not liable for any consequence stemming from the reuse of this document.  
+Register of Commission Expert Groups and Other Similar Entities, code number E03863   
+
+2 
+ Executive Summary  
+Sustainable Urban Logistics Plans (SULPs) are strategic frameworks designed to optimise the 
+transportation of goods within urban areas, aiming to reduce environmental impact, improve 
+efficiency, and enhance quality of life. These plans play a critical role  in making cities more 
+resilient to climate change and rapid urbanisation while ensuring that logistics services remain 
+efficient and reliable.  
+It is recommended that Develop an EU -wide common approach for data collection and 
+voluntary data sharing for SULPs, as local authorities are lacking of quality data about 
+urban freight transport flows. Data collection and sharing on freight transport often relies on 
+specific agreements between the public and private sectors.  
+It is recommended that the existing SULP guidelines are updated and include new elements 
+(real estate market, energy provision, circular economy)  that have not been considered earlier 
+and take into account the latest innovations, such as digitalisation tools like Digital Twins, 
+blockchain, artificial intelligence (AI), and Data Spaces.  
+It is recommended to  provide expert support and training to local authorities on urban 
+logistics, as the digital revolution has accelerated logistics planning and execution in urban 
+settings.  The development or reinforcement of educational and training programmes 
+targeting logistics should also be pursued, as a way for local authorities to recruit more easily 
+professionals with technical expertise on urban freight.  
+It is recommended to Set a policy framework at national level to ensure safety, social 
+sustainability, and good working conditions of all workers of the logistics sector, in 
+particular those that are most affected (e.g. truck drivers, urban deliveries, etc.).  
+It is recommended to set a policy framework to encourage collaborative logistics to share 
+vehicles and assets, that encourages business (shippers) and logistics service providers to 
+cooperate to facilitate collaborative logistics that can maximise use of all available resources. 
+Hubs appear to be the best option for cities to better organise supplies and enhance li veability.  
+Cities through SULPs to create a policy framework to encourage business (shippers) and 
+logistics service providers to cooperate to facilitate collaborative logistics that can maximise 
+use of all resources (e.g. reducing empty runs).  
+It is recommended to strengthen the collaboration between local authorities and the 
+private sector , building long term mechanism to facilitate public and private dialogues focused 
+on urban freight, such as freight quality partnerships.  
+It is recommended to Develop awareness campaigns and incentive schemes to encourage 
+sustainable e -commerce activities from business and citizens, as their acceptability is 
+greatly enhanced by adequate stakeholder engagement.  
+ 
+  
+3 
+  
+Table of Contents  
+1. INTRODUCTION  ................................ ................................ ................................ ........  4 
+1.1 Urban logistics: the definition  ................................ ................................ ............  4 
+1.2 Stakeholders: the definition  ................................ ................................ ..............  4 
+1.3 Urban Logistics: current challenges  ................................ ................................ .... 5 
+2. SULP: THE STATE -OF-THE-ART ................................ ................................ ...................  6 
+2.1 Integration of Urban Logistics with other public policies  ................................ ........  6 
+2.2 Collaboration between public with private stakeholders  ................................ .........  7 
+3. RECOMMENDED ACTIONS  ................................ ................................ .......................  8 
+ANNEX – ADDITIONAL INFORMATION  ................................ ................................ .............  20 
+List of acronyms and abbreviations  ................................ ................................ .........  20 
+About the group  ................................ ................................ ................................ ... 21 
+ 
+  
+4 
+ 1. Introduction  
+1.1 Urban logistics : the definition   
+Urban logistics is vital to all systems and functionalities of cities . Urban logistics deliver s 
+construction materials, food and all goods needed for daily life . Without urban logistics, cities 
+will not function.  
+Urban logistics can be  defined as “ the movement of things (as distinct from people) to, from, 
+within, and through urban areas.1” or “ those movements of goods that are affected by 
+particularities associated to urban traffic and morphology2.” However, the definition of urban 
+logistics varies with difference in type of goods and services, use of transport modes and 
+infrastructure, and spatial and functional structure. In this document, the definition of urban 
+logistics covers:  
+• Type of goods and services:  
+- Business -to-business ( B2B) large volumes of goods (e.g. delivery to supermarket)  
+- Construction materials and waste  
+- Business -to-Consumer ( B2C) large volumes of goods (e.g. furniture)  
+- B2C small packages  
+- Collected waste from business and residents  
+• Use of transport mode:  
+- Road transport: Heavy Duty Vehicles (HDV s), Light Duty Vehicles (L DVs), Cargo 
+bicycles and tricycles, delivery or collection on foot  
+- Inland waterway transport  
+- Urban railway  
+- Air mobility  
+- Autonomous vehicles and robots  
+• Use of infrastructure in additional to transport networks:  
+- Charging and refuelling stations  
+- Depots, warehouses, and logistics hubs  
+- Off road parking facilities and curb si de space  
+• Spatial and functional structure:  
+- Central business district (CBD)  
+- Urban core area  
+- Suburban residential areas  
+- Exurbia that has functional areas supporting urban freight distributions, e.g. 
+highway networks, warehouses, or large freight transport hubs (e.g. airport and 
+ports) are not considered by this document.  
+1.2 Stakeholders: the definiti on 
+Urban logistics is an interdisciplinary  topic , and its complexity engages with many actors from 
+the public and private sectors. As the Subgroup aims to deliver actionable recommendations 
+for implementing the Urban Mobility Framework  (UMF) , this document primarily addresses 
+key stakeholders whose actions can have significant impacts on the implementation of the 
+UMF . The main actors addressed by this document are:  
+- EU Commission Services (e.g. DG MOVE) and EU institutions who can implement 
+transport related projects and policies;  
+ 
+1 Ogden, K. W. 1992. Urban Goods Movement: A Guide to Policy and Planning . Burlington, VT : Ashgate 
+Publishing, Ltd.  
+2 Muñuzuri, J. , J. Larrañeta , L. Onieva , and P. Cortés . 2005 . “Solutions Applicable by Local Administrations for 
+Urban Logistics Improvement.” Cities 22 ( 1 ): 15 – 28. 
+5 
+ - Regional and local authorities as planners and regulators who are responsible for 
+local policies on transport, mobility, environment, energy and economic 
+development .  
+- Public t ransport authorities or network operators have not been primarily focused ; 
+- Local residents , associations of citizens.  
+- Private sectors primarily addressed by this document:  
+o Freight owners/shippers including e -commerce who need freight moved as 
+part of their commercial or manufacturing activities. They are mainly 
+concerned with the cost, capacity, and reliability of deliveries.  
+o Business (construction companies, retailers) who need to receive products 
+and remove waste. They are mainly concerned with consistent and reliable 
+deliveries that minimize inventory costs.  
+o Distributors/Carriers/logistics service providers who store, move, and 
+deliver the goods. They are concerned by factors impacting their 
+operations, particularly congestion and parking difficulties.  
+Original Equipment Manufacturer s (OEMs ) who manufacture vehicles for 
+freight transport . 
+ 
+1.3 Urban Logistics: current challenges  
+Urban freight transport is essential for city life. Urban freight transport contributes between 
+10% and 20% of vehicle kilometres travelled (VKT) and two of five percent of the employed 
+urban workforce3. According  to Eurostat  urban freight in 2017 constitutes for almo st 15% of 
+the greenhouse gas (GHG) emiss ions and 30% of air pollutions  in city4.  
+Urban freight  volumes  continues  to grow due to urbanisation and most recently, the rise in e-
+commerce  practices . Also, since the COVID -19 pandemic,  on-demand and  fast deliver ies 
+have increased and reshaped  urban freight . In 2022, the most common online purchases of 
+goods were clothes , shoes or accessories (ordered by 42% of internet users)5.  
+Increased demand for home delivery of online purchased goods and employment 
+opportunities provided by collaborative economy platforms have resulted in sharp increase of 
+use of cargo -bikes, raising complex issues about demand for infrastructure (cycling lanes, 
+parking) and urban space (logistics hubs in central areas), road safety, workers’ right . 
+Much emphasis is given in recent policy making and EU funding programmes (e.g. Horizon 
+2020 and Horizon Europe) to parcel and last -mile deliveries . Despite being a visible  
+phenomenon , they  only account for about 3% of the total VKT. Conversely, construction 
+logistics accounts for a much more significant 37% of VKT6. Construction of new infrastructure 
+and buildings is likely to continue to grow due to urbanisation  and needs for building renovation 
+for more energy efficiency . Rubble removal, building material being transported, and various 
+construction -related services require H eavy Goods Vehicles  (HGVs)  that cannot be replaced 
+with small vehicles. Loading process of H GVs often cause s congestion  in urban networks.   
+Urban logistics  challenges  can be summarised into four categorie s: emissions  and pollutions 
+(air pollution and noise ), infrastructure and land use, safety , and workforce.  These challenges 
+are often interrelated. For examples, logistics hubs for fast grocery delivery (so called ‘dark 
+store s’) have been banned by some cities in the Netherland s due to excessive noise level in 
+ 
+3 Urban Freight Research Roadmap, https://www.ertrac.org/wp -
+content/uploads/2022/07/ERTRAC_Alice_Urban_Freight.pdf  
+4 Energy, transport and environment statistics – 2020 edition , https://ec.europa.eu/eurostat/web/products -
+statistical -books/ -/ks-dk-20-001  
+5https://ec.europa.eu/eurostat/web/products -eurostat -news/w/ddn -20230228 -
+2#:~:text=In%202022%2C%20the%20most%20common,42%25%20of%20internet%20users ).  
+6 PhD Thesis of KU Leuven , https://research.kuleuven.be/portal/en/project/3E240107   
+6 
+ residential areas . Congestion caused by loading process can be mitigated by pr e-booked 
+curb-side space7.  
+2. SULP: the state -of-the-art  
+Increasingly, European cities are widening the scope of these plans to include freight transport 
+and logistics – resulting cases in the development of Sustainable Urban Logistics Plans 
+(SULPs).  Many cities have develop ed their SULPs to meet the challenges of urban freight’s 
+environmental impact which represents around 15 -20 percent  of city flows but generates 30  
+percent  of pollutant emissions.  
+The EU established a clear strategy for " near zero emission urban logistics by 2030 ” in the 
+2011 White Paper, which was followed by several supportive initiatives such as the Urban 
+Mobility Package, the Low Emission Strategy of 2016, and the three Mobility packages of 2017 
+and 2018. EU has also developed a guideline for SULPs (Topic Guide: Sustainable Urban 
+Logistics Planning) through the NOV ELOG project  in 2014 and an updated version has been 
+published in 2019 . The SULPITER8 project has developed examples of SULPs for Bologna, 
+Brescia, Budapest, Maribor, Poznan, Rijeka and Stuttgart.  
+There are several other reports published in recen t years that provide guidelines for cities to  
+tackle urban freight,  such as “ POLIS – ALICE Joint Guide for advancing together towards 
+zero-emission urban logistics by 20309”, and POLIS, TDA and C40’s How -to Guide on Zero -
+Emission Zones for Freight10”.  
+More at the national level , in France, the French Ministry for Ecological Transition and 
+Territorial Cohesion selected the Innovations Territoriales et Logistique Urbaine Durable  
+(InTerLUD) programme to create forums for dialogue between public and economic players, 
+with the aim of drawing up sustainable urban logistics charters to promote low -carbon, energy -
+efficient goods transport and helped the development of SULP s in 40 French cities. The Dutch 
+National Climate Agreement was established in 2018 and CO 2 emissions by freight traffic 
+entered t he equation. Over a hundred parties committed to implementing Zero -Emission 
+Zones for city logistics by the year 202511. 
+2.1 Integration of Urban Logistics with other public policies  
+According to the UMF , the upgraded SUMP concept should make it clear that the priority is to 
+favour sustainable solutions such as active, collective, public, and shared mobility (including 
+for urban -rural linkages), fully integrating resilience aspects, and innovations  based on zero -
+emission vehicles and solutions. It ought to be enhanced further, considering the requirement 
+for indicators and SUMP requirements for the TEN -T urban nodes12.  
+The integration of urban logistics within the global mobility framework of cities is also a key 
+challenge. Most cities have Sustainable Urban Mobility Plans (SUMPs) that marginally 
+consider – or even not mention at all  urban freight . This translates into difficulties as mobility 
+of passengers and freight cannot work in silos as they share networks, infrastructures , and 
+urban space. The same applies to Low Emission Zones (LEZ), Zero Emissions Zones (ZEZ) 
+ 
+7 The Coding the Curbs project, partly funded by EIT Urban Mobility, tested a platform for logistics companies to 
+book loading zones in Groningen and Bucharest, aiming to improve delivery times and reduce unnecessary 
+congestion.  
+8 https://programme2014 -20.interreg -central.eu/Content.Node/SULPiTER/D.T3.2.6 -SULP -POLICY -DOCUMENT -
+Bologna -FUA.pdf  
+9 https://www.etp -logistics.eu/polis -and-alice-launch -their-joint-guide -for-advancing -together -towards -zero-
+emission -urban -logistics -by-2030/   
+10 https://www.polisnetwork.eu/wp -content/uploads/2020/12/ZEZ -F_How -to-Guide_low.pdf   
+11 https://www.polisnetwork.eu/article/rotterdam -roadmap/   
+12 TEN-T node requirements: By 31 December 2040, the development of at least one multimodal freight terminal, 
+which may serve several urban nodes.  
+7 
+ or any restricted -access area – as they need to be thought out around urban freight challenges 
+as well and day -to-day logistic drivers' reality.   
+In 2023, the Commission Recommendation on National Support Programmes for Sustainable 
+Urban Mobility Planning stressed the need to help local authorities integrate and improve 
+coordination between SUMPs and spatial planning, and improve alignment and syner gies with 
+SULPs, and other relevant plans.  
+2.2 Collaboration between public with private stakeholders  
+To build public policies and SULP s fitting day -to-day professionals’ reality, they need to be 
+included in the building process of such document. The objective is to have an exhaustive and 
+representative roundtable of private actors: both bigger firms and SMEs, as well as all relevant 
+secto rs (retailers, wholesalers, craftsmen, operators, LSPs etc.) - which is not an easy task 
+for city planners. A strong component of this collaboration lies in building efficient, trustworthy, 
+and lasting relationships with local stakeholders around SULP. The y need to be solicited 
+carefully, with matters relevant to them, to be updated of progress regularly. Cities need to 
+work on solutions with them, to fit their daily operation challenges and include them in the 
+process.   
+Collaboration  between public and private parties is key to success. A strong political support 
+is an important asset in both the collaboration and relationship with private stakeholders and 
+the implementation phase of the SULPs, as it attests of the engagement of the c ity on the 
+topic and embodies its ambition to move toward s concrete action.  
+ 
+ 
+  Our observation :  
+ 
+Guidance on SULPs should be more flexible  by providing a range of potential actions and 
+new adaptive planning methods to city planners:  
+ 
+• SULP s can be a tool to accelerate the deployment, uptake and upscaling of 
+innovative and sustainable transport solutions already available .  
+• SULP s currently focus on small volumes of goods and lack focus on logistics for 
+construction sites and other large volume of goods. There is lack of knowledge and 
+awareness of waste management, specific heavy -duty vehicles, and vehicle access 
+regulation related  to urban construction sites which have significant impacts on 
+urban logistics .   
+• Enforcement of regulations is fundamental for proficient urban logistics 
+management. Regulatory enforcement is crucial in maintaining the seamless  
+operation of various logistical aspects within the city and is crucial in safeguarding 
+optimized space allocation.  
+ 
+ 
+8 
+ 3. Recommended Actions  
+R1: Develop an EU -wide common approach for data collection and voluntary data 
+sharing for SULP s 
+The current  “Topic Guide: Sustainable Urban Logistics Planning ”13 published in 2019  
+recommends ‘ A Data collection framework for UFT’ including ‘basic data  to be collected ’ and 
+‘method for data analysis ’. However, i t does not define what the essential datasets for SULP s 
+should consist of .  
+Collecting d ata from the logistics sector is  a very  complex task, for several reasons . Although 
+urban logistics has increased its importance in policy making, there is still lack of research 
+towards a beter knowledge and modelling of urban freight transport flow s, resulting in 
+insufficient data availability .  
+Data collection and sharing on freight transport often relies on specific agreements between 
+the public and  private sectors , which are challenging  and often done on a case -by-case 
+situations  (due to competition, sensitivity, GDPR  issues , etc.). An EU-wide common approach 
+would make data sharing from multiple national businesses (including logistics service 
+providers) easy to support local government.    
+Action R1.1: Identify needs for the essential dataset for SULP s 
+In the current guide lines and many of SULPs available in various European cities, there is lack 
+of coherence on needs for the essential dataset. Urban  freight is not only about traffic flow s 
+and vehicles, but also type of goods transported, loading process es, and storage. The 
+identif ication of  needs for the essential dataset is the first action to enable an EU -wide common 
+approach for data collection for SULP s. Some examples  from EU cities below :   
+In Bologna, in order to evaluate the current situation about freight transport flows for SULP, 
+interviews to traders and transport operators have been conducted. LDVs Origin Destination  
+(OD) matrix has been developed based on Floating Vehicle Data. Data on construction 
+logistics and waste collection has not been included. Therefore, it is not possible to understand 
+percentage of such freight traffic flow account for the total freight transport flow.  
+Faced with a lack of reliable, exhaustive, and available data, the State and the Regional 
+Council of Ile -de-France, with the technical support of the Paris Region Institute (PRI), have 
+created an observatory to enable the collection of all available freight and logistics resources 
+in order to produce, share and enhance knowledge between the actors in the sector and to 
+inform political decision -making and assess its impact.  
+In Barcelona, the municipal application AreaDUM allows the city to retrieve real -time 
+information, that can also be used by scholars for the analysis of urban freight mobility14. The 
+available data, aggregated and anonymised, provide information about delivery zone, type of 
+vehicle, type of activity, day, and time.  
+Action R1. 2: Initiate pilots in different  types of cities to create best practices and 
+knowledge in data collection and sharing for SULP s 
+Cities can act as living laboratories where innovations are experimented and introduced 
+progressively . Living Labs (LLs) are open innovation ecosystems in real -life environments that 
+can be useful for SULP s implementation , as t hey focus on  co-creation, testing  and scaling -
+up innovations . They often are permanent working group s where stakeholders discuss policy 
+ 
+13 https://urban -mobility -observatory.transport.ec.europa.eu/index_en   
+14 https://www.lvmt.fr/wp -content/uploads/2019/10/Theme -3.-Nouvelles -donnees -cas-detude -de-Barcelone.pdf  
+9 
+ proposals, share their own opinions and needs while gaining insight into those of others, and 
+actively participate in the implementation of the solutions15.  
+Current SULP guidelines make a reference  to the needs for standards, governance models, 
+and trusted body to enable data sharing . However, s uch principles remain at a theoretical level 
+without concrete steps  to advance data availability for developing, implementing and 
+monitoring a SULP. There is a l ack of real -life demonstrations to implement an holistic 
+approach of data collection to use all existing methodologies and knowledge to make data 
+available and projects, research and discussions on data sharing f or SULPs. Projects that 
+demonstrate good practices in a diverse types of cities to collect, analyse data are essential 
+for SULP  implementation . 
+Using floating vehicle data (FVD) to analyse movement is one of many way to collect data to 
+understand freight movement. The city of Stockholm  is working with Scania to share data 
+supporting e -mobility planning and freight optimization. Purchasing FVD from private owners 
+or seeking agreement with data owners can be time -consuming and cost ly.  
+Other data collection methods, e.g. use Automatic Number Plate Recognition  (ANPR ) 
+cameras  to identify movement . A case study of the analysis of such a data source, with 
+augmented ANPR camera data for the police district of Mechelen  - Willebroek (Belgium ) 
+shows that 122 ANPR cameras can cover a district of 92,6 square kilometres  to enable 
+analysis movements of LDVs and HGVs16.  
+Action R1.3: Form a guideline for data collection  for SULP s, including types of data 
+needed, methodology to collect and use data for policy development and impact 
+monitoring  
+Data collection and sharing with freight stakeholders is an increasingly important topic. 
+Retailers and delivery companies should  provide data about logistic flows to municipalities, 
+while municipalities need to feed companies involved in urban logistics with updated  
+information on local regulations on traffic, parking, delivery areas, delivery time windows, or 
+the forecasting of road works and street or lane closures.  
+Guideline s for data collection for SULP s are needed to address the lack of a holistic approach 
+to collect data . A new strategy in this sense should be aligned with the European data strategy 
+and the Sustainable and Smart Mobility Strategy, and coherent with other initiatives towards 
+a common European mobility data space . The guideline s shall make reference to  data 
+collection approaches , data purchasing agreements  from various stakeholders , how to use 
+the data, and analysis models or tools.   
+In the Netherlands, freight operators’ data sharing has been accelerated by a national 
+provision . More than  40 Dutch cities are required to establish zero -emission zones by 2025, 
+which would include freight. As part of this process, a shared data model with possible 
+advantages like privileged access for enterprises providing data is being planned.  
+Action R1. 4: Form a guideline for local authorities to communicate benefits of data 
+sharing to various types of private sectors  
+Establish long -term p artnerships with logistics operators, e -retailers, and delivery apps could 
+be a good way forward for local authorities to retrieve regular ly data and  information.  Currently, 
+policy makers and urban planners  interested in operators’ data go operator per operator (non -
+disclosure agreements and memorandums of understanding need to be carefully crafted), 
+ 
+15 Nesterova, N., and Quak, H. (2016). A city logistics living lab: A methodological approach. Transportation 
+Research Procedia, 16.  
+16 Analyzing passenger and freight vehicle movements from automatic -Number plate recognition camera data | 
+European Transport Research Review | Full Text (springeropen.com)  
+ 
+10 
+ which makes the process very slow. Moreover, companies are reluctant to provide their data, 
+key to their business models.  
+Currently, e ach EU country has its own legal requirements in this context, which ha s an impact 
+on the possibility of data collection in commercial transactions. Therefore, t argeted guidelines  
+should  be harmonised at EU level . They should  provide clear instructions to local authorities 
+on how to better communicate with various stakeholders of the private sector – e.g. different 
+communication strategies for local SM Es and international businesses to address different 
+needs and expectations. Moreover, local au thorities would  save time and energy to 
+understand needs of various stakeholders and adopt the guideline for local specifications to 
+foster efficient cooperation with local stakeholders.   
+ 
+R2: Update existing SULP guidance and include new element s 
+Currently, SULPs guidelines do not address latest innovation  and need to be updated with 
+important elements. Although drafting regulations and testing vehicles occur simultaneously, 
+large -scale implementation of vehicle automation still requires developments of the regulatory 
+framework.   
+Automation (i.e., autonomous surface and aerial delivery vehicles)  might  contribute towards 
+the achieve ment of  environmental  benefits through replacing or integrating with current 
+delivery systems, including providing the “last mile,” in urban areas.  
+Another example, energy provision has not been considered and energy providers are not one 
+of among stakeholders covered by current SULP  guidelines . Renewed and updated guidelines 
+should  leverage digitali sation tools like Digital Twin s, blockchain, artificial intelligence ( AI), and 
+Data Spaces as able to generate strategic data for freight -related network planning, 
+investment, and policy formulation more effectively and economically than traditional methods.   
+An increase attention to the real estate market, w ith a view to better land -use management  
+(densification and verticalisation of logistics, e .g. urban logistics hotels) or the pooling of 
+already urbanised and multimodal spaces.  Regulations and planning play an  essential role for 
+supporting these developments  and innovations . SULP s should also be an enabler for cities 
+to support , implement, test and upscale  innovation and technologies that can grea tly 
+contribute to decarbonise urban freight.   
+Action R2.1: Integrate urban logistics in local strategies and city policies beyond 
+mobility and transport sector  
+The initial focus of the concept of Sustainable Urban Mobility Plans (SUMPs) focused on 
+passenger transport and personal mobility.  Integrat ing SULP s with SUMP s has been 
+recommended by the current guide  and by the subgroup on SUMP of the  Expert Group on 
+Urban Mobility ( EGUM ).  
+However, in order to  support updates of innovative solution s and use of zero emission vehicles 
+for freight transport,  SULP s should consider renewable energy planning, e.g. a sufficiently 
+dense suitable network of charging/ refuelling infrastructures for all sizes logistics vehicles . 
+Urban space planning and land use, e.g. integration of cargo bikes needs, management of 
+construction sites logistics, identifying (public owned) sites to be potentially transformed into 
+logistics hubs, charging/refuelling facilities, or energy gene ration, flexible use of street space.  
+ 
+Action R2.2: Support consumer engagement  including raising awareness on delivery 
+choices and pick -up choices  with active mobility  
+11 
+ New guideline s shall include elements on how to increase consumer awareness and d evelop 
+sustainable delivery choices and proper management of returns . SULP s can work with local 
+residents and businesses to set up pick -up choices to enable residents to walk or cycling for 
+picking up their parcels.   
+The d igitalisation of reverse flows should  become more circular. Trials and experimentation in 
+Sweden  to engage retailers in a digital transformation process, with new capabilities, cost 
+reduction,  efficiency in handling returns, etc.  
+Action R2.3: Include m easures that can support circular economy  
+The need to pursue more  sustainab le practices  has led to the application of circular economy 
+approaches based on ‘closed loop’ systems that are intended to minimise waste with an 
+emphasis on efficient resource use .  
+New SULP guideline s shall consider measures that can support circular economy17, e.g. waste 
+management, “ refuse, reduce, rethink, reuse, repair, repurpose, recycle ” approach, logistics 
+of re-usable packaging, etc.   
+The current SULPs guidelines do not address return flows . Cities should address  solid return 
+mechanism in combination with the private sector, retailers but also waste collection entities 
+(private or public) . SULP s can help cities support return flows for disposed goods (electronic 
+devices, clothes,  etc.) by embedding returns in the forward flows (home delivery and pick -up), 
+organise pick -up days and /or embed return, repair and waste into urban service centers.  
+Action R2.4 Considering setting up urban service centres  
+Urban service centers  / mobility hubs  are an extension of urban logistics centers where various 
+shared mobility services are bundled in one place , including logistics services (return, repair, 
+refurbishment, waste management , etc). Cities should  encourage and  promote the set up of 
+this kind of  services . 
+The combination of passenger and freight mobility services require the cooperation of different 
+types of stakeholders which are not used to cooperate. For the local authorities, this implies 
+some challenges in setting up new forms of cooperation and partnerships between the more 
+traditional public transport operators, the newer mobility services providers, and logistics 
+operators.  Recent examples  that go in this direction are the mobility hotels opened in 2024  In 
+Oslo and Gothenburg (MOVE21 project) .  
+SULP guidelin es may provide indications on potent ial options that c ities can use ( locations , 
+types of buildings) in which urban service centers can be develop ed and this for both local 
+(smaller) and more general (regional, national) initiatives.  The absence of a common starting 
+point for mobility hub projects and the need to build up efforts from the ground level were 
+noted.  
+Action R2. 5: Support on monitoring and evaluation of SULPs’ implementation paths 
+and impacts  
+New guideline s should  identify relevant Key Perforance Indicators ( KPIs ) that can be used to 
+evaluate the impacts of SULPs on medium to long term. KPIs should also support policy 
+makers to identify actions needed for future planning  and essential datasets needed to for the 
+KPIs . They should be aligned also at the EU and national level to ensure as much as possible 
+consistency and comparison between different geographical areas.  
+ 
+17 The circular economy is a model of production and consumption, which involves sharing, leasing, reusing, 
+repairing, refurbishing and recycling existing materials and products as long as possible. In this way, the life cycle 
+of products is extended. (Source : European Parliament).  
+12 
+  
+R3: Provide expert support and training to local authorities  on urban logistics  
+The EC has been providing support to local authorities through research and innovation 
+projects , the ELTIS and CIVITAS initiative , and other funding programmes . ELTIS and 
+CIVITAS  enabled the collection of all available freight and logistics resources in order to 
+produce, share and enhance knowledge between the actors in the sector and to inform political 
+decision -making and assess its impact . Some of the EU-funded projects provide  the technical 
+training and capacity buildings, policy recommendations whilst other  projects helped cities 
+directly in implementing SULPs  (e.g. the SULPITER  project funded by Interreg  Program me, 
+and many others ).  
+ 
+Action R3.1: To develop training and technical supports on how to develop a 
+comprehensive understanding of the urban freight flows and eco -systems;  
+ 
+The digital revolution has accelerated logistics planning and execution in urban settings. New 
+urban logistics services have emerged thanks to advancements in technology. Local 
+authorities  should  fully embrace opportunities offered by digitali sation  and promote 
+partnerships and dialogue with the private logistics operators to set up common mechanisms 
+and procedures that allow a better knowledge of incoming and outcoming freight flows. Local 
+authorities should also be able to develop adequate skills in data gathering and analysis, to 
+fully assess and manage the quality of data and information gathered (ideally in aggregated 
+and anonymised forms).  
+ 
+Action R3.2: To provide training on how to integrate policies of urban logistics with 
+other policies  
+ 
+Urban freight , often overlooked in mobility strategies, can benefit from initiatives that aim to 
+integrate various aspects of urban planning and mobility.  A comprehensive and integrated 
+approach to urban mobility planning is essential to effectively harmoni se various aspects of  
+urban mobility, such as city logistics. Multi -level collaboration plays a crucial role, as  the need 
+for different national  / regional  / local government levels need to work together effectively to 
+align policies from the EU to the local level, and corresponding climate goals.  
+ 
+At the EU level, s pecific calls for capacity building initiatives could be linked to the SUMP 
+National Sump Support Programmes, or capacity building initiatives within the  ELTIS and 
+CIVITAS  Programmes . At domestic level, n ational ministries also have various programmes 
+to support cities in developing SULPs, such as the  InTerLUD ongoing programme  in France . 
+ 
+Action R3.3: To provide ex pert support in monitoring impact of policy measures on 
+urban logistics and fully integrate policies of urban logistics and propose actions to 
+mitigate negative impacts.  
+ 
+The development or reinforcement of educational and training program mes – especially at 
+university level - for the numerous jobs that urban logistics represents may prove beneficial 
+for both local and national stakeholders. Increasing the attractiveness of carriers  in the industry 
+should be one of  the main  goals of the private sector , and as a way to recruit more easily 
+professionals with technical expertise  on urban freight.  Local authorities would also greatly 
+benefit from technical experts  with skills in urban logistics and supply chain management  that 
+are employed full -time and with long -term contracts in the mobility departments.     
+13 
+  
+This would facilitate a continuous  monitoring of the actions and measures taken and assess 
+concrete impacts and trends  through time , and a regular interaction and exchange with 
+logistics players . Remedial actions could be more easily taken whether the expected 
+outcomes would not be achieved. A guidance on selected KPIs to be track ed and monitor ed 
+could be  useful to local authorities in the long term to facilitate comparisons at EU level . 
+ 
+R4: Set a policy framework at national level to ensure safety, social sustainablity, and 
+good working conditions of all workers of the logistics sector  
+Most likely higher delivery frequencies of smaller orders, typical for online shoppers, generate 
+negative impacts on traffic flows, road safety, loading factors and air quality.  Moreover, t here 
+are new options of logistics services, e.g. off-peak deliveries, low and zero emission freight 
+vehicles  of new generation,  the different types of cargo bikes.  
+As an example, d rivers of cargo -bikes may not receive appropriate training on safety, as they 
+are larger and heavier than other cycles and riders require additional skills , and they may be 
+hired through collaborative economy platforms without insurance etc.   
+Setting a national policy framework to ensure safety and social sustainability addressed to 
+better represent worker  categorie s in the logistics sector is necessary. It should be set at 
+national level  policy as restrictive interventions  in this sense from a single local authority  may 
+result in withdrawing services from a given city or region.  
+ 
+R5: Set a policy framework to encourage collaborative logistics to share vehicles and 
+assets  
+Cities through SULP s to create a policy framework to encourage business (shippers) and 
+logistics service providers to cooperate to facilitate collaborative logistics that can maximise 
+use of all resources (e.g. reducing empty runs). Cities can be a facilitator to connect 
+businesses and provide incentives schemes.   
+Hubs appear to be the best option for cities  to better organi se supplies and enhance liveability. 
+Less vehicles would be required to move the same volume in and out of cities by consolidating 
+various logistic  flows into hubs outside of them.  However, the recent experience s coming from 
+many EU-funded projects showed that  urban consolidation centres  (UCCs)  were in most 
+cases not continuing their operations after the end of public funding , due to lack of economic 
+viability. Therefore, alternative ways  and busi ness models  should  be tested and explored.  
+Successful urban collaborative logistics has been operated in Antwerp  via the  CULT 
+(Collaborative Urban Logistics & Transport)  initiative.  and will soon be operated in Brussels. 
+In Antwerp, 14 distributors have been collaborating using the same delivery option s through 
+the TRI -VIZOR plat form. The implementation has been in operation since 202218. It can 
+reduce vehicle mil eage (d riving ) by 25% and emissions by 90% through  combined city 
+deliveries .  
+In cities in Sweden, iBoxen  has deploy ed a nationwide infrastructure of delivery boxes to pick 
+up, return and ship packages. The new infrastructure create s sustainable  conditions for 
+economic growth.  The open, independent and national wide infrastructure for the delivery, 
+return and shipping of parcels across Sweden has been supported by 2 large publicly traded 
+property investment companies - Fastighets AB Balder and SBB Norden AB.  It has been seen 
+ 
+18 cultcitylogistics.be  
+14 
+ as an important step in supporting the growth of e -commerce while protecting the 
+environment19.  
+ 
+Action R 5.1: Encourage and facilitate vehicles and logistics assets (e.g. microhubs, 
+parcel lockers) sharing through standardi sed processes, load units, digital platforms 
+and data spaces.  
+ 
+The adoption of 'white label' hubs might assist logistics service providers to become more 
+sustainable and  to provide  a significant contribution to zero -emission . The main  challenge is 
+to make the micro  hub concept profitable , as margins in the sector are small. Therefore , efforts 
+from the local sector should strive to (i) develop  a sustainable financing model, (ii) a well 
+thought -out design of the micro hub , which is crucial for efficient use and therefore success, 
+(iii) build micro hubs on the right locations in the city . In this way, white labels is an option but 
+there are other ways (e.g. allowing companies to distribute in districts when they have a 
+minimum volume to distribute in that district or others, e.g. Physical Internet) . 
+ 
+Action R 5.2: Ensure pick -up points , micro -hubs  and parcel lockers  can be accessed 
+by residents within 15 minutes walking in most urban areas and can be used by 
+various e -commerce actors.  
+ 
+Micro hubs are placed close to urban  consolidation centr es, and vehicles are deployed to them 
+on regular routes throughout the day to ensure time -definite delivery windows.  Different kinds  
+of micro -hubs have been tested in different cities,  also within several EU -funded research 
+projects. However, key challenges  of those  models rely on  stakeholder collaboration, 
+competition issues, infrastructure and resource availability.  
+ 
+Studies in the Netherlands, Italy and Poland reveal that parcel lockers generate a considerable 
+reduction in vehicle -miles trave lled and carbon emissions20. Parcel lockers have been in use 
+in Finland since 2011. Their use is very popular and over the years the locker network has 
+expanded to cover the whole country. Most of the parcel lockers are located indoors, usually 
+in stores , kiosks or in shopping centres. Parcel lockers from several operators are often 
+located at the same point.  
+ 
+Action R 5.3: Go beyond the urban scale, cities as complex nodes  
+ 
+Many urban regions are net importers of products given the quantity of retail, leisure, 
+commercial firms  and public facilities.  Urban goods transit often starts and ends at a 
+commercial freight facility. Facilities  include depots, warehouses, logistics hubs  / fulfillment 
+centr es, and intermodal terminals. They  are major drivers of goods vehicle activity.  
+ 
+The recently adopted revision of the TEN -T Directive will require urban nodes to (i) d evelop 
+multimodal passenger hubs and appropriate connections with multimodal freight terminals by 
+2030  and (ii) h ave at least one multimodal passenger hub and one multimodal freight terminal 
+by 2040.  New generation SULPs should take into acc ount not only the local dimension of 
+urban freight but reflect also planning on a regional scale  and e nsure a lignment with regional, 
+national and TEN -T scale  policies .  
+ 
+19 https://news.cision.com/iboxen -infrastruktur/r/a -nationwide -infrastructure -of-delivery -boxes -to-be-launched -in-
+sweden,c3287628   
+20 Iwan, S. Kijewska, K. and Lemke, J. (2016) Analysis of Parcel Lockers’ Efficiency as the Last Mile Delivery 
+Solution – The Results of the Research in Poland. Transportation Research Procedia, 12, 644 –655. 
+https://doi.org/10.1016/j.trpro.2016.02.018 .  
+15 
+ R6: Strengthen the collaboration between local authorities and private sector, 
+establish or maintain effective partners to ensure various actors’ contributions to 
+policy making  
+Cities may consider to build  a long term mechanism to facilitate public and private dialogues 
+focused on  urban freight. Since many freight operators and business wish to be able to deliver 
+efficiently in cities, to develop an understanding of freight transport issues and needs to form 
+constructive solutions is essential to ensure cities’  prosperity .  
+Freight partnerships are long term partnerships between freight stakeholders concerned with 
+urban freight, that on a forma l or informal basis meet regularly to seek solutions to problems 
+and discuss  issues that occur in the urban area . It is a partnership between the  local 
+government, the  freight industry, local businesses, the local community, environmental groups 
+and others with an interest in freight.  Some examples are the Flemish 'Green Deal Sustainable 
+Urban Logistics', Brussels’s Urban Logistics Green  Deal, Rotterdam’s Logistiek010, Central 
+London Freight Quality Partnership .  
+While building such partnerships or initiate dialogues, it is important to ensure the widest 
+participation  possible  also of the HoReCa21 sector and local small and medium enterprises 
+(SMEs ), who may lack resources and experienc e in joining such public -private dialogues.  
+ 
+R7: Develop awareness campai gns and incentive schemes to enco urage sustain able 
+e-commerce activities from busin ess and citizens  
+According to EU’s 2023 survey22, 93% of EU citizens believe that climate change is a serious 
+problem . However , many of them are much less aware of environmental  impacts of their e -
+commerce shipping options nor have opportunities to take actions to reduce associated 
+emissions  associated with their purchases .  
+Their acceptability is greatly enhanced by adequate stakeholder engagement, understood as 
+the participation of various interested parties (producers and shippers, freight transport and 
+logistics operators, recipients, residents, local public authorities, and ot hers) in the decision -
+making process . 
+ 
+Action R 7.1: Awareness campaigns to citizens on impacts of e -commerce on 
+environment  
+ 
+When customers are given additional knowledge  about how their actions can have an impact  
+on sustainability, it has a favourable influence on their purchasing decisions. This concept is 
+at the core of the CountEmissions EU regulation proposal, which will provide a multimodal, 
+door-to-door harmonised framework to calculate and disclose Well -To-Wheel GHG emissions 
+of transport services.23 Consumers and operators will be able to shift their choices towards 
+the most environmentally friendly logistics solutions. Retailers may positively contribute to the 
+process by giving more  information about the impact upon the environment of single 
+purchases, and proposed alternative  options for green er deliver ies. Customers are asking for 
+more and more details on the delivery of their purchases. Customers who do not currently 
+have a simple method to grasp the implications of their actions must be given consistent 
+information.  
+ 
+ 
+21 Hotel, restaurant and café.  
+22 https://climate.ec.europa.eu/citizens/citizen -support -climate -action_en   
+23 COM/2023/441 final  
+16 
+ Action R 7.2: Propose more sustainable delivery options to consumers  
+ 
+Retailers may provide and encourage more sustainable delivery practices.  Alternative  delivery 
+options  to customers  should not be  causing additional  flow fragmentation, as this might have 
+negative  impacts  (e.g., having the standard vehicle and the low - or zero -emissions vehicle 
+deliver).  Free returns typically result in extra transportation, which must be handled carefully.  
+Despite t he public sector has limited powers in this regard , it could encourage  
+ 
+Action R 7.3: Setting up incentive measure s to awar d those who choose sustainable 
+deliver ies 
+ 
+There is a l imited role so far from governments  and cities to nudge consumers decisions on  
+sustainable  deliveries.  One-off attempts  have been made to charge large companies for the 
+use of public space of large e-commerce businesses . However, such an approach towards 
+taxation  has found mixed opinions from the public and private sectors about its  effectiveness 
+in the medium -long term24. Incentive schemes encourag ing businesses to provide various 
+options and information to consumers to enable them to choose the most sustainable options  
+are a n alternative.  
+ 
+ 
+24 https://www.etp -logistics.eu/polis -and-alice -webinar -series -2023/   
+17 
+ 1. Summary of recommendations  (toolkits ) 
+Recommendations  Actions  By whom  
+EC National 
+ministry of 
+member state  Local authority  Private sector  
+ 
+2. R1: Develop an EU -wide 
+common approach for data 
+collection and voluntary 
+data sharing for SULP  Action R1.1: Identify needs for the essential dataset for 
+SULP  ✔  ✔ ✔  
+Action R1.2: Initiate pilots in diverse types of cities to 
+create best practices and knowledge in data  collection 
+and sharing for SULP    ✔ ✔ 
+Action R1.3: Form a guideline for data collection for 
+SULP including types of data needed, methodology to 
+collect and use data for policy development and impact 
+monitoring  ✔ ✔ ✔  
+Action R1.4: Form a guideline for local authorities to 
+communicate benefits of data sharing to various types 
+of private sectors  ✔  ✔  
+3. R2: Update existing SULP 
+guidance and include new 
+elements  Action R2.1: Integrate urban logistics in local strategies 
+and city policies beyond mobility and transport sector   ✔ ✔  
+Action R2.2: Support consumer engagement including 
+raising awareness on delivery choices and pick -up 
+choices with active mobility   ✔ ✔ ✔ 
+18 
+ Action R2.3: Measures that can support circular 
+economy    ✔ ✔ 
+Action R2.4 Considering setting up urban service 
+centres  
+   ✔ ✔ 
+Action R2.5: Support on monitoring and evaluation of 
+SULPs’ implementation paths and impacts  ✔ ✔   
+R3: Provide expert support 
+and training to local 
+authorities on urban logistics  Action R3.1: To develop training and technical supports 
+on how to develop a comprehensive understanding of 
+the urban freight flows and eco -systems   ✔ ✔ ✔ 
+Action R3.2: To provide training on how to integrate 
+policies of urban logistics with other policies      
+Action R3.3: To provide excerpt support in monitoring 
+impact of policy measures on urban logistics and fully 
+integrate policies of urban logistics and propose actions 
+to mitigate negative impacts.      
+R4: Set a policy framework 
+at national level to ensure 
+safety, social sustainablity, 
+and good working conditions 
+of all  workers of the logistics 
+sector   ✔ ✔   
+R5: Set a policy framework 
+to encourage collaborative Action 5.1 Encourage white label logistics vehicles 
+through standardised load units and digital platforms.    ✔ ✔ 
+19 
+ logistics to share vehicles 
+and assets  Action 5.2: Ensure pick -up points and micro -hubs be 
+accessed by residents within 15 minutes walking in 
+most urban areas and can be used by various e -
+commerce actors.    ✔ ✔ 
+ Action 5.3: Go beyond the urban scale, cities as 
+complex nodes    ✔ ✔ 
+R6: Strengthen the 
+collaboration between local 
+authorities and private 
+sector, establish or maintain 
+effective partners to ensure 
+various actors’ contributions 
+to policy making     ✔ ✔ 
+R7: Develop awareness 
+campaigns and incentive 
+schemes to encoruage 
+sustainble e -commerce 
+activities from busienss and 
+citizens  Action 7.1 Awareness campaigns to citizens on impacts 
+of e-commerce on environment     ✔ 
+Action 7.2 Propose more sustainable delivery options 
+to consumers     ✔ 
+Action 7.3 Setting up incentive measure to award those 
+who choose sustainable delivery     ✔ 
+20 
+ Annex – additional information  
+ 
+List of acronyms and abbreviations  
+Acronym  Full name  
+ANPR  Automatic Number Plate Recognition  
+B2B Business to Business  
+B2C Business to Consumer  
+CEF Connecting Europe Facility  
+CBD  Central Business District  
+EC European Commission  
+EGUM  Expert Group on Urban Mobility  
+GHG  Green House Gases  
+HDV  Heavy -Duty Vehicle  
+HoReCa  Hotellerie  – Restaurant  - Café 
+LDV Light -Duty Vehicle  
+LEV Low-Emission Vehicle  
+LEZ Low-Emission Zone  
+LL Living Lab  
+KPI Key Performance Indicators  
+OEM  Original Equipment Manufacturer  
+R&I Research and Innovation  
+SULP  Sustainable Urban Logistics Plans  
+SUMP  Sustainable Urban Mobility Plans  
+UCC  Urban Consolidation Center  
+UMF  Urban Mobility Framework  
+ZEZ Zero-Emission Zones  
+ 
+21 
+  
+About the group  
+The Subgroup 4 of Expert Group on Urban Mobility (EGUM) is dedicated to urban logistics. It 
+is composed by twelve  national ministries of EU member states, seven  regional governments 
+and city authorities, and ten associations/organizations. This Subgroup  is coordinated by 
+ALICE, POLIS and ACEA.  
+This Subgroup aims to developing a set of recommendations for taking actions to advance  the 
+implementation of the Urban Mobility Framework. This document has been jointly developed 
+by the members of the Subgroup 4. The group believe s that the recommended actions would 
+ensure a better and improved quality of life in European cities, contribute to climate actions, 
+sustain economic growth and enhance competitiveness of European business.  
+Inputs were collected from the members of the Subgroup 4 and EGUM plenary through online 
+meetings, in -person meetings and workshops, online questionnaires, online discussion tools 
+(e.g. using Miro board). Members of the Subgroup 4 have exchanged informatio n on policy 
+development, technology developments, market insights, common challenges, and current 
+practices. Results, good practices, and lessons learned from past and ongoing EU funded 
+research and innovation (R&I) projects and relevant Living Labs (LLs) have been taken into 
+consideration.  
+  
+List of organisations participating to the subgroup  
+ 
+Subgroup leaders  
+ 
+Alliance for Logistics Innovation through Collaboration in Europe, ALICE AISBL  
+European Automobile Manufacturers Association , ACEA  
+POLIS  
+ 
+Cities and Regions  
+Barcelona Metropolitan Area  
+Bremen  
+Ile-de-France Region  
+Karditsa  
+Stockholm  
+The Hague  
+Toulouse Métropol e 
+ 
+Member States  
+Austria  
+Belgium  
+Czechia  
+Finland  
+France  
+Italy  
+Latvia  
+Lithuania  
+The Netherlands  
+Poland  
+Portugal  
+Spain  
+ 
+22 
+ Organisations  
+AVERE - The European Association For Electromobility  
+Community of European Railway and Infrastructure Companies - CER aisbl  
+Council of European Municipalities and Regions - CEMR  
+Cycling industries Europe aisbl (CIE)  
+European Cyclists Federation (ECF)  
+European Transport Workers Federation - ETF-Europe  
+Eurocities  
+International Road Transport Union - IRU 
+LEVA -EU 
+MaaS Alliance  
+ 
+Observers  
+JRC – Joint Research Centre of the European Commission  
+ 
