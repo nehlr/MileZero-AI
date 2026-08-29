@@ -4,6 +4,10 @@ Bu proje, Microsoft Foundry Local kullanılarak geliştirilmiş tamamen çevrimd
 
 Öğrencilerin veya araştırmacıların uzun belgeler (makaleler, notlar vb.) içerisinde kaybolmadan aradıkları bilgilere anında ulaşabilmelerini hedefler.
 
+## 🎥 Proje Sunum & Demo Videosu
+Projenin anlatımını ve canlı demosunu içeren sunum videosunu izlemek için:
+👉 [**Sunum Videosunu İzle / İndir (sunum.MP4)**](./sunum.MP4)
+
 ## 🌟 Özellikler
 - **Tamamen Yerel Çalışma:** Hiçbir veri internete veya buluta gönderilmez. Tüm veritabanı, arama ve yapay zeka işlemleri kullanıcının kendi donanımında gerçekleşir.
 - **Foundry Local Entegrasyonu:** Hem metinleri vektörleştirmek (Embedding) hem de cevap üretmek (Chat) için Microsoft'un hafif ve hızlı yapay zeka çalışma zamanı aracı olan Foundry Local kullanılır.
