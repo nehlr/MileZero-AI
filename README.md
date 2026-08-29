@@ -2,7 +2,7 @@
 
 Bu proje, Microsoft Foundry Local kullanılarak geliştirilmiş tamamen çevrimdışı (offline) çalışan bir RAG (Retrieval-Augmented Generation) Soru-Cevap asistanıdır. 
 
-Yaz Okulu Planı'nda (Summer School Foundry Local Plan) belirtilen gereksinimler doğrultusunda inşa edilmiştir. Öğrencilerin veya araştırmacıların uzun belgeler (makaleler, notlar vb.) içerisinde kaybolmadan aradıkları bilgilere anında ulaşabilmelerini hedefler.
+Öğrencilerin veya araştırmacıların uzun belgeler (makaleler, notlar vb.) içerisinde kaybolmadan aradıkları bilgilere anında ulaşabilmelerini hedefler.
 
 ## 🌟 Özellikler
 - **Tamamen Yerel Çalışma:** Hiçbir veri internete veya buluta gönderilmez. Tüm veritabanı, arama ve yapay zeka işlemleri kullanıcının kendi donanımında gerçekleşir.
