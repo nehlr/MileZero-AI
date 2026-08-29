@@ -21,23 +21,46 @@ def answer_query(query):
         "context, just say 'I don't know'. Do not hallucinate or use outside knowledge."
     )
     
+# ---------------------------------------------------------
+    # FOUNDRY LOCAL SDK / OAI UYUMLU LLM BAĞLANTISI
     # ---------------------------------------------------------
-    # TODO: Replace the mock response below with the real Foundry Local SDK call:
-    # ---------------------------------------------------------
-    # Example using OpenAI-compatible Foundry Local client:
-    # from openai import OpenAI
-    # client = OpenAI(base_url="http://localhost:1234/v1", api_key="local")
-    # response = client.chat.completions.create(
-    #     model="phi-1.5-mini",
-    #     messages=[
-    #         {"role": "system", "content": system_prompt + "\n\nContext:\n" + context},
-    #         {"role": "user", "content": query}
-    #     ]
-    # )
-    # return response.choices[0].message.content
-    
-    mock_response = f"[Mock LLM] Based on the {len(chunks)} chunks retrieved from the local database, here is the answer to your question: '{query}'. \n(Replace this with real LLM inference code)."
-    return mock_response
+    messages = [
+        # System prompt: Modelin nasıl davranması gerektiğini (Rolünü) ve kısıtlamalarını belirtir.
+        {"role": "system", "content": system_prompt + "\n\nContext:\n" + context},
+        # User prompt: Kullanıcının gerçek sorusudur.
+        {"role": "user", "content": query}
+    ]
+
+    # 1. Deneme: Doğrudan foundry-local-sdk ChatClient kullanımı
+    try:
+        from foundry_local_sdk import Configuration, FoundryLocalManager
+        config = Configuration(app_name="LocalRAGAssistant")
+        FoundryLocalManager.initialize(config)
+        mgr = FoundryLocalManager.instance
+        model = mgr.catalog.get_model("qwen2.5-1.5b")
+        if model:
+            if not model.is_loaded:
+                model.load()
+            chat_client = model.get_chat_client()
+            chat_client.settings.temperature = 0.1
+            response = chat_client.complete_chat(messages=messages)
+            return response.choices[0].message.content
+    except Exception as e:
+        # SDK ile doğrudan model yüklenmediyse yerel server API'ye fallback yap
+        pass
+
+    # 2. Deneme: OpenAI uyumlu yerel Foundry sunucusu (port 1234)
+    try:
+        from openai import OpenAI
+        client = OpenAI(base_url="http://127.0.0.1:1234/v1", api_key="local")
+        response = client.chat.completions.create(
+            model="qwen2.5-1.5b",
+            messages=messages,
+            temperature=0.1
+        )
+        return response.choices[0].message.content
+    except Exception as e:
+        return f"LLM bağlantısında bir hata oluştu. Arka planda Foundry Local'ın çalıştığından ve doğru porta (örn: 1234) bağlı olduğundan emin olun. \nHata detayı: {e}"
 
 def main():
     print("========================================")

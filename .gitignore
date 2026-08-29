@@ -2,3 +2,6 @@ venv/
 __pycache__/
 *.pyc
 .env
+*.zip
+foundry_local/foundry.zip
+foundry_local/foundry-cli-osx-arm64/
