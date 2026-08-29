@@ -5,9 +5,9 @@ Bu proje, Microsoft Foundry Local kullanılarak geliştirilmiş tamamen çevrimd
 Öğrencilerin veya araştırmacıların uzun belgeler (makaleler, notlar vb.) içerisinde kaybolmadan aradıkları bilgilere anında ulaşabilmelerini hedefler.
 
 ## 🎥 Proje Sunum & Demo Videosu
-Projenin anlatımını ve canlı demosunu içeren sunum videosunu izlemek veya bilgisayarınıza indirmek için aşağıdaki bağlantıları kullanabilirsiniz:
-- 🎬 [**Videoyu Doğrudan İzle / İndir (sunum.MP4)**](https://raw.githubusercontent.com/nehlr/MileZero-AI/main/sunum.MP4)
-- 📁 [**GitHub Depo Dosyası (sunum.MP4)**](./sunum.MP4)
+Projenin anlatımını ve canlı demosunu içeren sunum videosunu GitHub üzerinden doğrudan izleyebilir veya bilgisayarınıza indirebilirsiniz:
+
+👉 [**Videoyu GitHub Üzerinde İzle / İndir (sunum.MP4)**](./sunum.MP4)
 
 ## 🌟 Özellikler
 - **Tamamen Yerel Çalışma:** Hiçbir veri internete veya buluta gönderilmez. Tüm veritabanı, arama ve yapay zeka işlemleri kullanıcının kendi donanımında gerçekleşir.
